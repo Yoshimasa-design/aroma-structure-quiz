@@ -1,4 +1,4 @@
-const CACHE_NAME = "aroma-v2";
+const CACHE_NAME = "aroma-v3";
 
 const FILES = [
   "./",
