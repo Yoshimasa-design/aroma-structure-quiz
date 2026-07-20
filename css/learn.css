@@ -4,3 +4,5 @@
 .feedback{margin-top:20px;padding:22px;border-radius:18px;background:var(--class-light);border:1px solid var(--class-color)}.feedback h2{margin:.2em 0}.feedback-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}.feedback-grid div{background:rgba(255,255,255,.7);padding:13px;border-radius:12px}.hidden{display:none!important}.memory{margin-top:16px}.memory li{margin:5px 0}.actions{display:flex;justify-content:flex-end;gap:10px;margin-top:18px}
 .final-structure{max-width:300px;margin:10px auto;height:210px;object-fit:contain;display:block}
 @media(max-width:640px){.choices,.feedback-grid{grid-template-columns:1fr}.quiz-card{padding:18px}.choice.structure img{height:125px}}
+.favorite-actions{flex-wrap:wrap}.favorite-actions .favorite-button{margin-right:auto}
+@media(max-width:640px){.favorite-actions{justify-content:stretch}.favorite-actions>*{flex:1;text-align:center;justify-content:center}}

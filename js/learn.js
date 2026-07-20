@@ -1,5 +1,6 @@
 
 import{loadCompounds,shuffle,distract,theme,addResult,recordSession}from"./common.js";
+import{favoriteButtonMarkup,bindFavoriteButtons}from"./storage.js";
 const all=await loadCompounds();const queue=shuffle(all).slice(0,10);let i=0,stage=0,score=0,locked=false;
 const $=s=>document.querySelector(s), card=$("#card"),choices=$("#choices"),feedback=$("#feedback");
 function render(){
@@ -29,9 +30,9 @@ function answer(o,btn){
    <img class="final-structure" src="../${a.structure}" alt="${a.name_ja}の構造式">
    <div class="feedback-grid"><div><b>分子式</b><br>${a.formula}</div><div><b>分子量</b><br>${a.molecular_weight}</div><div><b>官能基</b><br>${a.functional_group}</div><div><b>構造の特徴</b><br>${a.structure_feature}</div></div>
    <div class="memory"><b>覚えるポイント</b><ul>${a.memorize.filter(Boolean).map(x=>`<li>${x}</li>`).join("")}</ul></div>
-   <div class="actions"><a class="btn secondary" href="encyclopedia.html?id=${a.id}">図鑑で見る</a><button class="btn primary" id="next">${i===queue.length-1?"結果を見る":"次の問題"}</button></div>`;
+   <div class="actions favorite-actions">${favoriteButtonMarkup(a.id)}<a class="btn secondary" href="encyclopedia.html?id=${a.id}">図鑑で見る</a><button class="btn primary" id="next">${i===queue.length-1?"結果を見る":"次の問題"}</button></div>`;
  }
- $("#next").onclick=advance;feedback.scrollIntoView({behavior:"smooth",block:"nearest"});
+ bindFavoriteButtons(feedback);$("#next").onclick=advance;feedback.scrollIntoView({behavior:"smooth",block:"nearest"});
 }
 function advance(){
  if(stage===0){stage=1;render();scrollTo({top:0,behavior:"smooth"});return}
