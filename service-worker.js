@@ -1,1 +1,48 @@
-const C="aroma-v1",A=["./", "./index.html", "./style.css", "./app.js", "./manifest.webmanifest", "./data/compounds.json", "./structures/isoamyl-acetate.svg", "./structures/ethyl-butyrate.svg", "./structures/ethyl-acetate.svg", "./structures/limonene.svg", "./structures/linalool.svg", "./structures/geraniol.svg", "./structures/menthol.svg", "./structures/carvone.svg", "./structures/vanillin.svg", "./structures/eugenol.svg", "./structures/benzaldehyde.svg", "./structures/cinnamaldehyde.svg", "./structures/methyl-salicylate.svg", "./structures/phenethyl-alcohol.svg", "./structures/hexanal.svg", "./structures/citral.svg", "./structures/diacetyl.svg", "./structures/one-octen-three-ol.svg", "./structures/allyl-isothiocyanate.svg", "./structures/dimethyl-sulfide.svg"];self.addEventListener("install",e=>e.waitUntil(caches.open(C).then(c=>c.addAll(A))));self.addEventListener("activate",e=>e.waitUntil(caches.keys().then(k=>Promise.all(k.filter(x=>x!==C).map(x=>caches.delete(x))))));self.addEventListener("fetch",e=>e.respondWith(caches.match(e.request).then(r=>r||fetch(e.request))));
+const CACHE_NAME = "aroma-v2";
+
+const FILES = [
+  "./",
+  "./index.html",
+  "./style.css",
+  "./app.js",
+  "./manifest.webmanifest",
+  "./data/compounds.json"
+];
+
+self.addEventListener("install", event => {
+  self.skipWaiting();
+
+  event.waitUntil(
+    caches.open(CACHE_NAME).then(cache => cache.addAll(FILES))
+  );
+});
+
+self.addEventListener("activate", event => {
+  event.waitUntil(
+    caches.keys()
+      .then(names =>
+        Promise.all(
+          names
+            .filter(name => name !== CACHE_NAME)
+            .map(name => caches.delete(name))
+        )
+      )
+      .then(() => self.clients.claim())
+  );
+});
+
+self.addEventListener("fetch", event => {
+  event.respondWith(
+    fetch(event.request)
+      .then(response => {
+        const copy = response.clone();
+
+        caches.open(CACHE_NAME).then(cache => {
+          cache.put(event.request, copy);
+        });
+
+        return response;
+      })
+      .catch(() => caches.match(event.request))
+  );
+});
