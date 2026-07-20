@@ -1,0 +1,4 @@
+
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.featured{border:2px solid #c68aaa;position:relative}.featured:before{content:"おすすめ";position:absolute;right:16px;top:14px;background:#8f2d65;color:#fff;border-radius:999px;padding:3px 9px;font-size:.72rem;font-weight:800}
+.summary-row{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.summary-row div{background:#fff;border:1px solid var(--line);padding:18px;border-radius:16px}.summary-row strong{font-size:1.5rem;display:block}
+@media(max-width:640px){.summary-row{grid-template-columns:1fr}}

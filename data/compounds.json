@@ -12,7 +12,27 @@
     "molecular_weight": 130.19,
     "structure": "structures/isoamyl-acetate.svg",
     "class_group": "エステル類",
-    "functional_group": "エステル結合（−COO−）"
+    "functional_group": "エステル結合（−COO−）",
+    "subcategory": "エステル",
+    "sources_list": [
+      "バナナ",
+      "清酒など"
+    ],
+    "uses": [
+      "食品香料",
+      "飲料",
+      "香粧品"
+    ],
+    "description": "酢酸とイソアミルアルコールからなるエステル。−COO−に注目。",
+    "memorize": [
+      "バナナ様の甘い果実香",
+      "エステル類",
+      "エステル"
+    ],
+    "odor_icon": "🍌",
+    "difficulty": "基礎",
+    "iupac": "",
+    "structure_feature": "酢酸とイソアミルアルコールからなるエステル。−COO−に注目。"
   },
   {
     "id": "ethyl-butyrate",
@@ -27,7 +47,27 @@
     "molecular_weight": 116.16,
     "structure": "structures/ethyl-butyrate.svg",
     "class_group": "エステル類",
-    "functional_group": "エステル結合（−COO−）"
+    "functional_group": "エステル結合（−COO−）",
+    "subcategory": "エステル",
+    "sources_list": [
+      "パイナップル",
+      "オレンジなど"
+    ],
+    "uses": [
+      "食品香料",
+      "飲料",
+      "香粧品"
+    ],
+    "description": "酪酸由来の炭素鎖とエチル基をもつエステル。",
+    "memorize": [
+      "パイナップル様の果実香",
+      "エステル類",
+      "エステル"
+    ],
+    "odor_icon": "🍍",
+    "difficulty": "基礎",
+    "iupac": "",
+    "structure_feature": "酪酸由来の炭素鎖とエチル基をもつエステル。"
   },
   {
     "id": "ethyl-acetate",
@@ -42,7 +82,28 @@
     "molecular_weight": 88.11,
     "structure": "structures/ethyl-acetate.svg",
     "class_group": "エステル類",
-    "functional_group": "エステル結合（−COO−）"
+    "functional_group": "エステル結合（−COO−）",
+    "subcategory": "エステル",
+    "sources_list": [
+      "果実",
+      "発酵食品",
+      "酒類など"
+    ],
+    "uses": [
+      "食品香料",
+      "飲料",
+      "香粧品"
+    ],
+    "description": "小さな分子の代表的なエステル。",
+    "memorize": [
+      "甘く軽い果実様・溶剤様",
+      "エステル類",
+      "エステル"
+    ],
+    "odor_icon": "🍎",
+    "difficulty": "基礎",
+    "iupac": "",
+    "structure_feature": "小さな分子の代表的なエステル。"
   },
   {
     "id": "limonene",
@@ -57,7 +118,27 @@
     "molecular_weight": 136.24,
     "structure": "structures/limonene.svg",
     "class_group": "テルペン類",
-    "functional_group": "炭素−炭素二重結合をもつ炭化水素"
+    "functional_group": "炭素−炭素二重結合をもつ炭化水素",
+    "subcategory": "テルペン",
+    "sources_list": [
+      "オレンジ",
+      "レモンなどの果皮"
+    ],
+    "uses": [
+      "食品香料",
+      "香粧品",
+      "洗浄製品"
+    ],
+    "description": "酸素を含まない環状モノテルペン。環と2つの二重結合が特徴。",
+    "memorize": [
+      "柑橘様のさわやかな香り",
+      "テルペン類",
+      "テルペン"
+    ],
+    "odor_icon": "🍊",
+    "difficulty": "基礎",
+    "iupac": "",
+    "structure_feature": "酸素を含まない環状モノテルペン。環と2つの二重結合が特徴。"
   },
   {
     "id": "linalool",
@@ -72,7 +153,28 @@
     "molecular_weight": 154.25,
     "structure": "structures/linalool.svg",
     "class_group": "アルコール類",
-    "functional_group": "アルコール性ヒドロキシ基（−OH）"
+    "functional_group": "アルコール性ヒドロキシ基（−OH）",
+    "subcategory": "テルペンアルコール",
+    "sources_list": [
+      "ラベンダー",
+      "ベルガモット",
+      "ホップなど"
+    ],
+    "uses": [
+      "香料",
+      "香粧品",
+      "食品"
+    ],
+    "description": "鎖状モノテルペンアルコール。第三級アルコールと二重結合をもつ。",
+    "memorize": [
+      "花様・柑橘様",
+      "アルコール類",
+      "テルペンアルコール"
+    ],
+    "odor_icon": "🍊",
+    "difficulty": "基礎",
+    "iupac": "",
+    "structure_feature": "鎖状モノテルペンアルコール。第三級アルコールと二重結合をもつ。"
   },
   {
     "id": "geraniol",
@@ -87,7 +189,28 @@
     "molecular_weight": 154.25,
     "structure": "structures/geraniol.svg",
     "class_group": "アルコール類",
-    "functional_group": "第一級アルコール（−CH₂OH）"
+    "functional_group": "第一級アルコール（−CH₂OH）",
+    "subcategory": "テルペンアルコール",
+    "sources_list": [
+      "バラ",
+      "ゼラニウム",
+      "レモングラスなど"
+    ],
+    "uses": [
+      "香料",
+      "香粧品",
+      "食品"
+    ],
+    "description": "鎖状の第一級アルコール。末端の−CH2OHに注目。",
+    "memorize": [
+      "バラ様の甘い花香",
+      "アルコール類",
+      "テルペンアルコール"
+    ],
+    "odor_icon": "🌹",
+    "difficulty": "基礎",
+    "iupac": "",
+    "structure_feature": "鎖状の第一級アルコール。末端の−CH2OHに注目。"
   },
   {
     "id": "menthol",
@@ -102,7 +225,27 @@
     "molecular_weight": 156.27,
     "structure": "structures/menthol.svg",
     "class_group": "アルコール類",
-    "functional_group": "第二級アルコール（−OH）"
+    "functional_group": "第二級アルコール（−OH）",
+    "subcategory": "テルペンアルコール",
+    "sources_list": [
+      "ハッカ",
+      "ペパーミントなど"
+    ],
+    "uses": [
+      "香料",
+      "香粧品",
+      "食品"
+    ],
+    "description": "飽和六員環をもつ環状アルコール。実際には立体異性体が重要。",
+    "memorize": [
+      "ミント様の清涼感のある香り",
+      "アルコール類",
+      "テルペンアルコール"
+    ],
+    "odor_icon": "🌿",
+    "difficulty": "基礎",
+    "iupac": "",
+    "structure_feature": "飽和六員環をもつ環状アルコール。実際には立体異性体が重要。"
   },
   {
     "id": "carvone",
@@ -117,7 +260,27 @@
     "molecular_weight": 150.22,
     "structure": "structures/carvone.svg",
     "class_group": "ケトン類",
-    "functional_group": "ケトンのカルボニル基（>C=O）"
+    "functional_group": "ケトンのカルボニル基（>C=O）",
+    "subcategory": "テルペンケトン",
+    "sources_list": [
+      "スペアミント",
+      "キャラウェイなど"
+    ],
+    "uses": [
+      "食品香料",
+      "香粧品",
+      "香味研究"
+    ],
+    "description": "環状モノテルペンケトン。鏡像異性体によって香りが大きく異なる。",
+    "memorize": [
+      "スペアミント様またはキャラウェイ様",
+      "ケトン類",
+      "テルペンケトン"
+    ],
+    "odor_icon": "🌿",
+    "difficulty": "基礎",
+    "iupac": "",
+    "structure_feature": "環状モノテルペンケトン。鏡像異性体によって香りが大きく異なる。"
   },
   {
     "id": "vanillin",
@@ -132,7 +295,27 @@
     "molecular_weight": 152.15,
     "structure": "structures/vanillin.svg",
     "class_group": "アルデヒド類",
-    "functional_group": "アルデヒド基・フェノール性ヒドロキシ基・メトキシ基"
+    "functional_group": "アルデヒド基・フェノール性ヒドロキシ基・メトキシ基",
+    "subcategory": "芳香族アルデヒド",
+    "sources_list": [
+      "バニラ豆",
+      "加熱・熟成食品など"
+    ],
+    "uses": [
+      "食品香料",
+      "香粧品",
+      "香味研究"
+    ],
+    "description": "ベンゼン環にアルデヒド基、ヒドロキシ基、メトキシ基をもつ。",
+    "memorize": [
+      "バニラ様の甘い香り",
+      "アルデヒド類",
+      "芳香族アルデヒド"
+    ],
+    "odor_icon": "🌼",
+    "difficulty": "基礎",
+    "iupac": "",
+    "structure_feature": "ベンゼン環にアルデヒド基、ヒドロキシ基、メトキシ基をもつ。"
   },
   {
     "id": "eugenol",
@@ -147,7 +330,28 @@
     "molecular_weight": 164.2,
     "structure": "structures/eugenol.svg",
     "class_group": "フェノール類",
-    "functional_group": "フェノール性ヒドロキシ基・メトキシ基"
+    "functional_group": "フェノール性ヒドロキシ基・メトキシ基",
+    "subcategory": "フェノール",
+    "sources_list": [
+      "クローブ",
+      "シナモン",
+      "バジルなど"
+    ],
+    "uses": [
+      "食品香料",
+      "香粧品",
+      "香味研究"
+    ],
+    "description": "フェノール性ヒドロキシ基、メトキシ基、アリル基をもつ。",
+    "memorize": [
+      "クローブ様のスパイシーな香り",
+      "フェノール類",
+      "フェノール"
+    ],
+    "odor_icon": "🌸",
+    "difficulty": "基礎",
+    "iupac": "",
+    "structure_feature": "フェノール性ヒドロキシ基、メトキシ基、アリル基をもつ。"
   },
   {
     "id": "benzaldehyde",
@@ -162,7 +366,28 @@
     "molecular_weight": 106.12,
     "structure": "structures/benzaldehyde.svg",
     "class_group": "アルデヒド類",
-    "functional_group": "アルデヒド基（−CHO）"
+    "functional_group": "アルデヒド基（−CHO）",
+    "subcategory": "芳香族アルデヒド",
+    "sources_list": [
+      "杏仁",
+      "アーモンド",
+      "サクランボなど"
+    ],
+    "uses": [
+      "食品香料",
+      "香粧品",
+      "香味研究"
+    ],
+    "description": "ベンゼン環にアルデヒド基が直接結合した基本的な構造。",
+    "memorize": [
+      "アーモンド様",
+      "アルデヒド類",
+      "芳香族アルデヒド"
+    ],
+    "odor_icon": "🌰",
+    "difficulty": "基礎",
+    "iupac": "",
+    "structure_feature": "ベンゼン環にアルデヒド基が直接結合した基本的な構造。"
   },
   {
     "id": "cinnamaldehyde",
@@ -177,7 +402,26 @@
     "molecular_weight": 132.16,
     "structure": "structures/cinnamaldehyde.svg",
     "class_group": "アルデヒド類",
-    "functional_group": "アルデヒド基（−CHO）と炭素−炭素二重結合"
+    "functional_group": "アルデヒド基（−CHO）と炭素−炭素二重結合",
+    "subcategory": "芳香族アルデヒド",
+    "sources_list": [
+      "シナモン樹皮"
+    ],
+    "uses": [
+      "食品香料",
+      "香粧品",
+      "香味研究"
+    ],
+    "description": "ベンゼン環とアルデヒド基の間に炭素−炭素二重結合をもつ。",
+    "memorize": [
+      "シナモン様の甘くスパイシーな香り",
+      "アルデヒド類",
+      "芳香族アルデヒド"
+    ],
+    "odor_icon": "🌸",
+    "difficulty": "基礎",
+    "iupac": "",
+    "structure_feature": "ベンゼン環とアルデヒド基の間に炭素−炭素二重結合をもつ。"
   },
   {
     "id": "methyl-salicylate",
@@ -192,7 +436,27 @@
     "molecular_weight": 152.15,
     "structure": "structures/methyl-salicylate.svg",
     "class_group": "エステル類",
-    "functional_group": "エステル基とフェノール性ヒドロキシ基"
+    "functional_group": "エステル基とフェノール性ヒドロキシ基",
+    "subcategory": "芳香族エステル",
+    "sources_list": [
+      "ウィンターグリーン",
+      "カバノキなど"
+    ],
+    "uses": [
+      "食品香料",
+      "飲料",
+      "香粧品"
+    ],
+    "description": "芳香環上でヒドロキシ基とエステル基が隣接している。",
+    "memorize": [
+      "ウィンターグリーン様の甘く清涼な香り",
+      "エステル類",
+      "芳香族エステル"
+    ],
+    "odor_icon": "🌸",
+    "difficulty": "基礎",
+    "iupac": "",
+    "structure_feature": "芳香環上でヒドロキシ基とエステル基が隣接している。"
   },
   {
     "id": "phenethyl-alcohol",
@@ -207,7 +471,28 @@
     "molecular_weight": 122.17,
     "structure": "structures/phenethyl-alcohol.svg",
     "class_group": "アルコール類",
-    "functional_group": "第一級アルコール（−CH₂OH）"
+    "functional_group": "第一級アルコール（−CH₂OH）",
+    "subcategory": "芳香族アルコール",
+    "sources_list": [
+      "バラ",
+      "ワイン",
+      "発酵食品など"
+    ],
+    "uses": [
+      "香料",
+      "香粧品",
+      "食品"
+    ],
+    "description": "ベンゼン環と第一級アルコールが2炭素鎖でつながる。",
+    "memorize": [
+      "バラ様のやわらかな花香",
+      "アルコール類",
+      "芳香族アルコール"
+    ],
+    "odor_icon": "🌹",
+    "difficulty": "基礎",
+    "iupac": "",
+    "structure_feature": "ベンゼン環と第一級アルコールが2炭素鎖でつながる。"
   },
   {
     "id": "hexanal",
@@ -222,7 +507,28 @@
     "molecular_weight": 100.16,
     "structure": "structures/hexanal.svg",
     "class_group": "アルデヒド類",
-    "functional_group": "アルデヒド基（−CHO）"
+    "functional_group": "アルデヒド基（−CHO）",
+    "subcategory": "脂肪族アルデヒド",
+    "sources_list": [
+      "青葉",
+      "豆類",
+      "油脂の酸化生成物など"
+    ],
+    "uses": [
+      "食品香料",
+      "香粧品",
+      "香味研究"
+    ],
+    "description": "直鎖6炭素の末端にアルデヒド基をもつ。",
+    "memorize": [
+      "青葉様・青草様",
+      "アルデヒド類",
+      "脂肪族アルデヒド"
+    ],
+    "odor_icon": "🍃",
+    "difficulty": "基礎",
+    "iupac": "",
+    "structure_feature": "直鎖6炭素の末端にアルデヒド基をもつ。"
   },
   {
     "id": "citral",
@@ -237,7 +543,27 @@
     "molecular_weight": 152.24,
     "structure": "structures/citral.svg",
     "class_group": "アルデヒド類",
-    "functional_group": "アルデヒド基（−CHO）"
+    "functional_group": "アルデヒド基（−CHO）",
+    "subcategory": "テルペンアルデヒド",
+    "sources_list": [
+      "レモングラス",
+      "レモンマートルなど"
+    ],
+    "uses": [
+      "食品香料",
+      "香粧品",
+      "香味研究"
+    ],
+    "description": "鎖状モノテルペンアルデヒド。ゲラニアールとネラールの混合物を指す。",
+    "memorize": [
+      "強いレモン様",
+      "アルデヒド類",
+      "テルペンアルデヒド"
+    ],
+    "odor_icon": "🌸",
+    "difficulty": "基礎",
+    "iupac": "",
+    "structure_feature": "鎖状モノテルペンアルデヒド。ゲラニアールとネラールの混合物を指す。"
   },
   {
     "id": "diacetyl",
@@ -252,7 +578,28 @@
     "molecular_weight": 86.09,
     "structure": "structures/diacetyl.svg",
     "class_group": "ケトン類",
-    "functional_group": "隣接する2つのケトン型カルボニル基"
+    "functional_group": "隣接する2つのケトン型カルボニル基",
+    "subcategory": "ジケトン",
+    "sources_list": [
+      "バター",
+      "発酵乳製品",
+      "発酵飲料など"
+    ],
+    "uses": [
+      "食品香料",
+      "香粧品",
+      "香味研究"
+    ],
+    "description": "隣接した2つのカルボニル基をもつ小分子。",
+    "memorize": [
+      "バター様の濃厚な香り",
+      "ケトン類",
+      "ジケトン"
+    ],
+    "odor_icon": "🧈",
+    "difficulty": "基礎",
+    "iupac": "",
+    "structure_feature": "隣接した2つのカルボニル基をもつ小分子。"
   },
   {
     "id": "one-octen-three-ol",
@@ -267,7 +614,27 @@
     "molecular_weight": 128.21,
     "structure": "structures/one-octen-three-ol.svg",
     "class_group": "アルコール類",
-    "functional_group": "第二級アルコール（−OH）と炭素−炭素二重結合"
+    "functional_group": "第二級アルコール（−OH）と炭素−炭素二重結合",
+    "subcategory": "不飽和アルコール",
+    "sources_list": [
+      "キノコ類",
+      "菌類など"
+    ],
+    "uses": [
+      "香料",
+      "香粧品",
+      "食品"
+    ],
+    "description": "8炭素鎖に二重結合と第二級アルコールをもつ。",
+    "memorize": [
+      "キノコ様・土様",
+      "アルコール類",
+      "不飽和アルコール"
+    ],
+    "odor_icon": "🌸",
+    "difficulty": "基礎",
+    "iupac": "",
+    "structure_feature": "8炭素鎖に二重結合と第二級アルコールをもつ。"
   },
   {
     "id": "allyl-isothiocyanate",
@@ -282,7 +649,27 @@
     "molecular_weight": 99.16,
     "structure": "structures/allyl-isothiocyanate.svg",
     "class_group": "含硫化合物",
-    "functional_group": "イソチオシアネート基（−N=C=S）"
+    "functional_group": "イソチオシアネート基（−N=C=S）",
+    "subcategory": "含硫化合物",
+    "sources_list": [
+      "ワサビ",
+      "カラシ",
+      "ホースラディッシュなど"
+    ],
+    "uses": [
+      "食品香気研究",
+      "品質評価"
+    ],
+    "description": "アリル基とイソチオシアネート基 −N=C=S をもつ。",
+    "memorize": [
+      "ワサビ・カラシ様の刺激臭",
+      "含硫化合物",
+      "含硫化合物"
+    ],
+    "odor_icon": "🌸",
+    "difficulty": "基礎",
+    "iupac": "",
+    "structure_feature": "アリル基とイソチオシアネート基 −N=C=S をもつ。"
   },
   {
     "id": "dimethyl-sulfide",
@@ -297,6 +684,26 @@
     "molecular_weight": 62.14,
     "structure": "structures/dimethyl-sulfide.svg",
     "class_group": "含硫化合物",
-    "functional_group": "スルフィド結合（C−S−C）"
+    "functional_group": "スルフィド結合（C−S−C）",
+    "subcategory": "含硫化合物",
+    "sources_list": [
+      "海藻",
+      "加熱野菜",
+      "魚介類など"
+    ],
+    "uses": [
+      "食品香気研究",
+      "品質評価"
+    ],
+    "description": "硫黄原子に2つのメチル基が結合した単純なスルフィド。",
+    "memorize": [
+      "海苔様・磯様（濃度により不快臭）",
+      "含硫化合物",
+      "含硫化合物"
+    ],
+    "odor_icon": "🌸",
+    "difficulty": "基礎",
+    "iupac": "",
+    "structure_feature": "硫黄原子に2つのメチル基が結合した単純なスルフィド。"
   }
 ]

@@ -1,0 +1,3 @@
+
+.quiz-shell{max-width:860px;margin:auto}.quiz-card{padding:28px}.question{text-align:center;margin:22px 0}.choices{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}.choice{background:#fff;border:2px solid var(--line);border-radius:16px;padding:18px;cursor:pointer}.choice img{width:100%;height:150px;object-fit:contain}.choice.correct{border-color:#268348;background:#ecf8ef}.choice.wrong{border-color:#c74444;background:#fff0f0}.result{margin-top:18px;padding:18px;border-radius:16px;background:var(--class-light);border:1px solid var(--class-color)}.hidden{display:none!important}
+@media(max-width:640px){.choices{grid-template-columns:1fr}.quiz-card{padding:18px}}

@@ -1,1 +1,8 @@
-{"name":"香りから化学を学ぼう","short_name":"香り化学","start_url":"./","display":"standalone","background_color":"#f4f7fa","theme_color":"#173b5e","lang":"ja"}
+{
+  "name": "香りから化学を学ぼう",
+  "short_name": "香り化学",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#f6f8fb",
+  "theme_color": "#7c2859"
+}
