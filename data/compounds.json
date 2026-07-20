@@ -10,7 +10,9 @@
     "feature": "酢酸とイソアミルアルコールからなるエステル。−COO−に注目。",
     "formula": "C7H14O2",
     "molecular_weight": 130.19,
-    "structure": "structures/isoamyl-acetate.svg"
+    "structure": "structures/isoamyl-acetate.svg",
+    "class_group": "エステル類",
+    "functional_group": "エステル結合（−COO−）"
   },
   {
     "id": "ethyl-butyrate",
@@ -23,7 +25,9 @@
     "feature": "酪酸由来の炭素鎖とエチル基をもつエステル。",
     "formula": "C6H12O2",
     "molecular_weight": 116.16,
-    "structure": "structures/ethyl-butyrate.svg"
+    "structure": "structures/ethyl-butyrate.svg",
+    "class_group": "エステル類",
+    "functional_group": "エステル結合（−COO−）"
   },
   {
     "id": "ethyl-acetate",
@@ -36,7 +40,9 @@
     "feature": "小さな分子の代表的なエステル。",
     "formula": "C4H8O2",
     "molecular_weight": 88.11,
-    "structure": "structures/ethyl-acetate.svg"
+    "structure": "structures/ethyl-acetate.svg",
+    "class_group": "エステル類",
+    "functional_group": "エステル結合（−COO−）"
   },
   {
     "id": "limonene",
@@ -49,7 +55,9 @@
     "feature": "酸素を含まない環状モノテルペン。環と2つの二重結合が特徴。",
     "formula": "C10H16",
     "molecular_weight": 136.24,
-    "structure": "structures/limonene.svg"
+    "structure": "structures/limonene.svg",
+    "class_group": "テルペン類",
+    "functional_group": "炭素−炭素二重結合をもつ炭化水素"
   },
   {
     "id": "linalool",
@@ -62,7 +70,9 @@
     "feature": "鎖状モノテルペンアルコール。第三級アルコールと二重結合をもつ。",
     "formula": "C10H18O",
     "molecular_weight": 154.25,
-    "structure": "structures/linalool.svg"
+    "structure": "structures/linalool.svg",
+    "class_group": "アルコール類",
+    "functional_group": "アルコール性ヒドロキシ基（−OH）"
   },
   {
     "id": "geraniol",
@@ -75,7 +85,9 @@
     "feature": "鎖状の第一級アルコール。末端の−CH2OHに注目。",
     "formula": "C10H18O",
     "molecular_weight": 154.25,
-    "structure": "structures/geraniol.svg"
+    "structure": "structures/geraniol.svg",
+    "class_group": "アルコール類",
+    "functional_group": "第一級アルコール（−CH₂OH）"
   },
   {
     "id": "menthol",
@@ -88,7 +100,9 @@
     "feature": "飽和六員環をもつ環状アルコール。実際には立体異性体が重要。",
     "formula": "C10H20O",
     "molecular_weight": 156.27,
-    "structure": "structures/menthol.svg"
+    "structure": "structures/menthol.svg",
+    "class_group": "アルコール類",
+    "functional_group": "第二級アルコール（−OH）"
   },
   {
     "id": "carvone",
@@ -101,7 +115,9 @@
     "feature": "環状モノテルペンケトン。鏡像異性体によって香りが大きく異なる。",
     "formula": "C10H14O",
     "molecular_weight": 150.22,
-    "structure": "structures/carvone.svg"
+    "structure": "structures/carvone.svg",
+    "class_group": "ケトン類",
+    "functional_group": "ケトンのカルボニル基（>C=O）"
   },
   {
     "id": "vanillin",
@@ -114,7 +130,9 @@
     "feature": "ベンゼン環にアルデヒド基、ヒドロキシ基、メトキシ基をもつ。",
     "formula": "C8H8O3",
     "molecular_weight": 152.15,
-    "structure": "structures/vanillin.svg"
+    "structure": "structures/vanillin.svg",
+    "class_group": "アルデヒド類",
+    "functional_group": "アルデヒド基・フェノール性ヒドロキシ基・メトキシ基"
   },
   {
     "id": "eugenol",
@@ -127,7 +145,9 @@
     "feature": "フェノール性ヒドロキシ基、メトキシ基、アリル基をもつ。",
     "formula": "C10H12O2",
     "molecular_weight": 164.2,
-    "structure": "structures/eugenol.svg"
+    "structure": "structures/eugenol.svg",
+    "class_group": "フェノール類",
+    "functional_group": "フェノール性ヒドロキシ基・メトキシ基"
   },
   {
     "id": "benzaldehyde",
@@ -140,7 +160,9 @@
     "feature": "ベンゼン環にアルデヒド基が直接結合した基本的な構造。",
     "formula": "C7H6O",
     "molecular_weight": 106.12,
-    "structure": "structures/benzaldehyde.svg"
+    "structure": "structures/benzaldehyde.svg",
+    "class_group": "アルデヒド類",
+    "functional_group": "アルデヒド基（−CHO）"
   },
   {
     "id": "cinnamaldehyde",
@@ -153,7 +175,9 @@
     "feature": "ベンゼン環とアルデヒド基の間に炭素−炭素二重結合をもつ。",
     "formula": "C9H8O",
     "molecular_weight": 132.16,
-    "structure": "structures/cinnamaldehyde.svg"
+    "structure": "structures/cinnamaldehyde.svg",
+    "class_group": "アルデヒド類",
+    "functional_group": "アルデヒド基（−CHO）と炭素−炭素二重結合"
   },
   {
     "id": "methyl-salicylate",
@@ -166,7 +190,9 @@
     "feature": "芳香環上でヒドロキシ基とエステル基が隣接している。",
     "formula": "C8H8O3",
     "molecular_weight": 152.15,
-    "structure": "structures/methyl-salicylate.svg"
+    "structure": "structures/methyl-salicylate.svg",
+    "class_group": "エステル類",
+    "functional_group": "エステル基とフェノール性ヒドロキシ基"
   },
   {
     "id": "phenethyl-alcohol",
@@ -179,7 +205,9 @@
     "feature": "ベンゼン環と第一級アルコールが2炭素鎖でつながる。",
     "formula": "C8H10O",
     "molecular_weight": 122.17,
-    "structure": "structures/phenethyl-alcohol.svg"
+    "structure": "structures/phenethyl-alcohol.svg",
+    "class_group": "アルコール類",
+    "functional_group": "第一級アルコール（−CH₂OH）"
   },
   {
     "id": "hexanal",
@@ -192,7 +220,9 @@
     "feature": "直鎖6炭素の末端にアルデヒド基をもつ。",
     "formula": "C6H12O",
     "molecular_weight": 100.16,
-    "structure": "structures/hexanal.svg"
+    "structure": "structures/hexanal.svg",
+    "class_group": "アルデヒド類",
+    "functional_group": "アルデヒド基（−CHO）"
   },
   {
     "id": "citral",
@@ -205,7 +235,9 @@
     "feature": "鎖状モノテルペンアルデヒド。ゲラニアールとネラールの混合物を指す。",
     "formula": "C10H16O",
     "molecular_weight": 152.24,
-    "structure": "structures/citral.svg"
+    "structure": "structures/citral.svg",
+    "class_group": "アルデヒド類",
+    "functional_group": "アルデヒド基（−CHO）"
   },
   {
     "id": "diacetyl",
@@ -218,7 +250,9 @@
     "feature": "隣接した2つのカルボニル基をもつ小分子。",
     "formula": "C4H6O2",
     "molecular_weight": 86.09,
-    "structure": "structures/diacetyl.svg"
+    "structure": "structures/diacetyl.svg",
+    "class_group": "ケトン類",
+    "functional_group": "隣接する2つのケトン型カルボニル基"
   },
   {
     "id": "one-octen-three-ol",
@@ -231,7 +265,9 @@
     "feature": "8炭素鎖に二重結合と第二級アルコールをもつ。",
     "formula": "C8H16O",
     "molecular_weight": 128.21,
-    "structure": "structures/one-octen-three-ol.svg"
+    "structure": "structures/one-octen-three-ol.svg",
+    "class_group": "アルコール類",
+    "functional_group": "第二級アルコール（−OH）と炭素−炭素二重結合"
   },
   {
     "id": "allyl-isothiocyanate",
@@ -244,7 +280,9 @@
     "feature": "アリル基とイソチオシアネート基 −N=C=S をもつ。",
     "formula": "C4H5NS",
     "molecular_weight": 99.16,
-    "structure": "structures/allyl-isothiocyanate.svg"
+    "structure": "structures/allyl-isothiocyanate.svg",
+    "class_group": "含硫化合物",
+    "functional_group": "イソチオシアネート基（−N=C=S）"
   },
   {
     "id": "dimethyl-sulfide",
@@ -257,6 +295,8 @@
     "feature": "硫黄原子に2つのメチル基が結合した単純なスルフィド。",
     "formula": "C2H6S",
     "molecular_weight": 62.14,
-    "structure": "structures/dimethyl-sulfide.svg"
+    "structure": "structures/dimethyl-sulfide.svg",
+    "class_group": "含硫化合物",
+    "functional_group": "スルフィド結合（C−S−C）"
   }
 ]
