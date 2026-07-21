@@ -2138,5 +2138,248 @@
       "citral",
       "trans-two-hexenal"
     ]
+  },
+  {
+    "id": "maltol",
+    "name_ja": "マルトール",
+    "name_en": "Maltol",
+    "smiles": "CC1=CC(=O)C(O)=CO1",
+    "odor": "キャラメルやバタースコッチを思わせる甘い香り",
+    "sources": "麦芽、焙煎食品、加熱食品、針葉樹など",
+    "category": "ピラノン",
+    "feature": "酸素を含む六員環にヒドロキシ基、メチル基、カルボニル基をもつ。",
+    "formula": "C6H6O3",
+    "molecular_weight": 126.11,
+    "structure": "structures/maltol.svg",
+    "class_group": "その他",
+    "functional_group": "ヒドロキシ基・環状エーテル・共役カルボニル基",
+    "subcategory": "ヒドロキシピラノン",
+    "sources_list": [
+      "麦芽",
+      "焙煎食品",
+      "加熱食品",
+      "針葉樹など"
+    ],
+    "uses": [
+      "食品香料",
+      "香味増強",
+      "香料"
+    ],
+    "description": "キャラメル様の甘い香りを示す代表的な含酸素複素環化合物。",
+    "memorize": [
+      "キャラメル・バタースコッチ様",
+      "含酸素複素環化合物",
+      "メチル基をもつピラノン"
+    ],
+    "odor_icon": "🍮",
+    "difficulty": "基礎",
+    "iupac": "3-hydroxy-2-methylpyran-4-one",
+    "structure_feature": "酸素を含む六員環にヒドロキシ基、メチル基、カルボニル基をもつ。",
+    "odor_family": [
+      "キャラメル",
+      "甘い",
+      "焙煎"
+    ],
+    "learning_point": "エチルマルトールと比較し、メチル基とエチル基の違いによる構造変化を学ぶ。",
+    "related_compounds": [
+      "ethyl-maltol",
+      "furaneol",
+      "sotolon",
+      "ethyl-vanillin"
+    ]
+  },
+  {
+    "id": "ethyl-maltol",
+    "name_ja": "エチルマルトール",
+    "name_en": "Ethyl maltol",
+    "smiles": "CCC1=C(C(=O)C=CO1)O",
+    "odor": "キャラメルや綿菓子を思わせる強い甘い香り",
+    "sources": "主に香料として製造され、マンゴーなどでも存在が報告される",
+    "category": "ピラノン",
+    "feature": "マルトールのメチル基がエチル基になった含酸素複素環化合物。",
+    "formula": "C7H8O3",
+    "molecular_weight": 140.14,
+    "structure": "structures/ethyl-maltol.svg",
+    "class_group": "その他",
+    "functional_group": "ヒドロキシ基・環状エーテル・共役カルボニル基",
+    "subcategory": "ヒドロキシピラノン",
+    "sources_list": [
+      "香料として製造",
+      "マンゴーなどで報告"
+    ],
+    "uses": [
+      "食品香料",
+      "香味増強",
+      "香料"
+    ],
+    "description": "マルトールに似た構造をもち、強い甘さを感じさせる香調を示す。",
+    "memorize": [
+      "キャラメル・綿菓子様",
+      "含酸素複素環化合物",
+      "エチル基をもつマルトール類縁体"
+    ],
+    "odor_icon": "🍭",
+    "difficulty": "基礎",
+    "iupac": "2-ethyl-3-hydroxypyran-4-one",
+    "structure_feature": "酸素を含む六員環にヒドロキシ基、エチル基、カルボニル基をもつ。",
+    "odor_family": [
+      "キャラメル",
+      "甘い",
+      "果実"
+    ],
+    "learning_point": "マルトールと比較し、炭素鎖が1炭素増えたときの分子式と分子量の変化を学ぶ。",
+    "related_compounds": [
+      "maltol",
+      "furaneol",
+      "ethyl-vanillin",
+      "vanillin"
+    ]
+  },
+  {
+    "id": "furaneol",
+    "name_ja": "フラネオール",
+    "name_en": "Furaneol",
+    "smiles": "CC1C(=O)C(=C(O1)C)O",
+    "odor": "イチゴやパイナップル、キャラメルを思わせる甘い香り",
+    "sources": "イチゴ、パイナップル、トマト、加熱食品など",
+    "category": "フラノン",
+    "feature": "酸素を含む五員環に2つのメチル基、ヒドロキシ基、カルボニル基をもつ。",
+    "formula": "C6H8O3",
+    "molecular_weight": 128.13,
+    "structure": "structures/furaneol.svg",
+    "class_group": "その他",
+    "functional_group": "ヒドロキシ基・環状エーテル・カルボニル基",
+    "subcategory": "ヒドロキシフラノン",
+    "sources_list": [
+      "イチゴ",
+      "パイナップル",
+      "トマト",
+      "加熱食品など"
+    ],
+    "uses": [
+      "食品香料",
+      "果実香料",
+      "香気研究"
+    ],
+    "description": "ストロベリーフラノンとも呼ばれ、果実香とキャラメル香を併せもつ。",
+    "memorize": [
+      "イチゴ・キャラメル様",
+      "含酸素五員環",
+      "2つのメチル基をもつフラノン"
+    ],
+    "odor_icon": "🍓",
+    "difficulty": "基礎",
+    "iupac": "4-hydroxy-2,5-dimethylfuran-3-one",
+    "structure_feature": "酸素を含む五員環に2つのメチル基、ヒドロキシ基、カルボニル基をもつ。",
+    "odor_family": [
+      "果実",
+      "キャラメル",
+      "甘い"
+    ],
+    "learning_point": "ソトロンと比較し、同じ分子式でも原子の結合関係が異なる構造異性体を学ぶ。",
+    "related_compounds": [
+      "sotolon",
+      "maltol",
+      "ethyl-maltol",
+      "ethyl-vanillin"
+    ]
+  },
+  {
+    "id": "sotolon",
+    "name_ja": "ソトロン",
+    "name_en": "Sotolon",
+    "smiles": "CC1C(=C(C(=O)O1)O)C",
+    "odor": "メープルシロップやカレー、焦げた砂糖を思わせる香り",
+    "sources": "フェヌグリーク、熟成酒、貴腐ワイン、発酵・熟成食品など",
+    "category": "ラクトン",
+    "feature": "酸素を含む五員環に2つのメチル基、ヒドロキシ基、環状エステルをもつ。",
+    "formula": "C6H8O3",
+    "molecular_weight": 128.13,
+    "structure": "structures/sotolon.svg",
+    "class_group": "エステル類",
+    "functional_group": "環状エステル・ヒドロキシ基・炭素−炭素二重結合",
+    "subcategory": "ヒドロキシラクトン",
+    "sources_list": [
+      "フェヌグリーク",
+      "熟成酒",
+      "貴腐ワイン",
+      "発酵・熟成食品など"
+    ],
+    "uses": [
+      "食品香料",
+      "熟成香研究",
+      "香気分析"
+    ],
+    "description": "非常に特徴的なメープル様、カレー様の香調を示す熟成香成分。",
+    "memorize": [
+      "メープル・カレー様",
+      "ラクトン",
+      "熟成香の代表成分"
+    ],
+    "odor_icon": "🍁",
+    "difficulty": "基礎",
+    "iupac": "4-hydroxy-2,3-dimethyl-2H-furan-5-one",
+    "structure_feature": "五員環の環状エステルに2つのメチル基とヒドロキシ基をもつ。",
+    "odor_family": [
+      "熟成",
+      "スパイス",
+      "キャラメル"
+    ],
+    "learning_point": "フラネオールと比較し、同じ分子式をもつ構造異性体の構造と香りの違いを学ぶ。",
+    "related_compounds": [
+      "furaneol",
+      "maltol",
+      "ethyl-maltol",
+      "coumarin"
+    ]
+  },
+  {
+    "id": "two-acetylpyrrole",
+    "name_ja": "2-アセチルピロール",
+    "name_en": "2-Acetylpyrrole",
+    "smiles": "CC(=O)C1=CC=CN1",
+    "odor": "焼いたパンやクルミ、甘草を思わせる焙煎香",
+    "sources": "コーヒー、パン、麦芽、各種焙煎食品など",
+    "category": "含窒素複素環ケトン",
+    "feature": "窒素を含む芳香族五員環であるピロール環にアセチル基が結合している。",
+    "formula": "C6H7NO",
+    "molecular_weight": 109.13,
+    "structure": "structures/two-acetylpyrrole.svg",
+    "class_group": "ケトン類",
+    "functional_group": "ケトンのカルボニル基とピロール環",
+    "subcategory": "含窒素複素環ケトン",
+    "sources_list": [
+      "コーヒー",
+      "パン",
+      "麦芽",
+      "各種焙煎食品など"
+    ],
+    "uses": [
+      "食品香料",
+      "焙煎香料",
+      "香気研究"
+    ],
+    "description": "ピロール環とアセチル基をもち、パンやナッツを思わせる焙煎香を示す。",
+    "memorize": [
+      "パン・クルミ様",
+      "含窒素複素環化合物",
+      "ピロール環とアセチル基"
+    ],
+    "odor_icon": "🍞",
+    "difficulty": "基礎",
+    "iupac": "1-(1H-pyrrol-2-yl)ethanone",
+    "structure_feature": "窒素を1つ含む芳香族五員環の2位にアセチル基が結合している。",
+    "odor_family": [
+      "焙煎",
+      "ナッツ",
+      "パン"
+    ],
+    "learning_point": "含酸素複素環化合物と比較し、窒素を含む芳香族複素環の構造を学ぶ。",
+    "related_compounds": [
+      "maltol",
+      "furaneol",
+      "vanillin",
+      "diacetyl"
+    ]
   }
 ]
