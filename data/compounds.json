@@ -3108,5 +3108,246 @@
       "cis-three-hexen-one-ol",
       "alpha-pinene"
     ]
+  },
+  {
+    "id": "gamma-octalactone",
+    "name_ja": "γ-オクタラクトン",
+    "name_en": "Gamma-octalactone",
+    "smiles": "CCCCC1CCC(=O)O1",
+    "odor": "ココナッツやモモを思わせる甘くクリーミーな果実香",
+    "sources": "モモ、マンゴー、発酵食品など",
+    "category": "ラクトン",
+    "feature": "5員環の環状エステルにブチル基が結合したγ-ラクトン。",
+    "formula": "C8H14O2",
+    "molecular_weight": 142.2,
+    "structure": "structures/gamma-octalactone.svg",
+    "class_group": "エステル類",
+    "functional_group": "5員環の環状エステル（γ-ラクトン）",
+    "subcategory": "γ-ラクトン",
+    "sources_list": [
+      "モモ",
+      "マンゴー",
+      "発酵食品など"
+    ],
+    "uses": [
+      "食品香料",
+      "果実香料",
+      "香粧品"
+    ],
+    "description": "ココナッツ様、果実様の香りを示す比較的小さなγ-ラクトン。",
+    "memorize": [
+      "ココナッツ・モモ様",
+      "エステル類",
+      "5員環のγ-ラクトン"
+    ],
+    "odor_icon": "🥥",
+    "difficulty": "基礎",
+    "iupac": "5-butyloxolan-2-one",
+    "structure_feature": "5員環のラクトン環に直鎖4炭素のブチル基が結合している。",
+    "odor_family": [
+      "ココナッツ",
+      "果実",
+      "クリーミー"
+    ],
+    "learning_point": "δ-オクタラクトンと比較し、同じ分子式でも環サイズが異なる構造異性体を学ぶ。",
+    "related_compounds": [
+      "delta-octalactone",
+      "gamma-nonalactone",
+      "gamma-decalactone",
+      "coumarin"
+    ]
+  },
+  {
+    "id": "delta-octalactone",
+    "name_ja": "δ-オクタラクトン",
+    "name_en": "Delta-octalactone",
+    "smiles": "CCCC1CCCC(=O)O1",
+    "odor": "ココナッツやモモを思わせる柔らかくクリーミーな香り",
+    "sources": "果実、植物精油、発酵食品など",
+    "category": "ラクトン",
+    "feature": "6員環の環状エステルにプロピル基が結合したδ-ラクトン。",
+    "formula": "C8H14O2",
+    "molecular_weight": 142.2,
+    "structure": "structures/delta-octalactone.svg",
+    "class_group": "エステル類",
+    "functional_group": "6員環の環状エステル（δ-ラクトン）",
+    "subcategory": "δ-ラクトン",
+    "sources_list": [
+      "果実",
+      "植物精油",
+      "発酵食品など"
+    ],
+    "uses": [
+      "食品香料",
+      "乳製品香料",
+      "香粧品"
+    ],
+    "description": "γ-オクタラクトンと同じ分子式をもつが、6員環のラクトン環を形成する。",
+    "memorize": [
+      "ココナッツ・クリーム様",
+      "エステル類",
+      "6員環のδ-ラクトン"
+    ],
+    "odor_icon": "🥥",
+    "difficulty": "基礎",
+    "iupac": "6-propyloxan-2-one",
+    "structure_feature": "6員環のラクトン環に直鎖3炭素のプロピル基が結合している。",
+    "odor_family": [
+      "ココナッツ",
+      "乳製品",
+      "クリーミー"
+    ],
+    "learning_point": "γ-オクタラクトンと比較し、γ-ラクトンとδ-ラクトンの環サイズの違いを学ぶ。",
+    "related_compounds": [
+      "gamma-octalactone",
+      "gamma-nonalactone",
+      "gamma-decalactone",
+      "sotolon"
+    ]
+  },
+  {
+    "id": "gamma-nonalactone",
+    "name_ja": "γ-ノナラクトン",
+    "name_en": "Gamma-nonalactone",
+    "smiles": "CCCCCC1CCC(=O)O1",
+    "odor": "ココナッツクリームを思わせる甘く濃厚な香り",
+    "sources": "モモ、各種果実、発酵食品など",
+    "category": "ラクトン",
+    "feature": "5員環の環状エステルにペンチル基が結合したγ-ラクトン。",
+    "formula": "C9H16O2",
+    "molecular_weight": 156.22,
+    "structure": "structures/gamma-nonalactone.svg",
+    "class_group": "エステル類",
+    "functional_group": "5員環の環状エステル（γ-ラクトン）",
+    "subcategory": "γ-ラクトン",
+    "sources_list": [
+      "モモ",
+      "各種果実",
+      "発酵食品など"
+    ],
+    "uses": [
+      "食品香料",
+      "ココナッツ香料",
+      "香粧品"
+    ],
+    "description": "ココナッツ様の香りを示す代表的なγ-ラクトンで、ココナッツアルデヒドとも呼ばれる。",
+    "memorize": [
+      "ココナッツクリーム様",
+      "エステル類",
+      "9炭素のγ-ラクトン"
+    ],
+    "odor_icon": "🥥",
+    "difficulty": "基礎",
+    "iupac": "5-pentyloxolan-2-one",
+    "structure_feature": "5員環のラクトン環に直鎖5炭素のペンチル基が結合している。",
+    "odor_family": [
+      "ココナッツ",
+      "甘い",
+      "クリーミー"
+    ],
+    "learning_point": "γ-オクタラクトンやγ-デカラクトンと比較し、炭素鎖長の変化を学ぶ。",
+    "related_compounds": [
+      "gamma-octalactone",
+      "gamma-decalactone",
+      "gamma-undecalactone",
+      "delta-octalactone"
+    ]
+  },
+  {
+    "id": "gamma-decalactone",
+    "name_ja": "γ-デカラクトン",
+    "name_en": "Gamma-decalactone",
+    "smiles": "CCCCCCC1CCC(=O)O1",
+    "odor": "熟したモモやアンズを思わせる甘く濃厚な果実香",
+    "sources": "モモ、アンズ、イチゴ、発酵食品など",
+    "category": "ラクトン",
+    "feature": "5員環の環状エステルにヘキシル基が結合したγ-ラクトン。",
+    "formula": "C10H18O2",
+    "molecular_weight": 170.25,
+    "structure": "structures/gamma-decalactone.svg",
+    "class_group": "エステル類",
+    "functional_group": "5員環の環状エステル（γ-ラクトン）",
+    "subcategory": "γ-ラクトン",
+    "sources_list": [
+      "モモ",
+      "アンズ",
+      "イチゴ",
+      "発酵食品など"
+    ],
+    "uses": [
+      "食品香料",
+      "モモ香料",
+      "香粧品"
+    ],
+    "description": "モモやアンズの香りを構成する代表的なγ-ラクトン。",
+    "memorize": [
+      "熟したモモ・アンズ様",
+      "エステル類",
+      "10炭素のγ-ラクトン"
+    ],
+    "odor_icon": "🍑",
+    "difficulty": "基礎",
+    "iupac": "5-hexyloxolan-2-one",
+    "structure_feature": "5員環のラクトン環に直鎖6炭素のヘキシル基が結合している。",
+    "odor_family": [
+      "モモ",
+      "果実",
+      "クリーミー"
+    ],
+    "learning_point": "γ-ノナラクトンやγ-ウンデカラクトンと比較し、炭素数と香りの変化を学ぶ。",
+    "related_compounds": [
+      "gamma-nonalactone",
+      "gamma-undecalactone",
+      "gamma-octalactone",
+      "delta-octalactone"
+    ]
+  },
+  {
+    "id": "gamma-undecalactone",
+    "name_ja": "γ-ウンデカラクトン",
+    "name_en": "Gamma-undecalactone",
+    "smiles": "CCCCCCCC1CCC(=O)O1",
+    "odor": "モモやアンズを思わせる甘くワックス様の果実香",
+    "sources": "モモ、アンズ、各種果実など",
+    "category": "ラクトン",
+    "feature": "5員環の環状エステルにヘプチル基が結合したγ-ラクトン。",
+    "formula": "C11H20O2",
+    "molecular_weight": 184.27,
+    "structure": "structures/gamma-undecalactone.svg",
+    "class_group": "エステル類",
+    "functional_group": "5員環の環状エステル（γ-ラクトン）",
+    "subcategory": "γ-ラクトン",
+    "sources_list": [
+      "モモ",
+      "アンズ",
+      "各種果実など"
+    ],
+    "uses": [
+      "食品香料",
+      "モモ香料",
+      "香粧品"
+    ],
+    "description": "ピーチラクトンとも呼ばれ、モモ様の香りを示す代表的な香料成分。",
+    "memorize": [
+      "モモ・アンズ様",
+      "エステル類",
+      "11炭素のγ-ラクトン"
+    ],
+    "odor_icon": "🍑",
+    "difficulty": "基礎",
+    "iupac": "5-heptyloxolan-2-one",
+    "structure_feature": "5員環のラクトン環に直鎖7炭素のヘプチル基が結合している。",
+    "odor_family": [
+      "モモ",
+      "果実",
+      "ワックス"
+    ],
+    "learning_point": "γ-デカラクトンと比較し、炭素数が1つ増えたときの分子式と分子量の変化を学ぶ。",
+    "related_compounds": [
+      "gamma-decalactone",
+      "gamma-nonalactone",
+      "delta-octalactone",
+      "coumarin"
+    ]
   }
 ]
