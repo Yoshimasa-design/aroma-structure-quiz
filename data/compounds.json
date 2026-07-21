@@ -2381,5 +2381,249 @@
       "vanillin",
       "diacetyl"
     ]
+  },
+  {
+    "id": "acetoin",
+    "name_ja": "アセトイン",
+    "name_en": "Acetoin",
+    "smiles": "CC(=O)C(C)O",
+    "odor": "バターやクリームを思わせる穏やかな乳製品香",
+    "sources": "バター、ヨーグルト、発酵乳製品、酒類など",
+    "category": "ヒドロキシケトン",
+    "feature": "4炭素の分子にケトン型カルボニル基とヒドロキシ基をもつ。",
+    "formula": "C4H8O2",
+    "molecular_weight": 88.11,
+    "structure": "structures/acetoin.svg",
+    "class_group": "ケトン類",
+    "functional_group": "ケトンのカルボニル基とヒドロキシ基",
+    "subcategory": "ヒドロキシケトン",
+    "sources_list": [
+      "バター",
+      "ヨーグルト",
+      "発酵乳製品",
+      "酒類など"
+    ],
+    "uses": [
+      "食品香料",
+      "乳製品香料",
+      "発酵香研究"
+    ],
+    "description": "発酵によって生成する代表的な香気成分で、ジアセチルより穏やかなバター様香を示す。",
+    "memorize": [
+      "バター・クリーム様",
+      "ケトン類",
+      "ヒドロキシ基をもつケトン"
+    ],
+    "odor_icon": "🧈",
+    "difficulty": "基礎",
+    "iupac": "3-hydroxybutan-2-one",
+    "structure_feature": "隣接する炭素にケトン型カルボニル基とヒドロキシ基をもつ。",
+    "odor_family": [
+      "乳製品",
+      "バター",
+      "発酵"
+    ],
+    "learning_point": "ジアセチルと比較し、2つのカルボニル基の一方がヒドロキシ基に変化した構造を学ぶ。",
+    "related_compounds": [
+      "diacetyl",
+      "acetaldehyde",
+      "ethyl-lactate",
+      "butyric-acid"
+    ]
+  },
+  {
+    "id": "acetaldehyde",
+    "name_ja": "アセトアルデヒド",
+    "name_en": "Acetaldehyde",
+    "smiles": "CC=O",
+    "odor": "青リンゴや未熟果実を思わせる刺激的な果実香",
+    "sources": "果実、ヨーグルト、ワイン、発酵食品など",
+    "category": "脂肪族アルデヒド",
+    "feature": "2炭素からなる最も単純な脂肪族アルデヒドの一つ。",
+    "formula": "C2H4O",
+    "molecular_weight": 44.05,
+    "structure": "structures/acetaldehyde.svg",
+    "class_group": "アルデヒド類",
+    "functional_group": "アルデヒド基（−CHO）",
+    "subcategory": "脂肪族アルデヒド",
+    "sources_list": [
+      "果実",
+      "ヨーグルト",
+      "ワイン",
+      "発酵食品など"
+    ],
+    "uses": [
+      "食品香気研究",
+      "発酵研究",
+      "品質評価"
+    ],
+    "description": "エタナールとも呼ばれ、発酵食品や果実の香気に関与する低分子アルデヒド。",
+    "memorize": [
+      "青リンゴ・未熟果実様",
+      "アルデヒド類",
+      "2炭素のアルデヒド"
+    ],
+    "odor_icon": "🍏",
+    "difficulty": "基礎",
+    "iupac": "ethanal",
+    "structure_feature": "メチル基にアルデヒド基が結合した小さな分子。",
+    "odor_family": [
+      "果実",
+      "グリーン",
+      "発酵"
+    ],
+    "learning_point": "ヘキサナールなどの長鎖アルデヒドと比較し、炭素鎖長の違いを学ぶ。",
+    "related_compounds": [
+      "acetoin",
+      "diacetyl",
+      "ethyl-acetate",
+      "ethyl-lactate"
+    ]
+  },
+  {
+    "id": "ethyl-lactate",
+    "name_ja": "乳酸エチル",
+    "name_en": "Ethyl lactate",
+    "smiles": "CCOC(=O)C(C)O",
+    "odor": "穏やかな果実様・乳製品様の甘い香り",
+    "sources": "日本酒、ワイン、発酵食品、乳製品など",
+    "category": "ヒドロキシエステル",
+    "feature": "乳酸とエタノールからなるエステルで、エステル基とヒドロキシ基をもつ。",
+    "formula": "C5H10O3",
+    "molecular_weight": 118.13,
+    "structure": "structures/ethyl-lactate.svg",
+    "class_group": "エステル類",
+    "functional_group": "エステル結合（−COO−）とヒドロキシ基",
+    "subcategory": "ヒドロキシエステル",
+    "sources_list": [
+      "日本酒",
+      "ワイン",
+      "発酵食品",
+      "乳製品など"
+    ],
+    "uses": [
+      "食品香料",
+      "発酵香研究",
+      "香料"
+    ],
+    "description": "乳酸のカルボキシ基がエタノールとエステルを形成した化合物。",
+    "memorize": [
+      "穏やかな果実・乳製品様",
+      "エステル類",
+      "ヒドロキシ基をもつエステル"
+    ],
+    "odor_icon": "🥛",
+    "difficulty": "基礎",
+    "iupac": "ethyl 2-hydroxypropanoate",
+    "structure_feature": "エステル結合に隣接する炭素にヒドロキシ基をもつ。",
+    "odor_family": [
+      "発酵",
+      "果実",
+      "乳製品"
+    ],
+    "learning_point": "酢酸エチルと比較し、分子内にヒドロキシ基が加わったエステルの構造を学ぶ。",
+    "related_compounds": [
+      "ethyl-acetate",
+      "acetoin",
+      "acetaldehyde",
+      "butyric-acid"
+    ]
+  },
+  {
+    "id": "butyric-acid",
+    "name_ja": "酪酸",
+    "name_en": "Butyric acid",
+    "smiles": "CCCC(=O)O",
+    "odor": "発酵バターや熟成チーズを思わせる強い酸臭",
+    "sources": "バター、チーズ、発酵乳製品など",
+    "category": "脂肪族カルボン酸",
+    "feature": "直鎖4炭素の末端にカルボキシ基をもつ短鎖脂肪酸。",
+    "formula": "C4H8O2",
+    "molecular_weight": 88.11,
+    "structure": "structures/butyric-acid.svg",
+    "class_group": "カルボン酸類",
+    "functional_group": "カルボキシ基（−COOH）",
+    "subcategory": "短鎖脂肪酸",
+    "sources_list": [
+      "バター",
+      "チーズ",
+      "発酵乳製品など"
+    ],
+    "uses": [
+      "食品香料",
+      "チーズ香料",
+      "発酵香研究"
+    ],
+    "description": "酪酸発酵などで生成し、低濃度ではチーズや乳製品の香気に関与する。",
+    "memorize": [
+      "発酵バター・チーズ様",
+      "カルボン酸類",
+      "直鎖4炭素の短鎖脂肪酸"
+    ],
+    "odor_icon": "🧀",
+    "difficulty": "基礎",
+    "iupac": "butanoic acid",
+    "structure_feature": "直鎖4炭素の末端にカルボキシ基を1つもつ。",
+    "odor_family": [
+      "発酵",
+      "チーズ",
+      "酸臭"
+    ],
+    "learning_point": "イソ吉草酸と比較し、直鎖構造と分岐鎖構造の違いを学ぶ。",
+    "related_compounds": [
+      "isovaleric-acid",
+      "acetoin",
+      "diacetyl",
+      "ethyl-butyrate"
+    ]
+  },
+  {
+    "id": "isovaleric-acid",
+    "name_ja": "イソ吉草酸",
+    "name_en": "Isovaleric acid",
+    "smiles": "CC(C)CC(=O)O",
+    "odor": "熟成チーズや汗を思わせる特徴的で強い酸臭",
+    "sources": "熟成チーズ、発酵食品、ホップ、カノコソウなど",
+    "category": "分岐鎖カルボン酸",
+    "feature": "5炭素の分岐鎖にカルボキシ基をもつ短鎖脂肪酸。",
+    "formula": "C5H10O2",
+    "molecular_weight": 102.13,
+    "structure": "structures/isovaleric-acid.svg",
+    "class_group": "カルボン酸類",
+    "functional_group": "カルボキシ基（−COOH）",
+    "subcategory": "分岐鎖短鎖脂肪酸",
+    "sources_list": [
+      "熟成チーズ",
+      "発酵食品",
+      "ホップ",
+      "カノコソウなど"
+    ],
+    "uses": [
+      "食品香料",
+      "チーズ香料",
+      "発酵香研究"
+    ],
+    "description": "3-メチルブタン酸とも呼ばれ、分岐した炭素骨格をもつ短鎖脂肪酸。",
+    "memorize": [
+      "熟成チーズ・汗様",
+      "カルボン酸類",
+      "分岐した5炭素の脂肪酸"
+    ],
+    "odor_icon": "🧀",
+    "difficulty": "基礎",
+    "iupac": "3-methylbutanoic acid",
+    "structure_feature": "カルボキシ基をもつ5炭素鎖の3位にメチル基が結合している。",
+    "odor_family": [
+      "発酵",
+      "チーズ",
+      "酸臭"
+    ],
+    "learning_point": "酪酸と比較し、炭素数と炭素鎖の分岐が分子構造に与える違いを学ぶ。",
+    "related_compounds": [
+      "butyric-acid",
+      "isoamyl-acetate",
+      "methyl-butyrate",
+      "ethyl-butyrate"
+    ]
   }
 ]
