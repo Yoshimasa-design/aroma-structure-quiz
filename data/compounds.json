@@ -3349,5 +3349,249 @@
       "delta-octalactone",
       "coumarin"
     ]
+  },
+  {
+    "id": "beta-caryophyllene",
+    "name_ja": "β-カリオフィレン",
+    "name_en": "β-Caryophyllene",
+    "smiles": "C/C/1=C\\CCC(=C)[C@H]2CC([C@@H]2CC1)(C)C",
+    "odor": "クローブや黒コショウを思わせるスパイシーでウッディーな香り",
+    "sources": "クローブ、黒コショウ、ホップ、ローズマリーなど",
+    "category": "セスキテルペン",
+    "feature": "9員環と4員環を含む二環性セスキテルペンで、環外メチレン基をもつ。",
+    "formula": "C15H24",
+    "molecular_weight": 204.35,
+    "structure": "structures/beta-caryophyllene.svg",
+    "class_group": "テルペン類",
+    "functional_group": "炭素−炭素二重結合をもつ炭化水素",
+    "subcategory": "二環性セスキテルペン",
+    "sources_list": [
+      "クローブ",
+      "黒コショウ",
+      "ホップ",
+      "ローズマリーなど"
+    ],
+    "uses": [
+      "香料",
+      "食品香料",
+      "香粧品"
+    ],
+    "description": "スパイスや精油に含まれる代表的な二環性セスキテルペン。一般的な天然型である（−）-β-カリオフィレンの構造を示す。",
+    "memorize": [
+      "クローブ・黒コショウ様",
+      "テルペン類",
+      "4員環を含む二環性セスキテルペン"
+    ],
+    "odor_icon": "🌶️",
+    "difficulty": "基礎",
+    "iupac": "(1R,4E,9S)-4,11,11-trimethyl-8-methylidenebicyclo[7.2.0]undec-4-ene",
+    "structure_feature": "大きな環と4員環が縮合し、環内二重結合と環外メチレン基をもつ。",
+    "odor_family": [
+      "スパイス",
+      "木質",
+      "樹脂"
+    ],
+    "learning_point": "α-フムレンと比較し、同じ分子式をもつ単環性構造と二環性構造の違いを学ぶ。",
+    "related_compounds": [
+      "alpha-humulene",
+      "beta-farnesene",
+      "alpha-pinene",
+      "eugenol"
+    ]
+  },
+  {
+    "id": "alpha-humulene",
+    "name_ja": "α-フムレン",
+    "name_en": "α-Humulene",
+    "smiles": "C/C/1=C\\CC(/C=C/C/C(=C/CC1)/C)(C)C",
+    "odor": "ホップや木材を思わせる穏やかなハーブ・ウッディー香",
+    "sources": "ホップ、クローブ、バジル、ショウガなど",
+    "category": "セスキテルペン",
+    "feature": "11員環に3つの炭素−炭素二重結合をもつ単環性セスキテルペン。",
+    "formula": "C15H24",
+    "molecular_weight": 204.35,
+    "structure": "structures/alpha-humulene.svg",
+    "class_group": "テルペン類",
+    "functional_group": "3つの炭素−炭素二重結合をもつ炭化水素",
+    "subcategory": "単環性セスキテルペン",
+    "sources_list": [
+      "ホップ",
+      "クローブ",
+      "バジル",
+      "ショウガなど"
+    ],
+    "uses": [
+      "食品香料",
+      "香料",
+      "香気研究"
+    ],
+    "description": "ホップの代表的な香気成分の一つで、α-カリオフィレンとも呼ばれる大環状セスキテルペン。",
+    "memorize": [
+      "ホップ・木質様",
+      "テルペン類",
+      "11員環をもつ単環性セスキテルペン"
+    ],
+    "odor_icon": "🌿",
+    "difficulty": "基礎",
+    "iupac": "(1E,4E,8E)-2,6,6,9-tetramethylcycloundeca-1,4,8-triene",
+    "structure_feature": "11員環に3つの二重結合と4つのメチル基をもつ。",
+    "odor_family": [
+      "ハーブ",
+      "木質",
+      "ホップ"
+    ],
+    "learning_point": "β-カリオフィレンと比較し、同じC15H24でも環の数と炭素骨格が異なることを学ぶ。",
+    "related_compounds": [
+      "beta-caryophyllene",
+      "beta-farnesene",
+      "gamma-terpinene",
+      "alpha-pinene"
+    ]
+  },
+  {
+    "id": "beta-farnesene",
+    "name_ja": "trans-β-ファルネセン",
+    "name_en": "trans-β-Farnesene",
+    "smiles": "CC(=CCC/C(=C/CCC(=C)C=C)/C)C",
+    "odor": "青葉や果実を思わせる穏やかなグリーン香",
+    "sources": "リンゴ、ホップ、茶葉、カモミールなど",
+    "category": "セスキテルペン",
+    "feature": "環をもたない鎖状セスキテルペンで、3つの二重結合と環外メチレン構造をもつ。",
+    "formula": "C15H24",
+    "molecular_weight": 204.35,
+    "structure": "structures/beta-farnesene.svg",
+    "class_group": "テルペン類",
+    "functional_group": "複数の炭素−炭素二重結合をもつ炭化水素",
+    "subcategory": "鎖状セスキテルペン",
+    "sources_list": [
+      "リンゴ",
+      "ホップ",
+      "茶葉",
+      "カモミールなど"
+    ],
+    "uses": [
+      "香気研究",
+      "食品香気分析",
+      "植物化学生態研究"
+    ],
+    "description": "環をもたない鎖状セスキテルペン。ここでは6位の二重結合がE配置のtrans-β-ファルネセンを示す。",
+    "memorize": [
+      "グリーン・果実様",
+      "テルペン類",
+      "環をもたない鎖状セスキテルペン"
+    ],
+    "odor_icon": "🍏",
+    "difficulty": "基礎",
+    "iupac": "(6E)-7,11-dimethyl-3-methylidenedodeca-1,6,10-triene",
+    "structure_feature": "鎖状骨格に3つの二重結合と1つの環外型メチレン基をもつ。",
+    "odor_family": [
+      "グリーン",
+      "果実",
+      "ハーブ"
+    ],
+    "learning_point": "β-カリオフィレンやα-フムレンと比較し、同じ分子式に鎖状・単環・二環構造が存在することを学ぶ。",
+    "related_compounds": [
+      "alpha-humulene",
+      "beta-caryophyllene",
+      "myrcene",
+      "trans-nerolidol"
+    ]
+  },
+  {
+    "id": "trans-nerolidol",
+    "name_ja": "trans-ネロリドール",
+    "name_en": "trans-Nerolidol",
+    "smiles": "CC(=CCC/C(=C/CCC(C)(C=C)O)/C)C",
+    "odor": "花や木材を思わせる穏やかで甘い香り",
+    "sources": "ネロリ、ジャスミン、茶葉、レモングラスなど",
+    "category": "セスキテルペンアルコール",
+    "feature": "鎖状セスキテルペン骨格に第三級アルコールと3つの二重結合をもつ。",
+    "formula": "C15H26O",
+    "molecular_weight": 222.37,
+    "structure": "structures/trans-nerolidol.svg",
+    "class_group": "アルコール類",
+    "functional_group": "第三級アルコールと複数の炭素−炭素二重結合",
+    "subcategory": "鎖状セスキテルペンアルコール",
+    "sources_list": [
+      "ネロリ",
+      "ジャスミン",
+      "茶葉",
+      "レモングラスなど"
+    ],
+    "uses": [
+      "香料",
+      "香粧品",
+      "食品香料"
+    ],
+    "description": "ファルネセン型の鎖状炭素骨格にヒドロキシ基をもつセスキテルペンアルコール。",
+    "memorize": [
+      "花・木質様",
+      "アルコール類",
+      "鎖状セスキテルペンアルコール"
+    ],
+    "odor_icon": "🌼",
+    "difficulty": "基礎",
+    "iupac": "(6E)-3,7,11-trimethyldodeca-1,6,10-trien-3-ol",
+    "structure_feature": "鎖状15炭素骨格に第三級アルコールと3つの二重結合をもつ。",
+    "odor_family": [
+      "花",
+      "木質",
+      "甘い"
+    ],
+    "learning_point": "β-ファルネセンと比較し、炭化水素骨格にヒドロキシ基が加わった構造を学ぶ。",
+    "related_compounds": [
+      "beta-farnesene",
+      "alpha-bisabolol",
+      "linalool",
+      "geraniol"
+    ]
+  },
+  {
+    "id": "alpha-bisabolol",
+    "name_ja": "α-ビサボロール",
+    "name_en": "α-Bisabolol",
+    "smiles": "CC1=CCC(CC1)C(C)(CCC=C(C)C)O",
+    "odor": "カモミールを思わせる甘く柔らかな花香",
+    "sources": "カモミール、カンデイア、各種植物精油など",
+    "category": "セスキテルペンアルコール",
+    "feature": "六員環と側鎖をもつ単環性セスキテルペンアルコール。",
+    "formula": "C15H26O",
+    "molecular_weight": 222.37,
+    "structure": "structures/alpha-bisabolol.svg",
+    "class_group": "アルコール類",
+    "functional_group": "第三級アルコールと炭素−炭素二重結合",
+    "subcategory": "単環性セスキテルペンアルコール",
+    "sources_list": [
+      "カモミール",
+      "カンデイア",
+      "各種植物精油など"
+    ],
+    "uses": [
+      "香料",
+      "香粧品",
+      "スキンケア製品"
+    ],
+    "description": "カモミールなどに含まれる単環性セスキテルペンアルコール。複数の立体異性体が存在する。",
+    "memorize": [
+      "カモミール様の柔らかな花香",
+      "アルコール類",
+      "単環性セスキテルペンアルコール"
+    ],
+    "odor_icon": "🌼",
+    "difficulty": "基礎",
+    "iupac": "6-methyl-2-(4-methylcyclohex-3-en-1-yl)hept-5-en-2-ol",
+    "structure_feature": "二重結合をもつ六員環、第三級アルコール、分岐した不飽和側鎖をもつ。",
+    "odor_family": [
+      "花",
+      "ハーブ",
+      "甘い"
+    ],
+    "learning_point": "trans-ネロリドールと比較し、同じC15H26Oでも鎖状構造と環状構造が存在することを学ぶ。",
+    "related_compounds": [
+      "trans-nerolidol",
+      "borneol",
+      "linalool",
+      "camphor"
+    ]
   }
 ]
