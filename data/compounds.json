@@ -2866,5 +2866,247 @@
       "cis-three-hexenyl-acetate",
       "ethyl-hexanoate"
     ]
+  },
+  {
+    "id": "indole",
+    "name_ja": "インドール",
+    "name_en": "Indole",
+    "smiles": "C1=CC=C2C(=C1)C=CN2",
+    "odor": "低濃度ではジャスミン様、高濃度では動物的な香り",
+    "sources": "ジャスミン、オレンジ花、発酵食品など",
+    "category": "含窒素複素環化合物",
+    "feature": "ベンゼン環と窒素を含む五員環が縮合した芳香族複素環化合物。",
+    "formula": "C8H7N",
+    "molecular_weight": 117.15,
+    "structure": "structures/indole.svg",
+    "class_group": "含窒素化合物",
+    "functional_group": "インドール環（窒素を含む縮合芳香族複素環）",
+    "subcategory": "インドール類",
+    "sources_list": [
+      "ジャスミン",
+      "オレンジ花",
+      "発酵食品など"
+    ],
+    "uses": [
+      "香料",
+      "香粧品",
+      "香気研究"
+    ],
+    "description": "花香を構成する一方、高濃度では動物的な香りを示す含窒素芳香族化合物。",
+    "memorize": [
+      "低濃度では花様",
+      "含窒素化合物",
+      "ベンゼン環と五員環の縮合構造"
+    ],
+    "odor_icon": "🌼",
+    "difficulty": "基礎",
+    "iupac": "1H-indole",
+    "structure_feature": "ベンゼン環と窒素を1つ含む五員環が縮合している。",
+    "odor_family": [
+      "花",
+      "動物",
+      "発酵"
+    ],
+    "learning_point": "スカトールと比較し、インドール環へのメチル基の付加による構造の違いを学ぶ。",
+    "related_compounds": [
+      "skatole",
+      "two-acetylpyrrole",
+      "two-five-dimethylpyrazine",
+      "piperonal"
+    ]
+  },
+  {
+    "id": "skatole",
+    "name_ja": "スカトール",
+    "name_en": "Skatole",
+    "smiles": "CC1=CNC2=CC=CC=C12",
+    "odor": "低濃度では花様、高濃度では強い動物臭・糞便臭",
+    "sources": "糞便、ジャスミン、発酵食品など",
+    "category": "含窒素複素環化合物",
+    "feature": "インドール環の3位にメチル基が結合した芳香族複素環化合物。",
+    "formula": "C9H9N",
+    "molecular_weight": 131.17,
+    "structure": "structures/skatole.svg",
+    "class_group": "含窒素化合物",
+    "functional_group": "メチル基をもつインドール環",
+    "subcategory": "メチルインドール",
+    "sources_list": [
+      "糞便",
+      "ジャスミン",
+      "発酵食品など"
+    ],
+    "uses": [
+      "香料",
+      "香気研究",
+      "畜産物品質研究"
+    ],
+    "description": "3-メチルインドールとも呼ばれ、濃度によって花様から強い動物的香調まで示す。",
+    "memorize": [
+      "低濃度では花様、高濃度では動物臭",
+      "含窒素化合物",
+      "インドールの3位にメチル基"
+    ],
+    "odor_icon": "🐾",
+    "difficulty": "基礎",
+    "iupac": "3-methyl-1H-indole",
+    "structure_feature": "インドール環の五員環部分にメチル基が1つ結合している。",
+    "odor_family": [
+      "動物",
+      "花",
+      "発酵"
+    ],
+    "learning_point": "インドールと比較し、メチル基が1つ増えることで分子式と分子量が変化することを学ぶ。",
+    "related_compounds": [
+      "indole",
+      "two-acetylpyrrole",
+      "isovaleric-acid",
+      "methional"
+    ]
+  },
+  {
+    "id": "trimethylamine",
+    "name_ja": "トリメチルアミン",
+    "name_en": "Trimethylamine",
+    "smiles": "CN(C)C",
+    "odor": "魚介類の腐敗を思わせる強い魚臭",
+    "sources": "魚介類、発酵水産食品、海産物の保存中など",
+    "category": "第三級アミン",
+    "feature": "窒素原子に3つのメチル基が結合した小さな第三級アミン。",
+    "formula": "C3H9N",
+    "molecular_weight": 59.11,
+    "structure": "structures/trimethylamine.svg",
+    "class_group": "含窒素化合物",
+    "functional_group": "第三級アミノ基",
+    "subcategory": "脂肪族第三級アミン",
+    "sources_list": [
+      "魚介類",
+      "発酵水産食品",
+      "海産物の保存中など"
+    ],
+    "uses": [
+      "食品鮮度研究",
+      "魚介類品質評価",
+      "香気分析"
+    ],
+    "description": "窒素原子に3つのメチル基が結合した揮発性アミンで、魚介類の鮮度評価にも関係する。",
+    "memorize": [
+      "強い魚臭",
+      "含窒素化合物",
+      "窒素に3つのメチル基"
+    ],
+    "odor_icon": "🐟",
+    "difficulty": "基礎",
+    "iupac": "N,N-dimethylmethanamine",
+    "structure_feature": "1つの窒素原子に同じメチル基が3つ結合している。",
+    "odor_family": [
+      "魚介",
+      "発酵",
+      "刺激"
+    ],
+    "learning_point": "インドールやピラジン類と比較し、環をもたない脂肪族アミンの構造を学ぶ。",
+    "related_compounds": [
+      "dimethyl-sulfide",
+      "methional",
+      "isovaleric-acid",
+      "acetaldehyde"
+    ]
+  },
+  {
+    "id": "two-five-dimethylpyrazine",
+    "name_ja": "2,5-ジメチルピラジン",
+    "name_en": "2,5-Dimethylpyrazine",
+    "smiles": "CC1=CN=C(C=N1)C",
+    "odor": "ローストナッツやカカオを思わせる香ばしい香り",
+    "sources": "焙煎コーヒー、カカオ、パン、加熱食品など",
+    "category": "ピラジン",
+    "feature": "窒素原子を2つ含む六員芳香環の2位と5位にメチル基をもつ。",
+    "formula": "C6H8N2",
+    "molecular_weight": 108.14,
+    "structure": "structures/two-five-dimethylpyrazine.svg",
+    "class_group": "含窒素化合物",
+    "functional_group": "ピラジン環",
+    "subcategory": "アルキルピラジン",
+    "sources_list": [
+      "焙煎コーヒー",
+      "カカオ",
+      "パン",
+      "加熱食品など"
+    ],
+    "uses": [
+      "食品香料",
+      "焙煎香料",
+      "香気研究"
+    ],
+    "description": "加熱反応で生じる代表的なアルキルピラジンで、ナッツ様・焙煎様の香りを示す。",
+    "memorize": [
+      "ローストナッツ・カカオ様",
+      "含窒素化合物",
+      "2つの窒素と2つのメチル基"
+    ],
+    "odor_icon": "🥜",
+    "difficulty": "基礎",
+    "iupac": "2,5-dimethylpyrazine",
+    "structure_feature": "窒素を2つ含む六員芳香環の向かい合う位置にメチル基をもつ。",
+    "odor_family": [
+      "焙煎",
+      "ナッツ",
+      "カカオ"
+    ],
+    "learning_point": "2-アセチルピロールと比較し、五員環と六員環、窒素原子数の違いを学ぶ。",
+    "related_compounds": [
+      "two-acetylpyrrole",
+      "two-isobutyl-three-methoxypyrazine",
+      "maltol",
+      "furaneol"
+    ]
+  },
+  {
+    "id": "two-isobutyl-three-methoxypyrazine",
+    "name_ja": "2-イソブチル-3-メトキシピラジン",
+    "name_en": "2-Isobutyl-3-methoxypyrazine",
+    "smiles": "CC(C)CC1=NC=CN=C1OC",
+    "odor": "青ピーマンや土、青葉を思わせる非常に強いグリーン香",
+    "sources": "青ピーマン、ブドウ、ワイン、エンドウなど",
+    "category": "メトキシピラジン",
+    "feature": "ピラジン環に分岐したイソブチル基とメトキシ基をもつ。",
+    "formula": "C9H14N2O",
+    "molecular_weight": 166.22,
+    "structure": "structures/two-isobutyl-three-methoxypyrazine.svg",
+    "class_group": "含窒素化合物",
+    "functional_group": "ピラジン環とメトキシ基",
+    "subcategory": "アルキルメトキシピラジン",
+    "sources_list": [
+      "青ピーマン",
+      "ブドウ",
+      "ワイン",
+      "エンドウなど"
+    ],
+    "uses": [
+      "ワイン香研究",
+      "食品香気研究",
+      "香気分析"
+    ],
+    "description": "IBMPとも呼ばれ、非常に低濃度でも青ピーマン様の香りを感じさせるメトキシピラジン。",
+    "memorize": [
+      "青ピーマン・土様",
+      "含窒素化合物",
+      "イソブチル基とメトキシ基"
+    ],
+    "odor_icon": "🫑",
+    "difficulty": "基礎",
+    "iupac": "2-methoxy-3-(2-methylpropyl)pyrazine",
+    "structure_feature": "ピラジン環の隣接する位置にメトキシ基と分岐したイソブチル基をもつ。",
+    "odor_family": [
+      "グリーン",
+      "野菜",
+      "土"
+    ],
+    "learning_point": "2,5-ジメチルピラジンと比較し、ピラジン環の置換基によって焙煎香とグリーン香が分かれることを学ぶ。",
+    "related_compounds": [
+      "two-five-dimethylpyrazine",
+      "trans-two-hexenal",
+      "cis-three-hexen-one-ol",
+      "alpha-pinene"
+    ]
   }
 ]
