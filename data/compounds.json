@@ -1651,248 +1651,492 @@
       "benzaldehyde",
       "coumarin"
     ]
-},
-{
-  "id": "beta-pinene",
-  "name_ja": "β-ピネン",
-  "name_en": "β-Pinene",
-  "smiles": "CC1(C2CCC(=C)C1C2)C",
-  "odor": "松や樹脂を思わせる乾いたウッディーな香り",
-  "sources": "マツ、モミ、ローズマリー、柑橘果皮など",
-  "category": "テルペン",
-  "feature": "二環性モノテルペン炭化水素。α-ピネンとは二重結合の位置が異なる構造異性体である。",
-  "formula": "C10H16",
-  "molecular_weight": 136.23,
-  "structure": "structures/beta-pinene.svg",
-  "class_group": "テルペン類",
-  "functional_group": "環外炭素−炭素二重結合をもつ炭化水素",
-  "subcategory": "二環性モノテルペン",
-  "sources_list": [
-    "マツ",
-    "モミ",
-    "ローズマリー",
-    "柑橘果皮など"
-  ],
-  "uses": [
-    "香料",
-    "香粧品",
-    "洗浄製品"
-  ],
-  "description": "α-ピネンと同じ二環性骨格と分子式をもつが、β-ピネンでは二重結合が環外に位置する。",
-  "memorize": [
-    "松・樹脂様の香り",
-    "テルペン類",
-    "環外二重結合をもつピネン"
-  ],
-  "odor_icon": "🌲",
-  "difficulty": "基礎",
-  "iupac": "6,6-dimethyl-2-methylidenebicyclo[3.1.1]heptane",
-  "structure_feature": "二環性骨格と環外メチレン基（=CH₂）をもつ。",
-  "odor_family": [
-    "木質",
-    "樹脂",
-    "フレッシュ"
-  ],
-  "learning_point": "α-ピネンと比較し、二重結合の位置が異なる構造異性体を学ぶ。",
-  "related_compounds": [
-    "alpha-pinene",
-    "myrcene",
-    "gamma-terpinene",
-    "camphor"
-  ]
-},
-{
-  "id": "myrcene",
-  "name_ja": "ミルセン",
-  "name_en": "Myrcene",
-  "smiles": "CC(=CCCC(=C)C=C)C",
-  "odor": "ハーブや樹脂を思わせる青くバルサム様の香り",
-  "sources": "ホップ、月桂樹、レモングラス、マンゴーなど",
-  "category": "テルペン",
-  "feature": "環をもたない鎖状モノテルペン炭化水素。3つの炭素−炭素二重結合をもつ。",
-  "formula": "C10H16",
-  "molecular_weight": 136.23,
-  "structure": "structures/myrcene.svg",
-  "class_group": "テルペン類",
-  "functional_group": "複数の炭素−炭素二重結合をもつ炭化水素",
-  "subcategory": "鎖状モノテルペン",
-  "sources_list": [
-    "ホップ",
-    "月桂樹",
-    "レモングラス",
-    "マンゴーなど"
-  ],
-  "uses": [
-    "香料",
-    "食品香料",
-    "香気研究"
-  ],
-  "description": "代表的な鎖状モノテルペンで、ピネン類やリモネンとは異なり環構造をもたない。",
-  "memorize": [
-    "ハーブ・樹脂様の香り",
-    "テルペン類",
-    "環をもたない鎖状モノテルペン"
-  ],
-  "odor_icon": "🌿",
-  "difficulty": "基礎",
-  "iupac": "7-methyl-3-methylideneocta-1,6-diene",
-  "structure_feature": "鎖状炭素骨格に末端二重結合、環外型メチレン基、内部二重結合をもつ。",
-  "odor_family": [
-    "ハーブ",
-    "樹脂",
-    "グリーン"
-  ],
-  "learning_point": "α-ピネンやリモネンと比較し、同じ分子式でも鎖状構造と環状構造が存在することを学ぶ。",
-  "related_compounds": [
-    "alpha-pinene",
-    "beta-pinene",
-    "limonene",
-    "gamma-terpinene"
-  ]
-},
-{
-  "id": "borneol",
-  "name_ja": "ボルネオール",
-  "name_en": "Borneol",
-  "smiles": "CC1(C2CCC1(C(C2)O)C)C",
-  "odor": "樟脳を思わせる清涼感のある樹木香",
-  "sources": "クスノキ科植物、ローズマリー、ショウガ科植物など",
-  "category": "テルペンアルコール",
-  "feature": "橋かけ二環性骨格に第二級アルコールをもつモノテルペノイド。",
-  "formula": "C10H18O",
-  "molecular_weight": 154.25,
-  "structure": "structures/borneol.svg",
-  "class_group": "アルコール類",
-  "functional_group": "第二級アルコール（−CHOH−）",
-  "subcategory": "二環性テルペンアルコール",
-  "sources_list": [
-    "クスノキ科植物",
-    "ローズマリー",
-    "ショウガ科植物など"
-  ],
-  "uses": [
-    "香料",
-    "香粧品",
-    "芳香製品"
-  ],
-  "description": "カンファーと共通するボルナン骨格をもち、カルボニル基ではなくヒドロキシ基をもつ。",
-  "memorize": [
-    "樟脳様の清涼な香り",
-    "アルコール類",
-    "カンファーに対応する第二級アルコール"
-  ],
-  "odor_icon": "🌲",
-  "difficulty": "基礎",
-  "iupac": "1,7,7-trimethylbicyclo[2.2.1]heptan-2-ol",
-  "structure_feature": "橋かけ二環性のボルナン骨格に第二級ヒドロキシ基をもつ。",
-  "odor_family": [
-    "木質",
-    "樹脂",
-    "フレッシュ"
-  ],
-  "learning_point": "カンファーと比較し、第二級アルコールの酸化によってケトンが生じる関係を学ぶ。",
-  "related_compounds": [
-    "camphor",
-    "bornyl-acetate",
-    "one-eight-cineole",
-    "alpha-pinene"
-  ]
-},
-{
-  "id": "bornyl-acetate",
-  "name_ja": "酢酸ボルニル",
-  "name_en": "Bornyl acetate",
-  "smiles": "CC(=O)OC1CC2CCC1(C2(C)C)C",
-  "odor": "モミや松葉を思わせる甘く穏やかな樹木香",
-  "sources": "モミ、マツ、ローズマリーなど",
-  "category": "テルペンエステル",
-  "feature": "ボルネオールのヒドロキシ基が酢酸とエステルを形成した二環性テルペンエステル。",
-  "formula": "C12H20O2",
-  "molecular_weight": 196.29,
-  "structure": "structures/bornyl-acetate.svg",
-  "class_group": "エステル類",
-  "functional_group": "エステル結合（−OCOCH₃）",
-  "subcategory": "二環性テルペンエステル",
-  "sources_list": [
-    "モミ",
-    "マツ",
-    "ローズマリーなど"
-  ],
-  "uses": [
-    "香料",
-    "香粧品",
-    "芳香製品"
-  ],
-  "description": "針葉樹系の香りを構成する代表的なテルペンエステルで、ボルネオールとの構造比較に適している。",
-  "memorize": [
-    "モミ・松葉様の甘い香り",
-    "エステル類",
-    "ボルネオールの酢酸エステル"
-  ],
-  "odor_icon": "🌲",
-  "difficulty": "基礎",
-  "iupac": "1,7,7-trimethylbicyclo[2.2.1]heptan-2-yl acetate",
-  "structure_feature": "橋かけ二環性骨格に酢酸エステル基が結合している。",
-  "odor_family": [
-    "木質",
-    "樹脂",
-    "甘い"
-  ],
-  "learning_point": "ボルネオールと比較し、アルコールのエステル化による官能基と香りの変化を学ぶ。",
-  "related_compounds": [
-    "borneol",
-    "camphor",
-    "linalyl-acetate",
-    "alpha-pinene"
-  ]
-},
-{
-  "id": "gamma-terpinene",
-  "name_ja": "γ-テルピネン",
-  "name_en": "γ-Terpinene",
-  "smiles": "CC1=CCC(=CC1)C(C)C",
-  "odor": "柑橘とハーブを思わせる爽やかな香り",
-  "sources": "柑橘果皮、クミン、コリアンダー、ティーツリーなど",
-  "category": "テルペン",
-  "feature": "六員環内に離れた2つの炭素−炭素二重結合をもつ環状モノテルペン。",
-  "formula": "C10H16",
-  "molecular_weight": 136.23,
-  "structure": "structures/gamma-terpinene.svg",
-  "class_group": "テルペン類",
-  "functional_group": "2つの炭素−炭素二重結合をもつ炭化水素",
-  "subcategory": "環状モノテルペン",
-  "sources_list": [
-    "柑橘果皮",
-    "クミン",
-    "コリアンダー",
-    "ティーツリーなど"
-  ],
-  "uses": [
-    "食品香料",
-    "香料",
-    "香粧品"
-  ],
-  "description": "p-メンタン骨格に1位と4位の二重結合をもつ環状モノテルペンである。",
-  "memorize": [
-    "柑橘・ハーブ様の香り",
-    "テルペン類",
-    "六員環内に2つの二重結合"
-  ],
-  "odor_icon": "🍋",
-  "difficulty": "基礎",
-  "iupac": "1-methyl-4-propan-2-ylcyclohexa-1,4-diene",
-  "structure_feature": "六員環にメチル基とイソプロピル基、互いに離れた2つの二重結合をもつ。",
-  "odor_family": [
-    "柑橘",
-    "ハーブ",
-    "フレッシュ"
-  ],
-  "learning_point": "リモネンやピネン類と比較し、環状モノテルペンにおける二重結合の位置の違いを学ぶ。",
-  "related_compounds": [
-    "limonene",
-    "alpha-pinene",
-    "beta-pinene",
-    "myrcene"
-  ]
-}
+  },
+  {
+    "id": "beta-pinene",
+    "name_ja": "β-ピネン",
+    "name_en": "β-Pinene",
+    "smiles": "CC1(C2CCC(=C)C1C2)C",
+    "odor": "松や樹脂を思わせる乾いたウッディーな香り",
+    "sources": "マツ、モミ、ローズマリー、柑橘果皮など",
+    "category": "テルペン",
+    "feature": "二環性モノテルペン炭化水素。α-ピネンとは二重結合の位置が異なる構造異性体である。",
+    "formula": "C10H16",
+    "molecular_weight": 136.23,
+    "structure": "structures/beta-pinene.svg",
+    "class_group": "テルペン類",
+    "functional_group": "環外炭素−炭素二重結合をもつ炭化水素",
+    "subcategory": "二環性モノテルペン",
+    "sources_list": [
+      "マツ",
+      "モミ",
+      "ローズマリー",
+      "柑橘果皮など"
+    ],
+    "uses": [
+      "香料",
+      "香粧品",
+      "洗浄製品"
+    ],
+    "description": "α-ピネンと同じ二環性骨格と分子式をもつが、β-ピネンでは二重結合が環外に位置する。",
+    "memorize": [
+      "松・樹脂様の香り",
+      "テルペン類",
+      "環外二重結合をもつピネン"
+    ],
+    "odor_icon": "🌲",
+    "difficulty": "基礎",
+    "iupac": "6,6-dimethyl-2-methylidenebicyclo[3.1.1]heptane",
+    "structure_feature": "二環性骨格と環外メチレン基（=CH₂）をもつ。",
+    "odor_family": [
+      "木質",
+      "樹脂",
+      "フレッシュ"
+    ],
+    "learning_point": "α-ピネンと比較し、二重結合の位置が異なる構造異性体を学ぶ。",
+    "related_compounds": [
+      "alpha-pinene",
+      "myrcene",
+      "gamma-terpinene",
+      "camphor"
+    ]
+  },
+  {
+    "id": "myrcene",
+    "name_ja": "ミルセン",
+    "name_en": "Myrcene",
+    "smiles": "CC(=CCCC(=C)C=C)C",
+    "odor": "ハーブや樹脂を思わせる青くバルサム様の香り",
+    "sources": "ホップ、月桂樹、レモングラス、マンゴーなど",
+    "category": "テルペン",
+    "feature": "環をもたない鎖状モノテルペン炭化水素。3つの炭素−炭素二重結合をもつ。",
+    "formula": "C10H16",
+    "molecular_weight": 136.23,
+    "structure": "structures/myrcene.svg",
+    "class_group": "テルペン類",
+    "functional_group": "複数の炭素−炭素二重結合をもつ炭化水素",
+    "subcategory": "鎖状モノテルペン",
+    "sources_list": [
+      "ホップ",
+      "月桂樹",
+      "レモングラス",
+      "マンゴーなど"
+    ],
+    "uses": [
+      "香料",
+      "食品香料",
+      "香気研究"
+    ],
+    "description": "代表的な鎖状モノテルペンで、ピネン類やリモネンとは異なり環構造をもたない。",
+    "memorize": [
+      "ハーブ・樹脂様の香り",
+      "テルペン類",
+      "環をもたない鎖状モノテルペン"
+    ],
+    "odor_icon": "🌿",
+    "difficulty": "基礎",
+    "iupac": "7-methyl-3-methylideneocta-1,6-diene",
+    "structure_feature": "鎖状炭素骨格に末端二重結合、環外型メチレン基、内部二重結合をもつ。",
+    "odor_family": [
+      "ハーブ",
+      "樹脂",
+      "グリーン"
+    ],
+    "learning_point": "α-ピネンやリモネンと比較し、同じ分子式でも鎖状構造と環状構造が存在することを学ぶ。",
+    "related_compounds": [
+      "alpha-pinene",
+      "beta-pinene",
+      "limonene",
+      "gamma-terpinene"
+    ]
+  },
+  {
+    "id": "borneol",
+    "name_ja": "ボルネオール",
+    "name_en": "Borneol",
+    "smiles": "CC1(C2CCC1(C(C2)O)C)C",
+    "odor": "樟脳を思わせる清涼感のある樹木香",
+    "sources": "クスノキ科植物、ローズマリー、ショウガ科植物など",
+    "category": "テルペンアルコール",
+    "feature": "橋かけ二環性骨格に第二級アルコールをもつモノテルペノイド。",
+    "formula": "C10H18O",
+    "molecular_weight": 154.25,
+    "structure": "structures/borneol.svg",
+    "class_group": "アルコール類",
+    "functional_group": "第二級アルコール（−CHOH−）",
+    "subcategory": "二環性テルペンアルコール",
+    "sources_list": [
+      "クスノキ科植物",
+      "ローズマリー",
+      "ショウガ科植物など"
+    ],
+    "uses": [
+      "香料",
+      "香粧品",
+      "芳香製品"
+    ],
+    "description": "カンファーと共通するボルナン骨格をもち、カルボニル基ではなくヒドロキシ基をもつ。",
+    "memorize": [
+      "樟脳様の清涼な香り",
+      "アルコール類",
+      "カンファーに対応する第二級アルコール"
+    ],
+    "odor_icon": "🌲",
+    "difficulty": "基礎",
+    "iupac": "1,7,7-trimethylbicyclo[2.2.1]heptan-2-ol",
+    "structure_feature": "橋かけ二環性のボルナン骨格に第二級ヒドロキシ基をもつ。",
+    "odor_family": [
+      "木質",
+      "樹脂",
+      "フレッシュ"
+    ],
+    "learning_point": "カンファーと比較し、第二級アルコールの酸化によってケトンが生じる関係を学ぶ。",
+    "related_compounds": [
+      "camphor",
+      "bornyl-acetate",
+      "one-eight-cineole",
+      "alpha-pinene"
+    ]
+  },
+  {
+    "id": "bornyl-acetate",
+    "name_ja": "酢酸ボルニル",
+    "name_en": "Bornyl acetate",
+    "smiles": "CC(=O)OC1CC2CCC1(C2(C)C)C",
+    "odor": "モミや松葉を思わせる甘く穏やかな樹木香",
+    "sources": "モミ、マツ、ローズマリーなど",
+    "category": "テルペンエステル",
+    "feature": "ボルネオールのヒドロキシ基が酢酸とエステルを形成した二環性テルペンエステル。",
+    "formula": "C12H20O2",
+    "molecular_weight": 196.29,
+    "structure": "structures/bornyl-acetate.svg",
+    "class_group": "エステル類",
+    "functional_group": "エステル結合（−OCOCH₃）",
+    "subcategory": "二環性テルペンエステル",
+    "sources_list": [
+      "モミ",
+      "マツ",
+      "ローズマリーなど"
+    ],
+    "uses": [
+      "香料",
+      "香粧品",
+      "芳香製品"
+    ],
+    "description": "針葉樹系の香りを構成する代表的なテルペンエステルで、ボルネオールとの構造比較に適している。",
+    "memorize": [
+      "モミ・松葉様の甘い香り",
+      "エステル類",
+      "ボルネオールの酢酸エステル"
+    ],
+    "odor_icon": "🌲",
+    "difficulty": "基礎",
+    "iupac": "1,7,7-trimethylbicyclo[2.2.1]heptan-2-yl acetate",
+    "structure_feature": "橋かけ二環性骨格に酢酸エステル基が結合している。",
+    "odor_family": [
+      "木質",
+      "樹脂",
+      "甘い"
+    ],
+    "learning_point": "ボルネオールと比較し、アルコールのエステル化による官能基と香りの変化を学ぶ。",
+    "related_compounds": [
+      "borneol",
+      "camphor",
+      "linalyl-acetate",
+      "alpha-pinene"
+    ]
+  },
+  {
+    "id": "gamma-terpinene",
+    "name_ja": "γ-テルピネン",
+    "name_en": "γ-Terpinene",
+    "smiles": "CC1=CCC(=CC1)C(C)C",
+    "odor": "柑橘とハーブを思わせる爽やかな香り",
+    "sources": "柑橘果皮、クミン、コリアンダー、ティーツリーなど",
+    "category": "テルペン",
+    "feature": "六員環内に離れた2つの炭素−炭素二重結合をもつ環状モノテルペン。",
+    "formula": "C10H16",
+    "molecular_weight": 136.23,
+    "structure": "structures/gamma-terpinene.svg",
+    "class_group": "テルペン類",
+    "functional_group": "2つの炭素−炭素二重結合をもつ炭化水素",
+    "subcategory": "環状モノテルペン",
+    "sources_list": [
+      "柑橘果皮",
+      "クミン",
+      "コリアンダー",
+      "ティーツリーなど"
+    ],
+    "uses": [
+      "食品香料",
+      "香料",
+      "香粧品"
+    ],
+    "description": "p-メンタン骨格に1位と4位の二重結合をもつ環状モノテルペンである。",
+    "memorize": [
+      "柑橘・ハーブ様の香り",
+      "テルペン類",
+      "六員環内に2つの二重結合"
+    ],
+    "odor_icon": "🍋",
+    "difficulty": "基礎",
+    "iupac": "1-methyl-4-propan-2-ylcyclohexa-1,4-diene",
+    "structure_feature": "六員環にメチル基とイソプロピル基、互いに離れた2つの二重結合をもつ。",
+    "odor_family": [
+      "柑橘",
+      "ハーブ",
+      "フレッシュ"
+    ],
+    "learning_point": "リモネンやピネン類と比較し、環状モノテルペンにおける二重結合の位置の違いを学ぶ。",
+    "related_compounds": [
+      "limonene",
+      "alpha-pinene",
+      "beta-pinene",
+      "myrcene"
+    ]
+  },
+  {
+    "id": "cis-three-hexen-one-ol",
+    "name_ja": "cis-3-ヘキセン-1-オール",
+    "name_en": "cis-3-Hexen-1-ol",
+    "smiles": "CC/C=C\\CCO",
+    "odor": "刈りたての草や青葉を思わせる強いグリーン香",
+    "sources": "緑葉、茶葉、シソ、各種果実など",
+    "category": "不飽和アルコール",
+    "feature": "6炭素の鎖にZ配置の二重結合と末端の第一級アルコールをもつ。",
+    "formula": "C6H12O",
+    "molecular_weight": 100.16,
+    "structure": "structures/cis-three-hexen-one-ol.svg",
+    "class_group": "アルコール類",
+    "functional_group": "第一級アルコール（−CH₂OH）と炭素−炭素二重結合",
+    "subcategory": "不飽和アルコール",
+    "sources_list": [
+      "緑葉",
+      "茶葉",
+      "シソ",
+      "各種果実など"
+    ],
+    "uses": [
+      "食品香料",
+      "香料",
+      "香気研究"
+    ],
+    "description": "青葉香を代表する不飽和アルコールで、リーフアルコールとも呼ばれる。",
+    "memorize": [
+      "刈りたての草・青葉様",
+      "アルコール類",
+      "Z配置のリーフアルコール"
+    ],
+    "odor_icon": "🍃",
+    "difficulty": "基礎",
+    "iupac": "(Z)-hex-3-en-1-ol",
+    "structure_feature": "末端の第一級アルコールと、中央にあるZ配置の炭素−炭素二重結合が特徴。",
+    "odor_family": [
+      "グリーン",
+      "ハーブ",
+      "フレッシュ"
+    ],
+    "learning_point": "trans-2-ヘキセナールやcis-3-ヘキセニルアセテートと比較し、アルコール・アルデヒド・エステルの違いを学ぶ。",
+    "related_compounds": [
+      "trans-two-hexenal",
+      "cis-three-hexenyl-acetate",
+      "hexanal",
+      "one-octen-three-ol"
+    ]
+  },
+  {
+    "id": "trans-two-hexenal",
+    "name_ja": "trans-2-ヘキセナール",
+    "name_en": "trans-2-Hexenal",
+    "smiles": "CCC/C=C/C=O",
+    "odor": "青葉や青草を思わせる鋭く爽やかなグリーン香",
+    "sources": "緑葉、茶葉、果実、野菜、香辛料など",
+    "category": "不飽和アルデヒド",
+    "feature": "アルデヒド基に隣接してE配置の炭素−炭素二重結合をもつ。",
+    "formula": "C6H10O",
+    "molecular_weight": 98.14,
+    "structure": "structures/trans-two-hexenal.svg",
+    "class_group": "アルデヒド類",
+    "functional_group": "アルデヒド基（−CHO）と炭素−炭素二重結合",
+    "subcategory": "不飽和アルデヒド",
+    "sources_list": [
+      "緑葉",
+      "茶葉",
+      "果実",
+      "野菜など"
+    ],
+    "uses": [
+      "食品香料",
+      "香料",
+      "香気研究"
+    ],
+    "description": "リーフアルデヒドとも呼ばれる、青葉香を代表するα,β-不飽和アルデヒド。",
+    "memorize": [
+      "鋭い青葉・青草様",
+      "アルデヒド類",
+      "E配置のリーフアルデヒド"
+    ],
+    "odor_icon": "🍃",
+    "difficulty": "基礎",
+    "iupac": "(E)-hex-2-enal",
+    "structure_feature": "末端のアルデヒド基と、それに共役したE配置の炭素−炭素二重結合をもつ。",
+    "odor_family": [
+      "グリーン",
+      "フレッシュ",
+      "刺激"
+    ],
+    "learning_point": "ヘキサナールと比較し、炭素−炭素二重結合の有無による構造と香りの違いを学ぶ。",
+    "related_compounds": [
+      "cis-three-hexen-one-ol",
+      "cis-three-hexenyl-acetate",
+      "hexanal",
+      "citral"
+    ]
+  },
+  {
+    "id": "cis-three-hexenyl-acetate",
+    "name_ja": "cis-3-ヘキセニルアセテート",
+    "name_en": "cis-3-Hexenyl acetate",
+    "smiles": "CC/C=C\\CCOC(=O)C",
+    "odor": "青葉の爽やかさと果実様の甘さを併せもつ香り",
+    "sources": "緑葉、茶葉、シソ、各種果実など",
+    "category": "不飽和エステル",
+    "feature": "cis-3-ヘキセン-1-オールのヒドロキシ基が酢酸とエステルを形成した化合物。",
+    "formula": "C8H14O2",
+    "molecular_weight": 142.2,
+    "structure": "structures/cis-three-hexenyl-acetate.svg",
+    "class_group": "エステル類",
+    "functional_group": "エステル結合（−COO−）と炭素−炭素二重結合",
+    "subcategory": "不飽和エステル",
+    "sources_list": [
+      "緑葉",
+      "茶葉",
+      "シソ",
+      "各種果実など"
+    ],
+    "uses": [
+      "食品香料",
+      "香料",
+      "香粧品"
+    ],
+    "description": "青葉香と果実香を併せもつ代表的なグリーンノート成分。",
+    "memorize": [
+      "青葉・果実様の香り",
+      "エステル類",
+      "リーフアルコールの酢酸エステル"
+    ],
+    "odor_icon": "🍃",
+    "difficulty": "基礎",
+    "iupac": "[(Z)-hex-3-enyl] acetate",
+    "structure_feature": "酢酸エステル結合と、Z配置の炭素−炭素二重結合をもつ。",
+    "odor_family": [
+      "グリーン",
+      "果実",
+      "フレッシュ"
+    ],
+    "learning_point": "cis-3-ヘキセン-1-オールと比較し、アルコールのエステル化による官能基と香りの変化を学ぶ。",
+    "related_compounds": [
+      "cis-three-hexen-one-ol",
+      "trans-two-hexenal",
+      "hexyl-acetate",
+      "benzyl-acetate"
+    ]
+  },
+  {
+    "id": "nonanal",
+    "name_ja": "ノナナール",
+    "name_en": "Nonanal",
+    "smiles": "CCCCCCCCC=O",
+    "odor": "バラやオレンジを思わせる花様・柑橘様の香り",
+    "sources": "バラ精油、柑橘精油、マツ精油など",
+    "category": "脂肪族アルデヒド",
+    "feature": "直鎖9炭素の末端にアルデヒド基をもつ飽和脂肪族アルデヒド。",
+    "formula": "C9H18O",
+    "molecular_weight": 142.24,
+    "structure": "structures/nonanal.svg",
+    "class_group": "アルデヒド類",
+    "functional_group": "アルデヒド基（−CHO）",
+    "subcategory": "脂肪族アルデヒド",
+    "sources_list": [
+      "バラ精油",
+      "柑橘精油",
+      "マツ精油など"
+    ],
+    "uses": [
+      "香料",
+      "食品香料",
+      "香粧品"
+    ],
+    "description": "花様、柑橘様、ワックス様の香りを示す中鎖の飽和脂肪族アルデヒド。",
+    "memorize": [
+      "バラ・オレンジ様",
+      "アルデヒド類",
+      "直鎖9炭素"
+    ],
+    "odor_icon": "🍊",
+    "difficulty": "基礎",
+    "iupac": "nonanal",
+    "structure_feature": "直鎖9炭素の末端にアルデヒド基を1つもつ。",
+    "odor_family": [
+      "柑橘",
+      "花",
+      "ワックス"
+    ],
+    "learning_point": "デカナールやヘキサナールと比較し、炭素鎖長と香りの変化を学ぶ。",
+    "related_compounds": [
+      "decanal",
+      "hexanal",
+      "trans-two-hexenal",
+      "citral"
+    ]
+  },
+  {
+    "id": "decanal",
+    "name_ja": "デカナール",
+    "name_en": "Decanal",
+    "smiles": "CCCCCCCCCC=O",
+    "odor": "オレンジ果皮を思わせる甘くワックス様の柑橘香",
+    "sources": "柑橘果皮、レモングラス、コリアンダー、各種精油など",
+    "category": "脂肪族アルデヒド",
+    "feature": "直鎖10炭素の末端にアルデヒド基をもつ飽和脂肪族アルデヒド。",
+    "formula": "C10H20O",
+    "molecular_weight": 156.26,
+    "structure": "structures/decanal.svg",
+    "class_group": "アルデヒド類",
+    "functional_group": "アルデヒド基（−CHO）",
+    "subcategory": "脂肪族アルデヒド",
+    "sources_list": [
+      "柑橘果皮",
+      "レモングラス",
+      "コリアンダー",
+      "各種精油など"
+    ],
+    "uses": [
+      "香料",
+      "食品香料",
+      "香粧品"
+    ],
+    "description": "柑橘香を構成する代表的な飽和脂肪族アルデヒドで、オレンジ果皮様の香りを示す。",
+    "memorize": [
+      "オレンジ果皮様",
+      "アルデヒド類",
+      "直鎖10炭素"
+    ],
+    "odor_icon": "🍊",
+    "difficulty": "基礎",
+    "iupac": "decanal",
+    "structure_feature": "直鎖10炭素の末端にアルデヒド基を1つもつ。",
+    "odor_family": [
+      "柑橘",
+      "ワックス",
+      "甘い"
+    ],
+    "learning_point": "ノナナールと比較し、炭素数が1つ増えることによる分子量と香りの違いを学ぶ。",
+    "related_compounds": [
+      "nonanal",
+      "hexanal",
+      "citral",
+      "trans-two-hexenal"
+    ]
+  }
 ]
