@@ -1174,4 +1174,243 @@
     "hexyl-acetate",
     "methyl-butyrate"
   ]
+}
+,
+{
+  "id": "anethole",
+  "name_ja": "アネトール",
+  "name_en": "Anethole",
+  "smiles": "C/C=C/C1=CC=C(C=C1)OC",
+  "odor": "アニスや甘草を思わせる甘くスパイシーな香り",
+  "sources": "アニス、スターアニス、フェンネルなど",
+  "category": "芳香族エーテル",
+  "feature": "ベンゼン環にメトキシ基とプロペニル基をもつ芳香族化合物。通常、香料で重要なのはE体である。",
+  "formula": "C10H12O",
+  "molecular_weight": 148.20,
+  "structure": "structures/anethole.svg",
+  "class_group": "その他",
+  "functional_group": "エーテル結合（メトキシ基）と炭素−炭素二重結合",
+  "subcategory": "芳香族エーテル",
+  "sources_list": [
+    "アニス",
+    "スターアニス",
+    "フェンネルなど"
+  ],
+  "uses": [
+    "食品香料",
+    "飲料",
+    "香料"
+  ],
+  "description": "アニス系の甘い香りを示す代表成分。芳香環、エーテル結合、炭素−炭素二重結合をあわせもつ。",
+  "memorize": [
+    "アニス様の甘い香り",
+    "芳香族エーテル",
+    "ベンゼン環とメトキシ基"
+  ],
+  "odor_icon": "🌿",
+  "difficulty": "基礎",
+  "iupac": "1-methoxy-4-[(E)-prop-1-enyl]benzene",
+  "structure_feature": "ベンゼン環の向かい合う位置にメトキシ基とE配置のプロペニル基が結合している。",
+  "odor_family": [
+    "スパイス",
+    "甘い",
+    "ハーブ"
+  ],
+  "learning_point": "オイゲノールと比較し、メトキシ基とフェノール性ヒドロキシ基の違いを学ぶ。",
+  "related_compounds": [
+    "eugenol",
+    "cinnamaldehyde",
+    "benzyl-acetate",
+    "thymol"
+  ]
+},
+{
+  "id": "thymol",
+  "name_ja": "チモール",
+  "name_en": "Thymol",
+  "smiles": "CC1=CC(=C(C=C1)C(C)C)O",
+  "odor": "タイムを思わせる温かく刺激的なハーブ香",
+  "sources": "タイム、オレガノ、アジョワンなど",
+  "category": "フェノール",
+  "feature": "ベンゼン環にフェノール性ヒドロキシ基、メチル基、イソプロピル基をもつ。",
+  "formula": "C10H14O",
+  "molecular_weight": 150.22,
+  "structure": "structures/thymol.svg",
+  "class_group": "フェノール類",
+  "functional_group": "フェノール性ヒドロキシ基（Ar−OH）",
+  "subcategory": "モノテルペンフェノール",
+  "sources_list": [
+    "タイム",
+    "オレガノ",
+    "アジョワンなど"
+  ],
+  "uses": [
+    "香料",
+    "食品香料",
+    "口腔ケア製品"
+  ],
+  "description": "タイム精油を特徴づけるフェノール性香気成分。カルバクロールとは置換基の位置が異なる位置異性体である。",
+  "memorize": [
+    "タイム様のハーブ香",
+    "フェノール類",
+    "カルバクロールの位置異性体"
+  ],
+  "odor_icon": "🌿",
+  "difficulty": "基礎",
+  "iupac": "5-methyl-2-propan-2-ylphenol",
+  "structure_feature": "ベンゼン環上にヒドロキシ基、メチル基、イソプロピル基をもつ。",
+  "odor_family": [
+    "ハーブ",
+    "スパイス"
+  ],
+  "learning_point": "カルバクロールと比較し、置換基の位置だけが異なる位置異性体を学ぶ。",
+  "related_compounds": [
+    "carvacrol",
+    "eugenol",
+    "menthol",
+    "one-eight-cineole"
+  ]
+},
+{
+  "id": "carvacrol",
+  "name_ja": "カルバクロール",
+  "name_en": "Carvacrol",
+  "smiles": "CC1=C(C=C(C=C1)C(C)C)O",
+  "odor": "オレガノを思わせる温かくスパイシーなハーブ香",
+  "sources": "オレガノ、タイム、セイボリーなど",
+  "category": "フェノール",
+  "feature": "ベンゼン環にフェノール性ヒドロキシ基、メチル基、イソプロピル基をもつ。",
+  "formula": "C10H14O",
+  "molecular_weight": 150.22,
+  "structure": "structures/carvacrol.svg",
+  "class_group": "フェノール類",
+  "functional_group": "フェノール性ヒドロキシ基（Ar−OH）",
+  "subcategory": "モノテルペンフェノール",
+  "sources_list": [
+    "オレガノ",
+    "タイム",
+    "セイボリーなど"
+  ],
+  "uses": [
+    "食品香料",
+    "香料",
+    "香味研究"
+  ],
+  "description": "オレガノの特徴的な香りに関与するフェノール性香気成分。チモールとは位置異性体の関係にある。",
+  "memorize": [
+    "オレガノ様の香り",
+    "フェノール類",
+    "チモールの位置異性体"
+  ],
+  "odor_icon": "🌿",
+  "difficulty": "基礎",
+  "iupac": "2-methyl-5-propan-2-ylphenol",
+  "structure_feature": "チモールと同じ置換基をもつが、ヒドロキシ基とメチル基の位置関係が異なる。",
+  "odor_family": [
+    "ハーブ",
+    "スパイス"
+  ],
+  "learning_point": "チモールと分子式が同じでも、置換基の位置によって構造と性質が異なることを学ぶ。",
+  "related_compounds": [
+    "thymol",
+    "eugenol",
+    "one-eight-cineole",
+    "camphor"
+  ]
+},
+{
+  "id": "one-eight-cineole",
+  "name_ja": "1,8-シネオール",
+  "name_en": "1,8-Cineole",
+  "smiles": "CC1(C2CCC(O1)(CC2)C)C",
+  "odor": "ユーカリを思わせる清涼感のあるカンファー様の香り",
+  "sources": "ユーカリ、ローズマリー、セージなど",
+  "category": "テルペンエーテル",
+  "feature": "酸素原子が二環性骨格の一部となっている環状エーテル型モノテルペン。",
+  "formula": "C10H18O",
+  "molecular_weight": 154.25,
+  "structure": "structures/one-eight-cineole.svg",
+  "class_group": "テルペン類",
+  "functional_group": "環状エーテル結合（C−O−C）",
+  "subcategory": "テルペンエーテル",
+  "sources_list": [
+    "ユーカリ",
+    "ローズマリー",
+    "セージなど"
+  ],
+  "uses": [
+    "香料",
+    "香粧品",
+    "口腔ケア製品"
+  ],
+  "description": "ユーカリ精油を特徴づける代表的なモノテルペンエーテル。エーテル酸素が環構造に組み込まれている。",
+  "memorize": [
+    "ユーカリ様の清涼な香り",
+    "テルペン類",
+    "二環性の環状エーテル"
+  ],
+  "odor_icon": "🌿",
+  "difficulty": "基礎",
+  "iupac": "1,3,3-trimethyl-2-oxabicyclo[2.2.2]octane",
+  "structure_feature": "酸素原子を橋かけ部分にもつ二環性の飽和環状エーテル。",
+  "odor_family": [
+    "ハーブ",
+    "フレッシュ",
+    "樹脂"
+  ],
+  "learning_point": "アルコールとは異なり、酸素が2つの炭素に結合したエーテル構造を学ぶ。",
+  "related_compounds": [
+    "camphor",
+    "alpha-pinene",
+    "menthol",
+    "linalool"
+  ]
+},
+{
+  "id": "camphor",
+  "name_ja": "カンファー",
+  "name_en": "Camphor",
+  "smiles": "CC1(C2CCC1(C(=O)C2)C)C",
+  "odor": "樟脳を思わせる鋭く清涼感のある香り",
+  "sources": "クスノキ、ローズマリー、セージなど",
+  "category": "テルペンケトン",
+  "feature": "二環性骨格の内部にケトン型カルボニル基をもつモノテルペノイド。",
+  "formula": "C10H16O",
+  "molecular_weight": 152.23,
+  "structure": "structures/camphor.svg",
+  "class_group": "ケトン類",
+  "functional_group": "ケトンのカルボニル基（>C=O）",
+  "subcategory": "テルペンケトン",
+  "sources_list": [
+    "クスノキ",
+    "ローズマリー",
+    "セージなど"
+  ],
+  "uses": [
+    "香料",
+    "香粧品",
+    "芳香製品"
+  ],
+  "description": "樟脳の主成分として知られる二環性モノテルペンケトン。常温でも昇華しやすく、強い香りを示す。",
+  "memorize": [
+    "樟脳様の鋭い香り",
+    "ケトン類",
+    "二環性モノテルペンケトン"
+  ],
+  "odor_icon": "🌲",
+  "difficulty": "基礎",
+  "iupac": "1,7,7-trimethylbicyclo[2.2.1]heptan-2-one",
+  "structure_feature": "橋かけ二環性骨格とケトン型カルボニル基をもつ。",
+  "odor_family": [
+    "樹脂",
+    "木質",
+    "フレッシュ"
+  ],
+  "learning_point": "α-ピネンや1,8-シネオールと比較し、二環性テルペン骨格に含まれる官能基の違いを学ぶ。",
+  "related_compounds": [
+    "one-eight-cineole",
+    "alpha-pinene",
+    "carvone",
+    "menthol"
+  ]
 }]
