@@ -3593,5 +3593,250 @@
       "linalool",
       "camphor"
     ]
+  },
+  {
+    "id": "guaiacol",
+    "name_ja": "グアイアコール",
+    "name_en": "Guaiacol",
+    "smiles": "COc1ccccc1O",
+    "odor": "煙や燻製、薬品を思わせる甘いフェノール香",
+    "sources": "木材煙、燻製食品、焙煎コーヒー、ウイスキーなど",
+    "category": "メトキシフェノール",
+    "feature": "ベンゼン環の隣接する位置にフェノール性ヒドロキシ基とメトキシ基をもつ。",
+    "formula": "C7H8O2",
+    "molecular_weight": 124.14,
+    "structure": "structures/guaiacol.svg",
+    "class_group": "フェノール類",
+    "functional_group": "フェノール性ヒドロキシ基とメトキシ基",
+    "subcategory": "メトキシフェノール",
+    "sources_list": [
+      "木材煙",
+      "燻製食品",
+      "焙煎コーヒー",
+      "ウイスキーなど"
+    ],
+    "uses": [
+      "食品香料",
+      "燻煙香研究",
+      "香気分析"
+    ],
+    "description": "木材の熱分解や燻煙によって生じる代表的なフェノール性香気成分。",
+    "memorize": [
+      "煙・燻製様",
+      "フェノール類",
+      "ヒドロキシ基とメトキシ基が隣接"
+    ],
+    "odor_icon": "🔥",
+    "difficulty": "基礎",
+    "iupac": "2-methoxyphenol",
+    "structure_feature": "ベンゼン環のオルト位にヒドロキシ基とメトキシ基が結合している。",
+    "odor_family": [
+      "煙",
+      "木質",
+      "薬品"
+    ],
+    "learning_point": "4-メチルグアイアコールなどと比較し、グアイアコール骨格への置換基の追加を学ぶ。",
+    "related_compounds": [
+      "four-methylguaiacol",
+      "four-ethylguaiacol",
+      "four-vinylguaiacol",
+      "syringol"
+    ]
+  },
+  {
+    "id": "four-methylguaiacol",
+    "name_ja": "4-メチルグアイアコール",
+    "name_en": "4-Methylguaiacol",
+    "smiles": "COc1cc(C)ccc1O",
+    "odor": "燻製、クローブ、バニラを思わせる甘くスパイシーな香り",
+    "sources": "焙煎コーヒー、ウイスキー、ワイン、燻製食品など",
+    "category": "アルキルグアイアコール",
+    "feature": "グアイアコール環の4位にメチル基が結合したフェノール化合物。",
+    "formula": "C8H10O2",
+    "molecular_weight": 138.17,
+    "structure": "structures/four-methylguaiacol.svg",
+    "class_group": "フェノール類",
+    "functional_group": "フェノール性ヒドロキシ基・メトキシ基・メチル基",
+    "subcategory": "メチルグアイアコール",
+    "sources_list": [
+      "焙煎コーヒー",
+      "ウイスキー",
+      "ワイン",
+      "燻製食品など"
+    ],
+    "uses": [
+      "食品香料",
+      "焙煎香研究",
+      "酒類香気分析"
+    ],
+    "description": "クレオソールとも呼ばれ、煙や焙煎食品の甘くスパイシーな香りに関与する。",
+    "memorize": [
+      "燻製・クローブ様",
+      "フェノール類",
+      "グアイアコールにメチル基"
+    ],
+    "odor_icon": "🔥",
+    "difficulty": "基礎",
+    "iupac": "2-methoxy-4-methylphenol",
+    "structure_feature": "グアイアコール骨格のヒドロキシ基に対してパラ位にメチル基をもつ。",
+    "odor_family": [
+      "煙",
+      "スパイス",
+      "バニラ"
+    ],
+    "learning_point": "グアイアコールと比較し、メチル基が加わることによる分子式と構造の変化を学ぶ。",
+    "related_compounds": [
+      "guaiacol",
+      "four-ethylguaiacol",
+      "four-vinylguaiacol",
+      "eugenol"
+    ]
+  },
+  {
+    "id": "four-ethylguaiacol",
+    "name_ja": "4-エチルグアイアコール",
+    "name_en": "4-Ethylguaiacol",
+    "smiles": "COc1cc(CC)ccc1O",
+    "odor": "クローブ、煙、革を思わせるスパイシーな香り",
+    "sources": "ワイン、ビール、発酵飲料、燻製食品など",
+    "category": "アルキルグアイアコール",
+    "feature": "グアイアコール環の4位に2炭素のエチル基が結合している。",
+    "formula": "C9H12O2",
+    "molecular_weight": 152.19,
+    "structure": "structures/four-ethylguaiacol.svg",
+    "class_group": "フェノール類",
+    "functional_group": "フェノール性ヒドロキシ基・メトキシ基・エチル基",
+    "subcategory": "エチルグアイアコール",
+    "sources_list": [
+      "ワイン",
+      "ビール",
+      "発酵飲料",
+      "燻製食品など"
+    ],
+    "uses": [
+      "酒類香気研究",
+      "発酵香研究",
+      "香気分析"
+    ],
+    "description": "発酵飲料などに含まれ、クローブ様、煙様、革様の香りに関与するフェノール性化合物。",
+    "memorize": [
+      "クローブ・煙・革様",
+      "フェノール類",
+      "グアイアコールにエチル基"
+    ],
+    "odor_icon": "🍷",
+    "difficulty": "基礎",
+    "iupac": "4-ethyl-2-methoxyphenol",
+    "structure_feature": "グアイアコール骨格の4位に直鎖2炭素のエチル基が結合している。",
+    "odor_family": [
+      "スパイス",
+      "煙",
+      "発酵"
+    ],
+    "learning_point": "4-メチルグアイアコールと比較し、アルキル基の炭素数が1つ増えた構造を学ぶ。",
+    "related_compounds": [
+      "guaiacol",
+      "four-methylguaiacol",
+      "four-vinylguaiacol",
+      "two-five-dimethylpyrazine"
+    ]
+  },
+  {
+    "id": "four-vinylguaiacol",
+    "name_ja": "4-ビニルグアイアコール",
+    "name_en": "4-Vinylguaiacol",
+    "smiles": "COc1cc(C=C)ccc1O",
+    "odor": "クローブやスパイスを思わせる甘く特徴的な香り",
+    "sources": "小麦ビール、ワイン、焙煎コーヒー、発酵食品など",
+    "category": "アルケニルグアイアコール",
+    "feature": "グアイアコール環の4位に炭素−炭素二重結合をもつビニル基が結合している。",
+    "formula": "C9H10O2",
+    "molecular_weight": 150.18,
+    "structure": "structures/four-vinylguaiacol.svg",
+    "class_group": "フェノール類",
+    "functional_group": "フェノール性ヒドロキシ基・メトキシ基・ビニル基",
+    "subcategory": "ビニルグアイアコール",
+    "sources_list": [
+      "小麦ビール",
+      "ワイン",
+      "焙煎コーヒー",
+      "発酵食品など"
+    ],
+    "uses": [
+      "ビール香気研究",
+      "発酵香研究",
+      "食品香料"
+    ],
+    "description": "小麦ビールのクローブ様香気などに関与する、ビニル基をもつグアイアコール誘導体。",
+    "memorize": [
+      "クローブ・スパイス様",
+      "フェノール類",
+      "グアイアコールにビニル基"
+    ],
+    "odor_icon": "🍺",
+    "difficulty": "基礎",
+    "iupac": "2-methoxy-4-vinylphenol",
+    "structure_feature": "グアイアコール骨格の4位に炭素−炭素二重結合をもつビニル基が結合する。",
+    "odor_family": [
+      "スパイス",
+      "発酵",
+      "煙"
+    ],
+    "learning_point": "4-エチルグアイアコールと比較し、エチル基とビニル基の二重結合の有無を学ぶ。",
+    "related_compounds": [
+      "guaiacol",
+      "four-methylguaiacol",
+      "eugenol",
+      "two-furfurylthiol"
+    ]
+  },
+  {
+    "id": "syringol",
+    "name_ja": "シリンゴール",
+    "name_en": "Syringol",
+    "smiles": "COc1cccc(OC)c1O",
+    "odor": "木材煙や燻製を思わせる甘く柔らかな煙香",
+    "sources": "木材煙、燻製食品、木炭、加熱木材など",
+    "category": "ジメトキシフェノール",
+    "feature": "フェノール性ヒドロキシ基の両隣に2つのメトキシ基をもつ。",
+    "formula": "C8H10O3",
+    "molecular_weight": 154.16,
+    "structure": "structures/syringol.svg",
+    "class_group": "フェノール類",
+    "functional_group": "フェノール性ヒドロキシ基と2つのメトキシ基",
+    "subcategory": "ジメトキシフェノール",
+    "sources_list": [
+      "木材煙",
+      "燻製食品",
+      "木炭",
+      "加熱木材など"
+    ],
+    "uses": [
+      "燻煙香研究",
+      "食品香気分析",
+      "木材熱分解研究"
+    ],
+    "description": "木材の熱分解で生じる代表的な煙香成分で、グアイアコールよりメトキシ基が1つ多い。",
+    "memorize": [
+      "甘い木材煙・燻製様",
+      "フェノール類",
+      "2つのメトキシ基"
+    ],
+    "odor_icon": "🌲",
+    "difficulty": "基礎",
+    "iupac": "2,6-dimethoxyphenol",
+    "structure_feature": "フェノール性ヒドロキシ基の両側のオルト位にメトキシ基をもつ。",
+    "odor_family": [
+      "煙",
+      "木質",
+      "甘い"
+    ],
+    "learning_point": "グアイアコールと比較し、メトキシ基が1つ増えたジメトキシフェノールの構造を学ぶ。",
+    "related_compounds": [
+      "guaiacol",
+      "four-methylguaiacol",
+      "vanillin",
+      "piperonal"
+    ]
   }
 ]
