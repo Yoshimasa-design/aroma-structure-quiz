@@ -706,4 +706,240 @@
     "iupac": "",
     "structure_feature": "硫黄原子に2つのメチル基が結合した単純なスルフィド。"
   }
-]
+,
+{
+  "id": "nerol",
+  "name_ja": "ネロール",
+  "name_en": "Nerol",
+  "smiles": "CC(=CCC/C(=C\\CO)/C)C",
+  "odor": "バラ様のやわらかく爽やかな花香",
+  "sources": "ネロリ、レモングラス、ホップなど",
+  "category": "テルペンアルコール",
+  "feature": "鎖状モノテルペンアルコール。ゲラニオールの幾何異性体で、二重結合の一つがZ配置である。",
+  "formula": "C10H18O",
+  "molecular_weight": 154.25,
+  "structure": "structures/nerol.svg",
+  "class_group": "アルコール類",
+  "functional_group": "第一級アルコール（−CH₂OH）",
+  "subcategory": "テルペンアルコール",
+  "sources_list": [
+    "ネロリ",
+    "レモングラス",
+    "ホップなど"
+  ],
+  "uses": [
+    "香料",
+    "香粧品",
+    "食品香料"
+  ],
+  "description": "末端に第一級アルコールをもつ鎖状モノテルペン。ゲラニオールと原子の結合順序は同じだが、二重結合周辺の立体配置が異なる。",
+  "memorize": [
+    "バラ様のやわらかな花香",
+    "アルコール類",
+    "ゲラニオールの幾何異性体"
+  ],
+  "odor_icon": "🌹",
+  "difficulty": "基礎",
+  "iupac": "(2Z)-3,7-dimethylocta-2,6-dien-1-ol",
+  "structure_feature": "第一級アルコールと2つの炭素−炭素二重結合をもち、2位の二重結合がZ配置である。",
+  "odor_family": [
+    "花",
+    "柑橘"
+  ],
+  "learning_point": "ゲラニオールと比較し、幾何異性体では原子の結合順序が同じでも分子の形や香りが異なることを学ぶ。",
+  "related_compounds": [
+    "geraniol",
+    "neral",
+    "citral",
+    "linalool"
+  ]
+},
+{
+  "id": "neral",
+  "name_ja": "ネラール",
+  "name_en": "Neral",
+  "smiles": "CC(=CCC/C(=C\\C=O)/C)C",
+  "odor": "甘さを伴う穏やかなレモン様の香り",
+  "sources": "レモングラス、レモンマートル、柑橘類など",
+  "category": "テルペンアルデヒド",
+  "feature": "鎖状モノテルペンアルデヒド。シトラールを構成するZ体で、シトラールBとも呼ばれる。",
+  "formula": "C10H16O",
+  "molecular_weight": 152.23,
+  "structure": "structures/neral.svg",
+  "class_group": "アルデヒド類",
+  "functional_group": "アルデヒド基（−CHO）",
+  "subcategory": "テルペンアルデヒド",
+  "sources_list": [
+    "レモングラス",
+    "レモンマートル",
+    "柑橘類など"
+  ],
+  "uses": [
+    "食品香料",
+    "香粧品",
+    "香味研究"
+  ],
+  "description": "末端にアルデヒド基をもつ鎖状モノテルペン。ゲラニアールの幾何異性体であり、両者の混合物が一般にシトラールと呼ばれる。",
+  "memorize": [
+    "穏やかなレモン様の香り",
+    "アルデヒド類",
+    "シトラールB・Z体"
+  ],
+  "odor_icon": "🍋",
+  "difficulty": "基礎",
+  "iupac": "(2Z)-3,7-dimethylocta-2,6-dienal",
+  "structure_feature": "アルデヒド基と2つの炭素−炭素二重結合をもち、2位の二重結合がZ配置である。",
+  "odor_family": [
+    "柑橘",
+    "フレッシュ"
+  ],
+  "learning_point": "ネラールとゲラニアールを比較し、アルデヒドの幾何異性体とシトラールの関係を学ぶ。",
+  "related_compounds": [
+    "geranial",
+    "citral",
+    "nerol",
+    "geraniol"
+  ]
+},
+{
+  "id": "geranial",
+  "name_ja": "ゲラニアール",
+  "name_en": "Geranial",
+  "smiles": "CC(=CCC/C(=C/C=O)/C)C",
+  "odor": "鋭く強いレモン様の香り",
+  "sources": "レモングラス、レモンマートル、柑橘類など",
+  "category": "テルペンアルデヒド",
+  "feature": "鎖状モノテルペンアルデヒド。シトラールを構成するE体で、シトラールAとも呼ばれる。",
+  "formula": "C10H16O",
+  "molecular_weight": 152.23,
+  "structure": "structures/geranial.svg",
+  "class_group": "アルデヒド類",
+  "functional_group": "アルデヒド基（−CHO）",
+  "subcategory": "テルペンアルデヒド",
+  "sources_list": [
+    "レモングラス",
+    "レモンマートル",
+    "柑橘類など"
+  ],
+  "uses": [
+    "食品香料",
+    "香粧品",
+    "香味研究"
+  ],
+  "description": "末端にアルデヒド基をもつ鎖状モノテルペン。ネラールの幾何異性体で、両者を合わせてシトラールとして扱うことが多い。",
+  "memorize": [
+    "鋭く強いレモン様の香り",
+    "アルデヒド類",
+    "シトラールA・E体"
+  ],
+  "odor_icon": "🍋",
+  "difficulty": "基礎",
+  "iupac": "(2E)-3,7-dimethylocta-2,6-dienal",
+  "structure_feature": "アルデヒド基と2つの炭素−炭素二重結合をもち、2位の二重結合がE配置である。",
+  "odor_family": [
+    "柑橘",
+    "フレッシュ"
+  ],
+  "learning_point": "ネラールとの構造比較を通して、E/Z異性体とシトラールの組成を理解する。",
+  "related_compounds": [
+    "neral",
+    "citral",
+    "geraniol",
+    "nerol"
+  ]
+},
+{
+  "id": "citronellol",
+  "name_ja": "シトロネロール",
+  "name_en": "Citronellol",
+  "smiles": "CC(=CCCC(C)CCO)C",
+  "odor": "バラ様で、ほのかに柑橘を感じる花香",
+  "sources": "バラ、ゼラニウム、シトロネラなど",
+  "category": "テルペンアルコール",
+  "feature": "鎖状モノテルペンアルコール。末端に第一級アルコールをもち、ゲラニオールより二重結合が一つ少ない。",
+  "formula": "C10H20O",
+  "molecular_weight": 156.26,
+  "structure": "structures/citronellol.svg",
+  "class_group": "アルコール類",
+  "functional_group": "第一級アルコール（−CH₂OH）",
+  "subcategory": "テルペンアルコール",
+  "sources_list": [
+    "バラ",
+    "ゼラニウム",
+    "シトロネラなど"
+  ],
+  "uses": [
+    "香料",
+    "香粧品",
+    "食品香料"
+  ],
+  "description": "第一級アルコールと一つの炭素−炭素二重結合をもつ鎖状モノテルペン。バラ系の香調をつくる代表的な成分である。",
+  "memorize": [
+    "バラ様でほのかに柑橘様",
+    "アルコール類",
+    "二重結合を一つもつテルペンアルコール"
+  ],
+  "odor_icon": "🌹",
+  "difficulty": "基礎",
+  "iupac": "3,7-dimethyloct-6-en-1-ol",
+  "structure_feature": "末端の第一級アルコールと一つの炭素−炭素二重結合が特徴。",
+  "odor_family": [
+    "花",
+    "柑橘"
+  ],
+  "learning_point": "ゲラニオールやネロールと比較し、二重結合の数と分子構造の違いを学ぶ。",
+  "related_compounds": [
+    "geraniol",
+    "nerol",
+    "linalool",
+    "citral"
+  ]
+},
+{
+  "id": "alpha-pinene",
+  "name_ja": "α-ピネン",
+  "name_en": "α-Pinene",
+  "smiles": "CC1=CCC2CC1C2(C)C",
+  "odor": "松葉や針葉樹を思わせる爽やかな樹木香",
+  "sources": "マツ、ヒノキ、ローズマリー、柑橘果皮など",
+  "category": "テルペン",
+  "feature": "二環性のモノテルペン炭化水素。酸素原子を含まず、一つの炭素−炭素二重結合をもつ。",
+  "formula": "C10H16",
+  "molecular_weight": 136.23,
+  "structure": "structures/alpha-pinene.svg",
+  "class_group": "テルペン類",
+  "functional_group": "炭素−炭素二重結合をもつ炭化水素",
+  "subcategory": "テルペン",
+  "sources_list": [
+    "マツ",
+    "ヒノキ",
+    "ローズマリー",
+    "柑橘果皮など"
+  ],
+  "uses": [
+    "香料",
+    "香粧品",
+    "洗浄製品"
+  ],
+  "description": "縮合した環構造をもつ二環性モノテルペン。リモネンと同じ分子式をもつが、炭素骨格が異なる構造異性体である。",
+  "memorize": [
+    "松葉・針葉樹様の香り",
+    "テルペン類",
+    "二環性モノテルペン"
+  ],
+  "odor_icon": "🌲",
+  "difficulty": "基礎",
+  "iupac": "2,6,6-trimethylbicyclo[3.1.1]hept-2-ene",
+  "structure_feature": "二環性炭素骨格と一つの炭素−炭素二重結合をもつ。酸素原子は含まない。",
+  "odor_family": [
+    "木質",
+    "ハーブ",
+    "フレッシュ"
+  ],
+  "learning_point": "リモネンと比較し、同じ分子式をもつ化合物でも炭素骨格が異なる構造異性体が存在することを学ぶ。",
+  "related_compounds": [
+    "limonene",
+    "linalool",
+    "menthol"
+  ]
+}]
