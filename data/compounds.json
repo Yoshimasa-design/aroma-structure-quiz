@@ -705,712 +705,951 @@
     "difficulty": "基礎",
     "iupac": "",
     "structure_feature": "硫黄原子に2つのメチル基が結合した単純なスルフィド。"
+  },
+  {
+    "id": "nerol",
+    "name_ja": "ネロール",
+    "name_en": "Nerol",
+    "smiles": "CC(=CCC/C(=C\\CO)/C)C",
+    "odor": "バラ様のやわらかく爽やかな花香",
+    "sources": "ネロリ、レモングラス、ホップなど",
+    "category": "テルペンアルコール",
+    "feature": "鎖状モノテルペンアルコール。ゲラニオールの幾何異性体で、二重結合の一つがZ配置である。",
+    "formula": "C10H18O",
+    "molecular_weight": 154.25,
+    "structure": "structures/nerol.svg",
+    "class_group": "アルコール類",
+    "functional_group": "第一級アルコール（−CH₂OH）",
+    "subcategory": "テルペンアルコール",
+    "sources_list": [
+      "ネロリ",
+      "レモングラス",
+      "ホップなど"
+    ],
+    "uses": [
+      "香料",
+      "香粧品",
+      "食品香料"
+    ],
+    "description": "末端に第一級アルコールをもつ鎖状モノテルペン。ゲラニオールと原子の結合順序は同じだが、二重結合周辺の立体配置が異なる。",
+    "memorize": [
+      "バラ様のやわらかな花香",
+      "アルコール類",
+      "ゲラニオールの幾何異性体"
+    ],
+    "odor_icon": "🌹",
+    "difficulty": "基礎",
+    "iupac": "(2Z)-3,7-dimethylocta-2,6-dien-1-ol",
+    "structure_feature": "第一級アルコールと2つの炭素−炭素二重結合をもち、2位の二重結合がZ配置である。",
+    "odor_family": [
+      "花",
+      "柑橘"
+    ],
+    "learning_point": "ゲラニオールと比較し、幾何異性体では原子の結合順序が同じでも分子の形や香りが異なることを学ぶ。",
+    "related_compounds": [
+      "geraniol",
+      "neral",
+      "citral",
+      "linalool"
+    ]
+  },
+  {
+    "id": "neral",
+    "name_ja": "ネラール",
+    "name_en": "Neral",
+    "smiles": "CC(=CCC/C(=C\\C=O)/C)C",
+    "odor": "甘さを伴う穏やかなレモン様の香り",
+    "sources": "レモングラス、レモンマートル、柑橘類など",
+    "category": "テルペンアルデヒド",
+    "feature": "鎖状モノテルペンアルデヒド。シトラールを構成するZ体で、シトラールBとも呼ばれる。",
+    "formula": "C10H16O",
+    "molecular_weight": 152.23,
+    "structure": "structures/neral.svg",
+    "class_group": "アルデヒド類",
+    "functional_group": "アルデヒド基（−CHO）",
+    "subcategory": "テルペンアルデヒド",
+    "sources_list": [
+      "レモングラス",
+      "レモンマートル",
+      "柑橘類など"
+    ],
+    "uses": [
+      "食品香料",
+      "香粧品",
+      "香味研究"
+    ],
+    "description": "末端にアルデヒド基をもつ鎖状モノテルペン。ゲラニアールの幾何異性体であり、両者の混合物が一般にシトラールと呼ばれる。",
+    "memorize": [
+      "穏やかなレモン様の香り",
+      "アルデヒド類",
+      "シトラールB・Z体"
+    ],
+    "odor_icon": "🍋",
+    "difficulty": "基礎",
+    "iupac": "(2Z)-3,7-dimethylocta-2,6-dienal",
+    "structure_feature": "アルデヒド基と2つの炭素−炭素二重結合をもち、2位の二重結合がZ配置である。",
+    "odor_family": [
+      "柑橘",
+      "フレッシュ"
+    ],
+    "learning_point": "ネラールとゲラニアールを比較し、アルデヒドの幾何異性体とシトラールの関係を学ぶ。",
+    "related_compounds": [
+      "geranial",
+      "citral",
+      "nerol",
+      "geraniol"
+    ]
+  },
+  {
+    "id": "geranial",
+    "name_ja": "ゲラニアール",
+    "name_en": "Geranial",
+    "smiles": "CC(=CCC/C(=C/C=O)/C)C",
+    "odor": "鋭く強いレモン様の香り",
+    "sources": "レモングラス、レモンマートル、柑橘類など",
+    "category": "テルペンアルデヒド",
+    "feature": "鎖状モノテルペンアルデヒド。シトラールを構成するE体で、シトラールAとも呼ばれる。",
+    "formula": "C10H16O",
+    "molecular_weight": 152.23,
+    "structure": "structures/geranial.svg",
+    "class_group": "アルデヒド類",
+    "functional_group": "アルデヒド基（−CHO）",
+    "subcategory": "テルペンアルデヒド",
+    "sources_list": [
+      "レモングラス",
+      "レモンマートル",
+      "柑橘類など"
+    ],
+    "uses": [
+      "食品香料",
+      "香粧品",
+      "香味研究"
+    ],
+    "description": "末端にアルデヒド基をもつ鎖状モノテルペン。ネラールの幾何異性体で、両者を合わせてシトラールとして扱うことが多い。",
+    "memorize": [
+      "鋭く強いレモン様の香り",
+      "アルデヒド類",
+      "シトラールA・E体"
+    ],
+    "odor_icon": "🍋",
+    "difficulty": "基礎",
+    "iupac": "(2E)-3,7-dimethylocta-2,6-dienal",
+    "structure_feature": "アルデヒド基と2つの炭素−炭素二重結合をもち、2位の二重結合がE配置である。",
+    "odor_family": [
+      "柑橘",
+      "フレッシュ"
+    ],
+    "learning_point": "ネラールとの構造比較を通して、E/Z異性体とシトラールの組成を理解する。",
+    "related_compounds": [
+      "neral",
+      "citral",
+      "geraniol",
+      "nerol"
+    ]
+  },
+  {
+    "id": "citronellol",
+    "name_ja": "シトロネロール",
+    "name_en": "Citronellol",
+    "smiles": "CC(=CCCC(C)CCO)C",
+    "odor": "バラ様で、ほのかに柑橘を感じる花香",
+    "sources": "バラ、ゼラニウム、シトロネラなど",
+    "category": "テルペンアルコール",
+    "feature": "鎖状モノテルペンアルコール。末端に第一級アルコールをもち、ゲラニオールより二重結合が一つ少ない。",
+    "formula": "C10H20O",
+    "molecular_weight": 156.26,
+    "structure": "structures/citronellol.svg",
+    "class_group": "アルコール類",
+    "functional_group": "第一級アルコール（−CH₂OH）",
+    "subcategory": "テルペンアルコール",
+    "sources_list": [
+      "バラ",
+      "ゼラニウム",
+      "シトロネラなど"
+    ],
+    "uses": [
+      "香料",
+      "香粧品",
+      "食品香料"
+    ],
+    "description": "第一級アルコールと一つの炭素−炭素二重結合をもつ鎖状モノテルペン。バラ系の香調をつくる代表的な成分である。",
+    "memorize": [
+      "バラ様でほのかに柑橘様",
+      "アルコール類",
+      "二重結合を一つもつテルペンアルコール"
+    ],
+    "odor_icon": "🌹",
+    "difficulty": "基礎",
+    "iupac": "3,7-dimethyloct-6-en-1-ol",
+    "structure_feature": "末端の第一級アルコールと一つの炭素−炭素二重結合が特徴。",
+    "odor_family": [
+      "花",
+      "柑橘"
+    ],
+    "learning_point": "ゲラニオールやネロールと比較し、二重結合の数と分子構造の違いを学ぶ。",
+    "related_compounds": [
+      "geraniol",
+      "nerol",
+      "linalool",
+      "citral"
+    ]
+  },
+  {
+    "id": "alpha-pinene",
+    "name_ja": "α-ピネン",
+    "name_en": "α-Pinene",
+    "smiles": "CC1=CCC2CC1C2(C)C",
+    "odor": "松葉や針葉樹を思わせる爽やかな樹木香",
+    "sources": "マツ、ヒノキ、ローズマリー、柑橘果皮など",
+    "category": "テルペン",
+    "feature": "二環性のモノテルペン炭化水素。酸素原子を含まず、一つの炭素−炭素二重結合をもつ。",
+    "formula": "C10H16",
+    "molecular_weight": 136.23,
+    "structure": "structures/alpha-pinene.svg",
+    "class_group": "テルペン類",
+    "functional_group": "炭素−炭素二重結合をもつ炭化水素",
+    "subcategory": "テルペン",
+    "sources_list": [
+      "マツ",
+      "ヒノキ",
+      "ローズマリー",
+      "柑橘果皮など"
+    ],
+    "uses": [
+      "香料",
+      "香粧品",
+      "洗浄製品"
+    ],
+    "description": "縮合した環構造をもつ二環性モノテルペン。リモネンと同じ分子式をもつが、炭素骨格が異なる構造異性体である。",
+    "memorize": [
+      "松葉・針葉樹様の香り",
+      "テルペン類",
+      "二環性モノテルペン"
+    ],
+    "odor_icon": "🌲",
+    "difficulty": "基礎",
+    "iupac": "2,6,6-trimethylbicyclo[3.1.1]hept-2-ene",
+    "structure_feature": "二環性炭素骨格と一つの炭素−炭素二重結合をもつ。酸素原子は含まない。",
+    "odor_family": [
+      "木質",
+      "ハーブ",
+      "フレッシュ"
+    ],
+    "learning_point": "リモネンと比較し、同じ分子式をもつ化合物でも炭素骨格が異なる構造異性体が存在することを学ぶ。",
+    "related_compounds": [
+      "limonene",
+      "linalool",
+      "menthol"
+    ]
+  },
+  {
+    "id": "hexyl-acetate",
+    "name_ja": "酢酸ヘキシル",
+    "name_en": "Hexyl acetate",
+    "smiles": "CCCCCCOC(C)=O",
+    "odor": "青リンゴや洋梨を思わせるフルーティーな香り",
+    "sources": "リンゴ、洋梨、バナナなど",
+    "category": "エステル",
+    "feature": "酢酸とヘキサノールからなる脂肪族エステル。果実様の香りを示す代表的なエステルである。",
+    "formula": "C8H16O2",
+    "molecular_weight": 144.21,
+    "structure": "structures/hexyl-acetate.svg",
+    "class_group": "エステル類",
+    "functional_group": "エステル結合（−COO−）",
+    "subcategory": "脂肪族エステル",
+    "sources_list": [
+      "リンゴ",
+      "洋梨",
+      "バナナなど"
+    ],
+    "uses": [
+      "食品香料",
+      "香料",
+      "香粧品"
+    ],
+    "description": "果実香をもつ脂肪族エステルで、特に青リンゴ様の香りの説明でよく取り上げられる。",
+    "memorize": [
+      "青リンゴ様の香り",
+      "エステル類",
+      "ヘキシル基をもつ酢酸エステル"
+    ],
+    "odor_icon": "🍏",
+    "difficulty": "基礎",
+    "iupac": "Hexyl ethanoate",
+    "structure_feature": "エステル結合を1つもち、直鎖6炭素のヘキシル基が結合している。",
+    "odor_family": [
+      "果実",
+      "フレッシュ"
+    ],
+    "learning_point": "エステルは果実様の香りを示しやすいこと、アルコール部分の炭素数の違いで香りが変化することを学ぶ。",
+    "related_compounds": [
+      "ethyl-butyrate",
+      "ethyl-acetate",
+      "isoamyl-acetate",
+      "benzyl-acetate"
+    ]
+  },
+  {
+    "id": "benzyl-acetate",
+    "name_ja": "酢酸ベンジル",
+    "name_en": "Benzyl acetate",
+    "smiles": "CC(=O)OCC1=CC=CC=C1",
+    "odor": "ジャスミンを思わせる甘い花香",
+    "sources": "ジャスミン、イランイラン、ナシなど",
+    "category": "エステル",
+    "feature": "ベンジルアルコールと酢酸からなる芳香族エステル。花様の香りを示す代表的な成分である。",
+    "formula": "C9H10O2",
+    "molecular_weight": 150.17,
+    "structure": "structures/benzyl-acetate.svg",
+    "class_group": "エステル類",
+    "functional_group": "エステル結合（−COO−）",
+    "subcategory": "芳香族エステル",
+    "sources_list": [
+      "ジャスミン",
+      "イランイラン",
+      "ナシなど"
+    ],
+    "uses": [
+      "香料",
+      "香粧品",
+      "食品香料"
+    ],
+    "description": "ベンゼン環を含む芳香族エステルで、甘く華やかな花香の代表成分として知られる。",
+    "memorize": [
+      "ジャスミン様の花香",
+      "エステル類",
+      "ベンゼン環をもつ酢酸エステル"
+    ],
+    "odor_icon": "🌼",
+    "difficulty": "基礎",
+    "iupac": "Phenylmethyl ethanoate",
+    "structure_feature": "エステル結合とベンゼン環をあわせもつ。",
+    "odor_family": [
+      "花",
+      "甘い"
+    ],
+    "learning_point": "脂肪族エステルと芳香族エステルを比較し、ベンゼン環の有無が香りの印象に影響することを学ぶ。",
+    "related_compounds": [
+      "phenethyl-alcohol",
+      "vanillin",
+      "hexyl-acetate",
+      "eugenol"
+    ]
+  },
+  {
+    "id": "methyl-butyrate",
+    "name_ja": "酪酸メチル",
+    "name_en": "Methyl butyrate",
+    "smiles": "COC(=O)CCC",
+    "odor": "リンゴやパイナップルを思わせる軽い果実香",
+    "sources": "リンゴ、パイナップル、各種果実など",
+    "category": "エステル",
+    "feature": "酪酸とメタノールからなる低分子エステル。小さな分子で揮発しやすく、明るい果実香を示す。",
+    "formula": "C5H10O2",
+    "molecular_weight": 102.13,
+    "structure": "structures/methyl-butyrate.svg",
+    "class_group": "エステル類",
+    "functional_group": "エステル結合（−COO−）",
+    "subcategory": "脂肪族エステル",
+    "sources_list": [
+      "リンゴ",
+      "パイナップル",
+      "各種果実など"
+    ],
+    "uses": [
+      "食品香料",
+      "香料"
+    ],
+    "description": "低分子の脂肪族エステルで、軽く揮発しやすい果実様の香りを示す。",
+    "memorize": [
+      "リンゴ・パイナップル様の香り",
+      "エステル類",
+      "低分子で揮発しやすい"
+    ],
+    "odor_icon": "🍍",
+    "difficulty": "基礎",
+    "iupac": "Methyl butanoate",
+    "structure_feature": "エステル結合を1つもつ短鎖脂肪族エステル。",
+    "odor_family": [
+      "果実",
+      "フレッシュ"
+    ],
+    "learning_point": "エステルは炭素数が少ないほど軽く揮発しやすい香りになることを学ぶ。",
+    "related_compounds": [
+      "ethyl-butyrate",
+      "ethyl-acetate",
+      "hexyl-acetate",
+      "ethyl-hexanoate"
+    ]
+  },
+  {
+    "id": "ethyl-hexanoate",
+    "name_ja": "ヘキサン酸エチル",
+    "name_en": "Ethyl hexanoate",
+    "smiles": "CCCCCC(=O)OCC",
+    "odor": "パイナップルやリンゴを思わせる甘い果実香",
+    "sources": "パイナップル、リンゴ、発酵食品など",
+    "category": "エステル",
+    "feature": "ヘキサン酸とエタノールからなる脂肪族エステル。果実香の代表成分の一つである。",
+    "formula": "C8H16O2",
+    "molecular_weight": 144.21,
+    "structure": "structures/ethyl-hexanoate.svg",
+    "class_group": "エステル類",
+    "functional_group": "エステル結合（−COO−）",
+    "subcategory": "脂肪族エステル",
+    "sources_list": [
+      "パイナップル",
+      "リンゴ",
+      "発酵食品など"
+    ],
+    "uses": [
+      "食品香料",
+      "香料"
+    ],
+    "description": "中鎖脂肪酸エステルで、甘くはっきりした果実香を示す。",
+    "memorize": [
+      "パイナップル様の香り",
+      "エステル類",
+      "中鎖脂肪酸エステル"
+    ],
+    "odor_icon": "🍍",
+    "difficulty": "基礎",
+    "iupac": "Ethyl hexanoate",
+    "structure_feature": "エステル結合を1つもち、6炭素の脂肪酸部分と2炭素のエチル基からなる。",
+    "odor_family": [
+      "果実",
+      "甘い"
+    ],
+    "learning_point": "同じエステルでも、酸部分とアルコール部分の長さの違いで香りの印象が変わることを学ぶ。",
+    "related_compounds": [
+      "methyl-butyrate",
+      "ethyl-butyrate",
+      "ethyl-octanoate",
+      "hexyl-acetate"
+    ]
+  },
+  {
+    "id": "ethyl-octanoate",
+    "name_ja": "オクタン酸エチル",
+    "name_en": "Ethyl octanoate",
+    "smiles": "CCCCCCCC(=O)OCC",
+    "odor": "ブドウや洋梨を思わせる甘くまろやかな果実香",
+    "sources": "ブドウ、ワイン、各種果実など",
+    "category": "エステル",
+    "feature": "オクタン酸とエタノールからなる脂肪族エステル。ワイン香気成分としてもよく知られる。",
+    "formula": "C10H20O2",
+    "molecular_weight": 172.27,
+    "structure": "structures/ethyl-octanoate.svg",
+    "class_group": "エステル類",
+    "functional_group": "エステル結合（−COO−）",
+    "subcategory": "脂肪族エステル",
+    "sources_list": [
+      "ブドウ",
+      "ワイン",
+      "各種果実など"
+    ],
+    "uses": [
+      "食品香料",
+      "香料"
+    ],
+    "description": "中〜長鎖脂肪酸エステルで、特にワインや果実の香気に関与する成分として知られる。",
+    "memorize": [
+      "ブドウ・洋梨様の香り",
+      "エステル類",
+      "ワイン香気の代表成分"
+    ],
+    "odor_icon": "🍇",
+    "difficulty": "基礎",
+    "iupac": "Ethyl octanoate",
+    "structure_feature": "エステル結合を1つもち、8炭素の脂肪酸部分と2炭素のエチル基からなる。",
+    "odor_family": [
+      "果実",
+      "甘い"
+    ],
+    "learning_point": "脂肪酸部分が長くなると、エステルの香りの印象がよりまろやかになることを学ぶ。",
+    "related_compounds": [
+      "ethyl-hexanoate",
+      "ethyl-butyrate",
+      "hexyl-acetate",
+      "methyl-butyrate"
+    ]
+  },
+  {
+    "id": "anethole",
+    "name_ja": "アネトール",
+    "name_en": "Anethole",
+    "smiles": "C/C=C/C1=CC=C(C=C1)OC",
+    "odor": "アニスや甘草を思わせる甘くスパイシーな香り",
+    "sources": "アニス、スターアニス、フェンネルなど",
+    "category": "芳香族エーテル",
+    "feature": "ベンゼン環にメトキシ基とプロペニル基をもつ芳香族化合物。通常、香料で重要なのはE体である。",
+    "formula": "C10H12O",
+    "molecular_weight": 148.2,
+    "structure": "structures/anethole.svg",
+    "class_group": "その他",
+    "functional_group": "エーテル結合（メトキシ基）と炭素−炭素二重結合",
+    "subcategory": "芳香族エーテル",
+    "sources_list": [
+      "アニス",
+      "スターアニス",
+      "フェンネルなど"
+    ],
+    "uses": [
+      "食品香料",
+      "飲料",
+      "香料"
+    ],
+    "description": "アニス系の甘い香りを示す代表成分。芳香環、エーテル結合、炭素−炭素二重結合をあわせもつ。",
+    "memorize": [
+      "アニス様の甘い香り",
+      "芳香族エーテル",
+      "ベンゼン環とメトキシ基"
+    ],
+    "odor_icon": "🌿",
+    "difficulty": "基礎",
+    "iupac": "1-methoxy-4-[(E)-prop-1-enyl]benzene",
+    "structure_feature": "ベンゼン環の向かい合う位置にメトキシ基とE配置のプロペニル基が結合している。",
+    "odor_family": [
+      "スパイス",
+      "甘い",
+      "ハーブ"
+    ],
+    "learning_point": "オイゲノールと比較し、メトキシ基とフェノール性ヒドロキシ基の違いを学ぶ。",
+    "related_compounds": [
+      "eugenol",
+      "cinnamaldehyde",
+      "benzyl-acetate",
+      "thymol"
+    ]
+  },
+  {
+    "id": "thymol",
+    "name_ja": "チモール",
+    "name_en": "Thymol",
+    "smiles": "CC1=CC(=C(C=C1)C(C)C)O",
+    "odor": "タイムを思わせる温かく刺激的なハーブ香",
+    "sources": "タイム、オレガノ、アジョワンなど",
+    "category": "フェノール",
+    "feature": "ベンゼン環にフェノール性ヒドロキシ基、メチル基、イソプロピル基をもつ。",
+    "formula": "C10H14O",
+    "molecular_weight": 150.22,
+    "structure": "structures/thymol.svg",
+    "class_group": "フェノール類",
+    "functional_group": "フェノール性ヒドロキシ基（Ar−OH）",
+    "subcategory": "モノテルペンフェノール",
+    "sources_list": [
+      "タイム",
+      "オレガノ",
+      "アジョワンなど"
+    ],
+    "uses": [
+      "香料",
+      "食品香料",
+      "口腔ケア製品"
+    ],
+    "description": "タイム精油を特徴づけるフェノール性香気成分。カルバクロールとは置換基の位置が異なる位置異性体である。",
+    "memorize": [
+      "タイム様のハーブ香",
+      "フェノール類",
+      "カルバクロールの位置異性体"
+    ],
+    "odor_icon": "🌿",
+    "difficulty": "基礎",
+    "iupac": "5-methyl-2-propan-2-ylphenol",
+    "structure_feature": "ベンゼン環上にヒドロキシ基、メチル基、イソプロピル基をもつ。",
+    "odor_family": [
+      "ハーブ",
+      "スパイス"
+    ],
+    "learning_point": "カルバクロールと比較し、置換基の位置だけが異なる位置異性体を学ぶ。",
+    "related_compounds": [
+      "carvacrol",
+      "eugenol",
+      "menthol",
+      "one-eight-cineole"
+    ]
+  },
+  {
+    "id": "carvacrol",
+    "name_ja": "カルバクロール",
+    "name_en": "Carvacrol",
+    "smiles": "CC1=C(C=C(C=C1)C(C)C)O",
+    "odor": "オレガノを思わせる温かくスパイシーなハーブ香",
+    "sources": "オレガノ、タイム、セイボリーなど",
+    "category": "フェノール",
+    "feature": "ベンゼン環にフェノール性ヒドロキシ基、メチル基、イソプロピル基をもつ。",
+    "formula": "C10H14O",
+    "molecular_weight": 150.22,
+    "structure": "structures/carvacrol.svg",
+    "class_group": "フェノール類",
+    "functional_group": "フェノール性ヒドロキシ基（Ar−OH）",
+    "subcategory": "モノテルペンフェノール",
+    "sources_list": [
+      "オレガノ",
+      "タイム",
+      "セイボリーなど"
+    ],
+    "uses": [
+      "食品香料",
+      "香料",
+      "香味研究"
+    ],
+    "description": "オレガノの特徴的な香りに関与するフェノール性香気成分。チモールとは位置異性体の関係にある。",
+    "memorize": [
+      "オレガノ様の香り",
+      "フェノール類",
+      "チモールの位置異性体"
+    ],
+    "odor_icon": "🌿",
+    "difficulty": "基礎",
+    "iupac": "2-methyl-5-propan-2-ylphenol",
+    "structure_feature": "チモールと同じ置換基をもつが、ヒドロキシ基とメチル基の位置関係が異なる。",
+    "odor_family": [
+      "ハーブ",
+      "スパイス"
+    ],
+    "learning_point": "チモールと分子式が同じでも、置換基の位置によって構造と性質が異なることを学ぶ。",
+    "related_compounds": [
+      "thymol",
+      "eugenol",
+      "one-eight-cineole",
+      "camphor"
+    ]
+  },
+  {
+    "id": "one-eight-cineole",
+    "name_ja": "1,8-シネオール",
+    "name_en": "1,8-Cineole",
+    "smiles": "CC1(C2CCC(O1)(CC2)C)C",
+    "odor": "ユーカリを思わせる清涼感のあるカンファー様の香り",
+    "sources": "ユーカリ、ローズマリー、セージなど",
+    "category": "テルペンエーテル",
+    "feature": "酸素原子が二環性骨格の一部となっている環状エーテル型モノテルペン。",
+    "formula": "C10H18O",
+    "molecular_weight": 154.25,
+    "structure": "structures/one-eight-cineole.svg",
+    "class_group": "テルペン類",
+    "functional_group": "環状エーテル結合（C−O−C）",
+    "subcategory": "テルペンエーテル",
+    "sources_list": [
+      "ユーカリ",
+      "ローズマリー",
+      "セージなど"
+    ],
+    "uses": [
+      "香料",
+      "香粧品",
+      "口腔ケア製品"
+    ],
+    "description": "ユーカリ精油を特徴づける代表的なモノテルペンエーテル。エーテル酸素が環構造に組み込まれている。",
+    "memorize": [
+      "ユーカリ様の清涼な香り",
+      "テルペン類",
+      "二環性の環状エーテル"
+    ],
+    "odor_icon": "🌿",
+    "difficulty": "基礎",
+    "iupac": "1,3,3-trimethyl-2-oxabicyclo[2.2.2]octane",
+    "structure_feature": "酸素原子を橋かけ部分にもつ二環性の飽和環状エーテル。",
+    "odor_family": [
+      "ハーブ",
+      "フレッシュ",
+      "樹脂"
+    ],
+    "learning_point": "アルコールとは異なり、酸素が2つの炭素に結合したエーテル構造を学ぶ。",
+    "related_compounds": [
+      "camphor",
+      "alpha-pinene",
+      "menthol",
+      "linalool"
+    ]
+  },
+  {
+    "id": "camphor",
+    "name_ja": "カンファー",
+    "name_en": "Camphor",
+    "smiles": "CC1(C2CCC1(C(=O)C2)C)C",
+    "odor": "樟脳を思わせる鋭く清涼感のある香り",
+    "sources": "クスノキ、ローズマリー、セージなど",
+    "category": "テルペンケトン",
+    "feature": "二環性骨格の内部にケトン型カルボニル基をもつモノテルペノイド。",
+    "formula": "C10H16O",
+    "molecular_weight": 152.23,
+    "structure": "structures/camphor.svg",
+    "class_group": "ケトン類",
+    "functional_group": "ケトンのカルボニル基（>C=O）",
+    "subcategory": "テルペンケトン",
+    "sources_list": [
+      "クスノキ",
+      "ローズマリー",
+      "セージなど"
+    ],
+    "uses": [
+      "香料",
+      "香粧品",
+      "芳香製品"
+    ],
+    "description": "樟脳の主成分として知られる二環性モノテルペンケトン。常温でも昇華しやすく、強い香りを示す。",
+    "memorize": [
+      "樟脳様の鋭い香り",
+      "ケトン類",
+      "二環性モノテルペンケトン"
+    ],
+    "odor_icon": "🌲",
+    "difficulty": "基礎",
+    "iupac": "1,7,7-trimethylbicyclo[2.2.1]heptan-2-one",
+    "structure_feature": "橋かけ二環性骨格とケトン型カルボニル基をもつ。",
+    "odor_family": [
+      "樹脂",
+      "木質",
+      "フレッシュ"
+    ],
+    "learning_point": "α-ピネンや1,8-シネオールと比較し、二環性テルペン骨格に含まれる官能基の違いを学ぶ。",
+    "related_compounds": [
+      "one-eight-cineole",
+      "alpha-pinene",
+      "carvone",
+      "menthol"
+    ]
+  },
+  {
+    "id": "linalyl-acetate",
+    "name_ja": "酢酸リナリル",
+    "name_en": "Linalyl acetate",
+    "smiles": "CC(C)=CCCC(C)(OC(C)=O)C=C",
+    "odor": "ラベンダーやベルガモットを思わせる甘く爽やかな花香",
+    "sources": "ラベンダー、ベルガモット、クラリセージなど",
+    "category": "テルペンエステル",
+    "feature": "リナロールのヒドロキシ基が酢酸とエステルを形成したテルペンエステル。",
+    "formula": "C12H20O2",
+    "molecular_weight": 196.29,
+    "structure": "structures/linalyl-acetate.svg",
+    "class_group": "エステル類",
+    "functional_group": "エステル結合（−COO−）と炭素−炭素二重結合",
+    "subcategory": "テルペンエステル",
+    "sources_list": [
+      "ラベンダー",
+      "ベルガモット",
+      "クラリセージなど"
+    ],
+    "uses": [
+      "香料",
+      "香粧品",
+      "食品香料"
+    ],
+    "description": "ラベンダー精油やベルガモット精油に含まれる代表的なテルペンエステル。リナロールと構造を比較しやすい。",
+    "memorize": [
+      "ラベンダー様の花香",
+      "エステル類",
+      "リナロールの酢酸エステル"
+    ],
+    "odor_icon": "🪻",
+    "difficulty": "基礎",
+    "iupac": "3,7-dimethylocta-1,6-dien-3-yl acetate",
+    "structure_feature": "第三級炭素に結合したエステル基と2つの炭素−炭素二重結合をもつ。",
+    "odor_family": [
+      "花",
+      "柑橘",
+      "ハーブ"
+    ],
+    "learning_point": "リナロールと比較し、アルコールがエステル化されると官能基と香りの性質が変化することを学ぶ。",
+    "related_compounds": [
+      "linalool",
+      "benzyl-acetate",
+      "geraniol",
+      "nerol"
+    ]
+  },
+  {
+    "id": "beta-ionone",
+    "name_ja": "β-イオノン",
+    "name_en": "β-Ionone",
+    "smiles": "CC1=C(C(CCC1)(C)C)/C=C/C(=O)C",
+    "odor": "スミレを思わせる甘くウッディーな花香",
+    "sources": "スミレ、キンモクセイ、ラズベリーなど",
+    "category": "テルペンケトン",
+    "feature": "環状構造と共役した不飽和ケトン構造をもつ香気成分。",
+    "formula": "C13H20O",
+    "molecular_weight": 192.3,
+    "structure": "structures/beta-ionone.svg",
+    "class_group": "ケトン類",
+    "functional_group": "ケトン型カルボニル基と炭素−炭素二重結合",
+    "subcategory": "ノルイソプレノイドケトン",
+    "sources_list": [
+      "スミレ",
+      "キンモクセイ",
+      "ラズベリーなど"
+    ],
+    "uses": [
+      "香料",
+      "香粧品",
+      "食品香料"
+    ],
+    "description": "カロテノイドの分解によって生じる代表的な香気成分で、スミレ様の花香を示す。",
+    "memorize": [
+      "スミレ様の香り",
+      "ケトン類",
+      "環状構造と共役ケトン"
+    ],
+    "odor_icon": "🪻",
+    "difficulty": "発展",
+    "iupac": "(E)-4-(2,6,6-trimethylcyclohex-1-en-1-yl)but-3-en-2-one",
+    "structure_feature": "置換シクロヘキセン環と側鎖のα,β-不飽和ケトン構造をもつ。",
+    "odor_family": [
+      "花",
+      "木質",
+      "甘い"
+    ],
+    "learning_point": "共役した炭素−炭素二重結合とカルボニル基からなるα,β-不飽和ケトンを学ぶ。",
+    "related_compounds": [
+      "carvone",
+      "camphor",
+      "linalool",
+      "benzyl-acetate"
+    ]
+  },
+  {
+    "id": "coumarin",
+    "name_ja": "クマリン",
+    "name_en": "Coumarin",
+    "smiles": "O=C1OC2=CC=CC=C2C=C1",
+    "odor": "桜餅や干し草を思わせる甘い香り",
+    "sources": "トンカ豆、シナモン、スイートクローバー、サクラ葉など",
+    "category": "ラクトン",
+    "feature": "ベンゼン環とα-ピロン環が縮合した芳香族ラクトン。",
+    "formula": "C9H6O2",
+    "molecular_weight": 146.14,
+    "structure": "structures/coumarin.svg",
+    "class_group": "エステル類",
+    "functional_group": "環状エステル（ラクトン）",
+    "subcategory": "芳香族ラクトン",
+    "sources_list": [
+      "トンカ豆",
+      "シナモン",
+      "スイートクローバー",
+      "サクラ葉など"
+    ],
+    "uses": [
+      "香料",
+      "香粧品",
+      "香気研究"
+    ],
+    "description": "甘い干し草様の香りを示す芳香族ラクトン。一般的な鎖状エステルとは異なり、エステル結合が環の一部を構成する。",
+    "memorize": [
+      "桜餅・干し草様の香り",
+      "エステル類",
+      "環状エステルであるラクトン"
+    ],
+    "odor_icon": "🌸",
+    "difficulty": "基礎",
+    "iupac": "chromen-2-one",
+    "structure_feature": "ベンゼン環と六員環ラクトンが縮合した平面性の高い構造をもつ。",
+    "odor_family": [
+      "甘い",
+      "バニラ",
+      "ハーブ"
+    ],
+    "learning_point": "酢酸エステルなどと比較し、エステル結合が環を形成したラクトンの構造を学ぶ。",
+    "related_compounds": [
+      "vanillin",
+      "ethyl-vanillin",
+      "cinnamaldehyde",
+      "methyl-salicylate"
+    ]
+  },
+  {
+    "id": "piperonal",
+    "name_ja": "ピペロナール",
+    "name_en": "Piperonal",
+    "smiles": "O=Cc1ccc2OCOc2c1",
+    "odor": "ヘリオトロープやバニラを思わせる甘い花香",
+    "sources": "バニラ、スミレ類、一部の植物精油など",
+    "category": "芳香族アルデヒド",
+    "feature": "ベンゼン環にアルデヒド基とメチレンジオキシ基をもつ。",
+    "formula": "C8H6O3",
+    "molecular_weight": 150.13,
+    "structure": "structures/piperonal.svg",
+    "class_group": "アルデヒド類",
+    "functional_group": "アルデヒド基と環状アセタール構造",
+    "subcategory": "芳香族アルデヒド",
+    "sources_list": [
+      "バニラ",
+      "スミレ類",
+      "一部の植物精油など"
+    ],
+    "uses": [
+      "香料",
+      "香粧品",
+      "香気研究"
+    ],
+    "description": "ヘリオトロピンとも呼ばれる甘い花香の香料。芳香環上にアルデヒド基とメチレンジオキシ環をもつ。",
+    "memorize": [
+      "ヘリオトロープ様の甘い香り",
+      "アルデヒド類",
+      "メチレンジオキシ基"
+    ],
+    "odor_icon": "🌼",
+    "difficulty": "発展",
+    "iupac": "1,3-benzodioxole-5-carbaldehyde",
+    "structure_feature": "ベンゼン環と五員環状のメチレンジオキシ構造が縮合し、アルデヒド基が結合している。",
+    "odor_family": [
+      "花",
+      "バニラ",
+      "甘い"
+    ],
+    "learning_point": "ベンズアルデヒドやバニリンと比較し、芳香環上の置換基による構造と香りの違いを学ぶ。",
+    "related_compounds": [
+      "benzaldehyde",
+      "vanillin",
+      "ethyl-vanillin",
+      "eugenol"
+    ]
+  },
+  {
+    "id": "ethyl-vanillin",
+    "name_ja": "エチルバニリン",
+    "name_en": "Ethyl vanillin",
+    "smiles": "CCOC1=C(C=CC(=C1)C=O)O",
+    "odor": "強く濃厚なバニラ様の甘い香り",
+    "sources": "主に香料として製造され、菓子や香粧品などに使用される",
+    "category": "芳香族アルデヒド",
+    "feature": "バニリンのメトキシ基がエトキシ基に置き換わった芳香族アルデヒド。",
+    "formula": "C9H10O3",
+    "molecular_weight": 166.17,
+    "structure": "structures/ethyl-vanillin.svg",
+    "class_group": "アルデヒド類",
+    "functional_group": "アルデヒド基・フェノール性ヒドロキシ基・エトキシ基",
+    "subcategory": "芳香族アルデヒド",
+    "sources_list": [
+      "香料製品",
+      "菓子",
+      "飲料など"
+    ],
+    "uses": [
+      "食品香料",
+      "菓子",
+      "香粧品"
+    ],
+    "description": "バニリンと類似する構造をもつ香料で、一般にバニリンより強いバニラ様香気を示す。",
+    "memorize": [
+      "強いバニラ様の香り",
+      "アルデヒド類",
+      "バニリンのメトキシ基をエトキシ基に置換"
+    ],
+    "odor_icon": "🍨",
+    "difficulty": "基礎",
+    "iupac": "3-ethoxy-4-hydroxybenzaldehyde",
+    "structure_feature": "ベンゼン環にアルデヒド基、フェノール性ヒドロキシ基、エトキシ基をもつ。",
+    "odor_family": [
+      "バニラ",
+      "甘い"
+    ],
+    "learning_point": "バニリンと比較し、メトキシ基とエトキシ基の炭素数の違いが分子量や香りに影響することを学ぶ。",
+    "related_compounds": [
+      "vanillin",
+      "piperonal",
+      "benzaldehyde",
+      "coumarin"
+    ]
   }
-,
-{
-  "id": "nerol",
-  "name_ja": "ネロール",
-  "name_en": "Nerol",
-  "smiles": "CC(=CCC/C(=C\\CO)/C)C",
-  "odor": "バラ様のやわらかく爽やかな花香",
-  "sources": "ネロリ、レモングラス、ホップなど",
-  "category": "テルペンアルコール",
-  "feature": "鎖状モノテルペンアルコール。ゲラニオールの幾何異性体で、二重結合の一つがZ配置である。",
-  "formula": "C10H18O",
-  "molecular_weight": 154.25,
-  "structure": "structures/nerol.svg",
-  "class_group": "アルコール類",
-  "functional_group": "第一級アルコール（−CH₂OH）",
-  "subcategory": "テルペンアルコール",
-  "sources_list": [
-    "ネロリ",
-    "レモングラス",
-    "ホップなど"
-  ],
-  "uses": [
-    "香料",
-    "香粧品",
-    "食品香料"
-  ],
-  "description": "末端に第一級アルコールをもつ鎖状モノテルペン。ゲラニオールと原子の結合順序は同じだが、二重結合周辺の立体配置が異なる。",
-  "memorize": [
-    "バラ様のやわらかな花香",
-    "アルコール類",
-    "ゲラニオールの幾何異性体"
-  ],
-  "odor_icon": "🌹",
-  "difficulty": "基礎",
-  "iupac": "(2Z)-3,7-dimethylocta-2,6-dien-1-ol",
-  "structure_feature": "第一級アルコールと2つの炭素−炭素二重結合をもち、2位の二重結合がZ配置である。",
-  "odor_family": [
-    "花",
-    "柑橘"
-  ],
-  "learning_point": "ゲラニオールと比較し、幾何異性体では原子の結合順序が同じでも分子の形や香りが異なることを学ぶ。",
-  "related_compounds": [
-    "geraniol",
-    "neral",
-    "citral",
-    "linalool"
-  ]
-},
-{
-  "id": "neral",
-  "name_ja": "ネラール",
-  "name_en": "Neral",
-  "smiles": "CC(=CCC/C(=C\\C=O)/C)C",
-  "odor": "甘さを伴う穏やかなレモン様の香り",
-  "sources": "レモングラス、レモンマートル、柑橘類など",
-  "category": "テルペンアルデヒド",
-  "feature": "鎖状モノテルペンアルデヒド。シトラールを構成するZ体で、シトラールBとも呼ばれる。",
-  "formula": "C10H16O",
-  "molecular_weight": 152.23,
-  "structure": "structures/neral.svg",
-  "class_group": "アルデヒド類",
-  "functional_group": "アルデヒド基（−CHO）",
-  "subcategory": "テルペンアルデヒド",
-  "sources_list": [
-    "レモングラス",
-    "レモンマートル",
-    "柑橘類など"
-  ],
-  "uses": [
-    "食品香料",
-    "香粧品",
-    "香味研究"
-  ],
-  "description": "末端にアルデヒド基をもつ鎖状モノテルペン。ゲラニアールの幾何異性体であり、両者の混合物が一般にシトラールと呼ばれる。",
-  "memorize": [
-    "穏やかなレモン様の香り",
-    "アルデヒド類",
-    "シトラールB・Z体"
-  ],
-  "odor_icon": "🍋",
-  "difficulty": "基礎",
-  "iupac": "(2Z)-3,7-dimethylocta-2,6-dienal",
-  "structure_feature": "アルデヒド基と2つの炭素−炭素二重結合をもち、2位の二重結合がZ配置である。",
-  "odor_family": [
-    "柑橘",
-    "フレッシュ"
-  ],
-  "learning_point": "ネラールとゲラニアールを比較し、アルデヒドの幾何異性体とシトラールの関係を学ぶ。",
-  "related_compounds": [
-    "geranial",
-    "citral",
-    "nerol",
-    "geraniol"
-  ]
-},
-{
-  "id": "geranial",
-  "name_ja": "ゲラニアール",
-  "name_en": "Geranial",
-  "smiles": "CC(=CCC/C(=C/C=O)/C)C",
-  "odor": "鋭く強いレモン様の香り",
-  "sources": "レモングラス、レモンマートル、柑橘類など",
-  "category": "テルペンアルデヒド",
-  "feature": "鎖状モノテルペンアルデヒド。シトラールを構成するE体で、シトラールAとも呼ばれる。",
-  "formula": "C10H16O",
-  "molecular_weight": 152.23,
-  "structure": "structures/geranial.svg",
-  "class_group": "アルデヒド類",
-  "functional_group": "アルデヒド基（−CHO）",
-  "subcategory": "テルペンアルデヒド",
-  "sources_list": [
-    "レモングラス",
-    "レモンマートル",
-    "柑橘類など"
-  ],
-  "uses": [
-    "食品香料",
-    "香粧品",
-    "香味研究"
-  ],
-  "description": "末端にアルデヒド基をもつ鎖状モノテルペン。ネラールの幾何異性体で、両者を合わせてシトラールとして扱うことが多い。",
-  "memorize": [
-    "鋭く強いレモン様の香り",
-    "アルデヒド類",
-    "シトラールA・E体"
-  ],
-  "odor_icon": "🍋",
-  "difficulty": "基礎",
-  "iupac": "(2E)-3,7-dimethylocta-2,6-dienal",
-  "structure_feature": "アルデヒド基と2つの炭素−炭素二重結合をもち、2位の二重結合がE配置である。",
-  "odor_family": [
-    "柑橘",
-    "フレッシュ"
-  ],
-  "learning_point": "ネラールとの構造比較を通して、E/Z異性体とシトラールの組成を理解する。",
-  "related_compounds": [
-    "neral",
-    "citral",
-    "geraniol",
-    "nerol"
-  ]
-},
-{
-  "id": "citronellol",
-  "name_ja": "シトロネロール",
-  "name_en": "Citronellol",
-  "smiles": "CC(=CCCC(C)CCO)C",
-  "odor": "バラ様で、ほのかに柑橘を感じる花香",
-  "sources": "バラ、ゼラニウム、シトロネラなど",
-  "category": "テルペンアルコール",
-  "feature": "鎖状モノテルペンアルコール。末端に第一級アルコールをもち、ゲラニオールより二重結合が一つ少ない。",
-  "formula": "C10H20O",
-  "molecular_weight": 156.26,
-  "structure": "structures/citronellol.svg",
-  "class_group": "アルコール類",
-  "functional_group": "第一級アルコール（−CH₂OH）",
-  "subcategory": "テルペンアルコール",
-  "sources_list": [
-    "バラ",
-    "ゼラニウム",
-    "シトロネラなど"
-  ],
-  "uses": [
-    "香料",
-    "香粧品",
-    "食品香料"
-  ],
-  "description": "第一級アルコールと一つの炭素−炭素二重結合をもつ鎖状モノテルペン。バラ系の香調をつくる代表的な成分である。",
-  "memorize": [
-    "バラ様でほのかに柑橘様",
-    "アルコール類",
-    "二重結合を一つもつテルペンアルコール"
-  ],
-  "odor_icon": "🌹",
-  "difficulty": "基礎",
-  "iupac": "3,7-dimethyloct-6-en-1-ol",
-  "structure_feature": "末端の第一級アルコールと一つの炭素−炭素二重結合が特徴。",
-  "odor_family": [
-    "花",
-    "柑橘"
-  ],
-  "learning_point": "ゲラニオールやネロールと比較し、二重結合の数と分子構造の違いを学ぶ。",
-  "related_compounds": [
-    "geraniol",
-    "nerol",
-    "linalool",
-    "citral"
-  ]
-},
-{
-  "id": "alpha-pinene",
-  "name_ja": "α-ピネン",
-  "name_en": "α-Pinene",
-  "smiles": "CC1=CCC2CC1C2(C)C",
-  "odor": "松葉や針葉樹を思わせる爽やかな樹木香",
-  "sources": "マツ、ヒノキ、ローズマリー、柑橘果皮など",
-  "category": "テルペン",
-  "feature": "二環性のモノテルペン炭化水素。酸素原子を含まず、一つの炭素−炭素二重結合をもつ。",
-  "formula": "C10H16",
-  "molecular_weight": 136.23,
-  "structure": "structures/alpha-pinene.svg",
-  "class_group": "テルペン類",
-  "functional_group": "炭素−炭素二重結合をもつ炭化水素",
-  "subcategory": "テルペン",
-  "sources_list": [
-    "マツ",
-    "ヒノキ",
-    "ローズマリー",
-    "柑橘果皮など"
-  ],
-  "uses": [
-    "香料",
-    "香粧品",
-    "洗浄製品"
-  ],
-  "description": "縮合した環構造をもつ二環性モノテルペン。リモネンと同じ分子式をもつが、炭素骨格が異なる構造異性体である。",
-  "memorize": [
-    "松葉・針葉樹様の香り",
-    "テルペン類",
-    "二環性モノテルペン"
-  ],
-  "odor_icon": "🌲",
-  "difficulty": "基礎",
-  "iupac": "2,6,6-trimethylbicyclo[3.1.1]hept-2-ene",
-  "structure_feature": "二環性炭素骨格と一つの炭素−炭素二重結合をもつ。酸素原子は含まない。",
-  "odor_family": [
-    "木質",
-    "ハーブ",
-    "フレッシュ"
-  ],
-  "learning_point": "リモネンと比較し、同じ分子式をもつ化合物でも炭素骨格が異なる構造異性体が存在することを学ぶ。",
-  "related_compounds": [
-    "limonene",
-    "linalool",
-    "menthol"
-  ]
-},
-{
-  "id": "hexyl-acetate",
-  "name_ja": "酢酸ヘキシル",
-  "name_en": "Hexyl acetate",
-  "smiles": "CCCCCCOC(C)=O",
-  "odor": "青リンゴや洋梨を思わせるフルーティーな香り",
-  "sources": "リンゴ、洋梨、バナナなど",
-  "category": "エステル",
-  "feature": "酢酸とヘキサノールからなる脂肪族エステル。果実様の香りを示す代表的なエステルである。",
-  "formula": "C8H16O2",
-  "molecular_weight": 144.21,
-  "structure": "structures/hexyl-acetate.svg",
-  "class_group": "エステル類",
-  "functional_group": "エステル結合（−COO−）",
-  "subcategory": "脂肪族エステル",
-  "sources_list": [
-    "リンゴ",
-    "洋梨",
-    "バナナなど"
-  ],
-  "uses": [
-    "食品香料",
-    "香料",
-    "香粧品"
-  ],
-  "description": "果実香をもつ脂肪族エステルで、特に青リンゴ様の香りの説明でよく取り上げられる。",
-  "memorize": [
-    "青リンゴ様の香り",
-    "エステル類",
-    "ヘキシル基をもつ酢酸エステル"
-  ],
-  "odor_icon": "🍏",
-  "difficulty": "基礎",
-  "iupac": "Hexyl ethanoate",
-  "structure_feature": "エステル結合を1つもち、直鎖6炭素のヘキシル基が結合している。",
-  "odor_family": [
-    "果実",
-    "フレッシュ"
-  ],
-  "learning_point": "エステルは果実様の香りを示しやすいこと、アルコール部分の炭素数の違いで香りが変化することを学ぶ。",
-  "related_compounds": [
-    "ethyl-butyrate",
-    "ethyl-acetate",
-    "isoamyl-acetate",
-    "benzyl-acetate"
-  ]
-},
-{
-  "id": "benzyl-acetate",
-  "name_ja": "酢酸ベンジル",
-  "name_en": "Benzyl acetate",
-  "smiles": "CC(=O)OCC1=CC=CC=C1",
-  "odor": "ジャスミンを思わせる甘い花香",
-  "sources": "ジャスミン、イランイラン、ナシなど",
-  "category": "エステル",
-  "feature": "ベンジルアルコールと酢酸からなる芳香族エステル。花様の香りを示す代表的な成分である。",
-  "formula": "C9H10O2",
-  "molecular_weight": 150.17,
-  "structure": "structures/benzyl-acetate.svg",
-  "class_group": "エステル類",
-  "functional_group": "エステル結合（−COO−）",
-  "subcategory": "芳香族エステル",
-  "sources_list": [
-    "ジャスミン",
-    "イランイラン",
-    "ナシなど"
-  ],
-  "uses": [
-    "香料",
-    "香粧品",
-    "食品香料"
-  ],
-  "description": "ベンゼン環を含む芳香族エステルで、甘く華やかな花香の代表成分として知られる。",
-  "memorize": [
-    "ジャスミン様の花香",
-    "エステル類",
-    "ベンゼン環をもつ酢酸エステル"
-  ],
-  "odor_icon": "🌼",
-  "difficulty": "基礎",
-  "iupac": "Phenylmethyl ethanoate",
-  "structure_feature": "エステル結合とベンゼン環をあわせもつ。",
-  "odor_family": [
-    "花",
-    "甘い"
-  ],
-  "learning_point": "脂肪族エステルと芳香族エステルを比較し、ベンゼン環の有無が香りの印象に影響することを学ぶ。",
-  "related_compounds": [
-    "phenethyl-alcohol",
-    "vanillin",
-    "hexyl-acetate",
-    "eugenol"
-  ]
-},
-{
-  "id": "methyl-butyrate",
-  "name_ja": "酪酸メチル",
-  "name_en": "Methyl butyrate",
-  "smiles": "COC(=O)CCC",
-  "odor": "リンゴやパイナップルを思わせる軽い果実香",
-  "sources": "リンゴ、パイナップル、各種果実など",
-  "category": "エステル",
-  "feature": "酪酸とメタノールからなる低分子エステル。小さな分子で揮発しやすく、明るい果実香を示す。",
-  "formula": "C5H10O2",
-  "molecular_weight": 102.13,
-  "structure": "structures/methyl-butyrate.svg",
-  "class_group": "エステル類",
-  "functional_group": "エステル結合（−COO−）",
-  "subcategory": "脂肪族エステル",
-  "sources_list": [
-    "リンゴ",
-    "パイナップル",
-    "各種果実など"
-  ],
-  "uses": [
-    "食品香料",
-    "香料"
-  ],
-  "description": "低分子の脂肪族エステルで、軽く揮発しやすい果実様の香りを示す。",
-  "memorize": [
-    "リンゴ・パイナップル様の香り",
-    "エステル類",
-    "低分子で揮発しやすい"
-  ],
-  "odor_icon": "🍍",
-  "difficulty": "基礎",
-  "iupac": "Methyl butanoate",
-  "structure_feature": "エステル結合を1つもつ短鎖脂肪族エステル。",
-  "odor_family": [
-    "果実",
-    "フレッシュ"
-  ],
-  "learning_point": "エステルは炭素数が少ないほど軽く揮発しやすい香りになることを学ぶ。",
-  "related_compounds": [
-    "ethyl-butyrate",
-    "ethyl-acetate",
-    "hexyl-acetate",
-    "ethyl-hexanoate"
-  ]
-},
-{
-  "id": "ethyl-hexanoate",
-  "name_ja": "ヘキサン酸エチル",
-  "name_en": "Ethyl hexanoate",
-  "smiles": "CCCCCC(=O)OCC",
-  "odor": "パイナップルやリンゴを思わせる甘い果実香",
-  "sources": "パイナップル、リンゴ、発酵食品など",
-  "category": "エステル",
-  "feature": "ヘキサン酸とエタノールからなる脂肪族エステル。果実香の代表成分の一つである。",
-  "formula": "C8H16O2",
-  "molecular_weight": 144.21,
-  "structure": "structures/ethyl-hexanoate.svg",
-  "class_group": "エステル類",
-  "functional_group": "エステル結合（−COO−）",
-  "subcategory": "脂肪族エステル",
-  "sources_list": [
-    "パイナップル",
-    "リンゴ",
-    "発酵食品など"
-  ],
-  "uses": [
-    "食品香料",
-    "香料"
-  ],
-  "description": "中鎖脂肪酸エステルで、甘くはっきりした果実香を示す。",
-  "memorize": [
-    "パイナップル様の香り",
-    "エステル類",
-    "中鎖脂肪酸エステル"
-  ],
-  "odor_icon": "🍍",
-  "difficulty": "基礎",
-  "iupac": "Ethyl hexanoate",
-  "structure_feature": "エステル結合を1つもち、6炭素の脂肪酸部分と2炭素のエチル基からなる。",
-  "odor_family": [
-    "果実",
-    "甘い"
-  ],
-  "learning_point": "同じエステルでも、酸部分とアルコール部分の長さの違いで香りの印象が変わることを学ぶ。",
-  "related_compounds": [
-    "methyl-butyrate",
-    "ethyl-butyrate",
-    "ethyl-octanoate",
-    "hexyl-acetate"
-  ]
-},
-{
-  "id": "ethyl-octanoate",
-  "name_ja": "オクタン酸エチル",
-  "name_en": "Ethyl octanoate",
-  "smiles": "CCCCCCCC(=O)OCC",
-  "odor": "ブドウや洋梨を思わせる甘くまろやかな果実香",
-  "sources": "ブドウ、ワイン、各種果実など",
-  "category": "エステル",
-  "feature": "オクタン酸とエタノールからなる脂肪族エステル。ワイン香気成分としてもよく知られる。",
-  "formula": "C10H20O2",
-  "molecular_weight": 172.27,
-  "structure": "structures/ethyl-octanoate.svg",
-  "class_group": "エステル類",
-  "functional_group": "エステル結合（−COO−）",
-  "subcategory": "脂肪族エステル",
-  "sources_list": [
-    "ブドウ",
-    "ワイン",
-    "各種果実など"
-  ],
-  "uses": [
-    "食品香料",
-    "香料"
-  ],
-  "description": "中〜長鎖脂肪酸エステルで、特にワインや果実の香気に関与する成分として知られる。",
-  "memorize": [
-    "ブドウ・洋梨様の香り",
-    "エステル類",
-    "ワイン香気の代表成分"
-  ],
-  "odor_icon": "🍇",
-  "difficulty": "基礎",
-  "iupac": "Ethyl octanoate",
-  "structure_feature": "エステル結合を1つもち、8炭素の脂肪酸部分と2炭素のエチル基からなる。",
-  "odor_family": [
-    "果実",
-    "甘い"
-  ],
-  "learning_point": "脂肪酸部分が長くなると、エステルの香りの印象がよりまろやかになることを学ぶ。",
-  "related_compounds": [
-    "ethyl-hexanoate",
-    "ethyl-butyrate",
-    "hexyl-acetate",
-    "methyl-butyrate"
-  ]
-}
-,
-{
-  "id": "anethole",
-  "name_ja": "アネトール",
-  "name_en": "Anethole",
-  "smiles": "C/C=C/C1=CC=C(C=C1)OC",
-  "odor": "アニスや甘草を思わせる甘くスパイシーな香り",
-  "sources": "アニス、スターアニス、フェンネルなど",
-  "category": "芳香族エーテル",
-  "feature": "ベンゼン環にメトキシ基とプロペニル基をもつ芳香族化合物。通常、香料で重要なのはE体である。",
-  "formula": "C10H12O",
-  "molecular_weight": 148.20,
-  "structure": "structures/anethole.svg",
-  "class_group": "その他",
-  "functional_group": "エーテル結合（メトキシ基）と炭素−炭素二重結合",
-  "subcategory": "芳香族エーテル",
-  "sources_list": [
-    "アニス",
-    "スターアニス",
-    "フェンネルなど"
-  ],
-  "uses": [
-    "食品香料",
-    "飲料",
-    "香料"
-  ],
-  "description": "アニス系の甘い香りを示す代表成分。芳香環、エーテル結合、炭素−炭素二重結合をあわせもつ。",
-  "memorize": [
-    "アニス様の甘い香り",
-    "芳香族エーテル",
-    "ベンゼン環とメトキシ基"
-  ],
-  "odor_icon": "🌿",
-  "difficulty": "基礎",
-  "iupac": "1-methoxy-4-[(E)-prop-1-enyl]benzene",
-  "structure_feature": "ベンゼン環の向かい合う位置にメトキシ基とE配置のプロペニル基が結合している。",
-  "odor_family": [
-    "スパイス",
-    "甘い",
-    "ハーブ"
-  ],
-  "learning_point": "オイゲノールと比較し、メトキシ基とフェノール性ヒドロキシ基の違いを学ぶ。",
-  "related_compounds": [
-    "eugenol",
-    "cinnamaldehyde",
-    "benzyl-acetate",
-    "thymol"
-  ]
-},
-{
-  "id": "thymol",
-  "name_ja": "チモール",
-  "name_en": "Thymol",
-  "smiles": "CC1=CC(=C(C=C1)C(C)C)O",
-  "odor": "タイムを思わせる温かく刺激的なハーブ香",
-  "sources": "タイム、オレガノ、アジョワンなど",
-  "category": "フェノール",
-  "feature": "ベンゼン環にフェノール性ヒドロキシ基、メチル基、イソプロピル基をもつ。",
-  "formula": "C10H14O",
-  "molecular_weight": 150.22,
-  "structure": "structures/thymol.svg",
-  "class_group": "フェノール類",
-  "functional_group": "フェノール性ヒドロキシ基（Ar−OH）",
-  "subcategory": "モノテルペンフェノール",
-  "sources_list": [
-    "タイム",
-    "オレガノ",
-    "アジョワンなど"
-  ],
-  "uses": [
-    "香料",
-    "食品香料",
-    "口腔ケア製品"
-  ],
-  "description": "タイム精油を特徴づけるフェノール性香気成分。カルバクロールとは置換基の位置が異なる位置異性体である。",
-  "memorize": [
-    "タイム様のハーブ香",
-    "フェノール類",
-    "カルバクロールの位置異性体"
-  ],
-  "odor_icon": "🌿",
-  "difficulty": "基礎",
-  "iupac": "5-methyl-2-propan-2-ylphenol",
-  "structure_feature": "ベンゼン環上にヒドロキシ基、メチル基、イソプロピル基をもつ。",
-  "odor_family": [
-    "ハーブ",
-    "スパイス"
-  ],
-  "learning_point": "カルバクロールと比較し、置換基の位置だけが異なる位置異性体を学ぶ。",
-  "related_compounds": [
-    "carvacrol",
-    "eugenol",
-    "menthol",
-    "one-eight-cineole"
-  ]
-},
-{
-  "id": "carvacrol",
-  "name_ja": "カルバクロール",
-  "name_en": "Carvacrol",
-  "smiles": "CC1=C(C=C(C=C1)C(C)C)O",
-  "odor": "オレガノを思わせる温かくスパイシーなハーブ香",
-  "sources": "オレガノ、タイム、セイボリーなど",
-  "category": "フェノール",
-  "feature": "ベンゼン環にフェノール性ヒドロキシ基、メチル基、イソプロピル基をもつ。",
-  "formula": "C10H14O",
-  "molecular_weight": 150.22,
-  "structure": "structures/carvacrol.svg",
-  "class_group": "フェノール類",
-  "functional_group": "フェノール性ヒドロキシ基（Ar−OH）",
-  "subcategory": "モノテルペンフェノール",
-  "sources_list": [
-    "オレガノ",
-    "タイム",
-    "セイボリーなど"
-  ],
-  "uses": [
-    "食品香料",
-    "香料",
-    "香味研究"
-  ],
-  "description": "オレガノの特徴的な香りに関与するフェノール性香気成分。チモールとは位置異性体の関係にある。",
-  "memorize": [
-    "オレガノ様の香り",
-    "フェノール類",
-    "チモールの位置異性体"
-  ],
-  "odor_icon": "🌿",
-  "difficulty": "基礎",
-  "iupac": "2-methyl-5-propan-2-ylphenol",
-  "structure_feature": "チモールと同じ置換基をもつが、ヒドロキシ基とメチル基の位置関係が異なる。",
-  "odor_family": [
-    "ハーブ",
-    "スパイス"
-  ],
-  "learning_point": "チモールと分子式が同じでも、置換基の位置によって構造と性質が異なることを学ぶ。",
-  "related_compounds": [
-    "thymol",
-    "eugenol",
-    "one-eight-cineole",
-    "camphor"
-  ]
-},
-{
-  "id": "one-eight-cineole",
-  "name_ja": "1,8-シネオール",
-  "name_en": "1,8-Cineole",
-  "smiles": "CC1(C2CCC(O1)(CC2)C)C",
-  "odor": "ユーカリを思わせる清涼感のあるカンファー様の香り",
-  "sources": "ユーカリ、ローズマリー、セージなど",
-  "category": "テルペンエーテル",
-  "feature": "酸素原子が二環性骨格の一部となっている環状エーテル型モノテルペン。",
-  "formula": "C10H18O",
-  "molecular_weight": 154.25,
-  "structure": "structures/one-eight-cineole.svg",
-  "class_group": "テルペン類",
-  "functional_group": "環状エーテル結合（C−O−C）",
-  "subcategory": "テルペンエーテル",
-  "sources_list": [
-    "ユーカリ",
-    "ローズマリー",
-    "セージなど"
-  ],
-  "uses": [
-    "香料",
-    "香粧品",
-    "口腔ケア製品"
-  ],
-  "description": "ユーカリ精油を特徴づける代表的なモノテルペンエーテル。エーテル酸素が環構造に組み込まれている。",
-  "memorize": [
-    "ユーカリ様の清涼な香り",
-    "テルペン類",
-    "二環性の環状エーテル"
-  ],
-  "odor_icon": "🌿",
-  "difficulty": "基礎",
-  "iupac": "1,3,3-trimethyl-2-oxabicyclo[2.2.2]octane",
-  "structure_feature": "酸素原子を橋かけ部分にもつ二環性の飽和環状エーテル。",
-  "odor_family": [
-    "ハーブ",
-    "フレッシュ",
-    "樹脂"
-  ],
-  "learning_point": "アルコールとは異なり、酸素が2つの炭素に結合したエーテル構造を学ぶ。",
-  "related_compounds": [
-    "camphor",
-    "alpha-pinene",
-    "menthol",
-    "linalool"
-  ]
-},
-{
-  "id": "camphor",
-  "name_ja": "カンファー",
-  "name_en": "Camphor",
-  "smiles": "CC1(C2CCC1(C(=O)C2)C)C",
-  "odor": "樟脳を思わせる鋭く清涼感のある香り",
-  "sources": "クスノキ、ローズマリー、セージなど",
-  "category": "テルペンケトン",
-  "feature": "二環性骨格の内部にケトン型カルボニル基をもつモノテルペノイド。",
-  "formula": "C10H16O",
-  "molecular_weight": 152.23,
-  "structure": "structures/camphor.svg",
-  "class_group": "ケトン類",
-  "functional_group": "ケトンのカルボニル基（>C=O）",
-  "subcategory": "テルペンケトン",
-  "sources_list": [
-    "クスノキ",
-    "ローズマリー",
-    "セージなど"
-  ],
-  "uses": [
-    "香料",
-    "香粧品",
-    "芳香製品"
-  ],
-  "description": "樟脳の主成分として知られる二環性モノテルペンケトン。常温でも昇華しやすく、強い香りを示す。",
-  "memorize": [
-    "樟脳様の鋭い香り",
-    "ケトン類",
-    "二環性モノテルペンケトン"
-  ],
-  "odor_icon": "🌲",
-  "difficulty": "基礎",
-  "iupac": "1,7,7-trimethylbicyclo[2.2.1]heptan-2-one",
-  "structure_feature": "橋かけ二環性骨格とケトン型カルボニル基をもつ。",
-  "odor_family": [
-    "樹脂",
-    "木質",
-    "フレッシュ"
-  ],
-  "learning_point": "α-ピネンや1,8-シネオールと比較し、二環性テルペン骨格に含まれる官能基の違いを学ぶ。",
-  "related_compounds": [
-    "one-eight-cineole",
-    "alpha-pinene",
-    "carvone",
-    "menthol"
-  ]
-}]
+]
