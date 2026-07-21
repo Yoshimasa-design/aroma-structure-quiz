@@ -2625,5 +2625,246 @@
       "methyl-butyrate",
       "ethyl-butyrate"
     ]
+  },
+  {
+    "id": "methional",
+    "name_ja": "メチオナール",
+    "name_en": "Methional",
+    "smiles": "CSCCC=O",
+    "odor": "加熱したジャガイモや肉汁を思わせる硫黄系の香り",
+    "sources": "加熱したジャガイモ、醤油、加熱したキノコ類など",
+    "category": "含硫アルデヒド",
+    "feature": "アルデヒド基と、硫黄を含むチオエーテル構造を併せもつ。",
+    "formula": "C4H8OS",
+    "molecular_weight": 104.17,
+    "structure": "structures/methional.svg",
+    "class_group": "アルデヒド類",
+    "functional_group": "アルデヒド基（−CHO）とスルフィド結合（C−S−C）",
+    "subcategory": "含硫アルデヒド",
+    "sources_list": [
+      "加熱したジャガイモ",
+      "醤油",
+      "加熱したキノコ類など"
+    ],
+    "uses": [
+      "食品香料",
+      "調理香料",
+      "香気研究"
+    ],
+    "description": "メチオニンの加熱分解などで生成し、加熱食品のジャガイモ様、肉汁様の香りに関与する。",
+    "memorize": [
+      "加熱ジャガイモ・肉汁様",
+      "アルデヒド類",
+      "硫黄を含むアルデヒド"
+    ],
+    "odor_icon": "🥔",
+    "difficulty": "基礎",
+    "iupac": "3-methylsulfanylpropanal",
+    "structure_feature": "末端のアルデヒド基とメチルスルファニル基をもつ直鎖構造。",
+    "odor_family": [
+      "加熱",
+      "肉",
+      "硫黄"
+    ],
+    "learning_point": "アセトアルデヒドなどと比較し、アルデヒドに硫黄を含む置換基が加わった構造を学ぶ。",
+    "related_compounds": [
+      "dimethyl-sulfide",
+      "dimethyl-disulfide",
+      "two-acetylpyrrole",
+      "acetaldehyde"
+    ]
+  },
+  {
+    "id": "dimethyl-disulfide",
+    "name_ja": "ジメチルジスルフィド",
+    "name_en": "Dimethyl disulfide",
+    "smiles": "CSSC",
+    "odor": "タマネギ、キャベツ、ニンニクを思わせる強い硫黄臭",
+    "sources": "ニンニク、ネギ類、加熱野菜、発酵食品など",
+    "category": "ジスルフィド",
+    "feature": "2つのメチル基が硫黄−硫黄結合を介して結合した含硫化合物。",
+    "formula": "C2H6S2",
+    "molecular_weight": 94.2,
+    "structure": "structures/dimethyl-disulfide.svg",
+    "class_group": "含硫化合物",
+    "functional_group": "ジスルフィド結合（S−S）",
+    "subcategory": "有機ジスルフィド",
+    "sources_list": [
+      "ニンニク",
+      "ネギ類",
+      "加熱野菜",
+      "発酵食品など"
+    ],
+    "uses": [
+      "食品香気研究",
+      "発酵香研究",
+      "品質評価"
+    ],
+    "description": "ジメチルスルフィドより硫黄原子が1つ多く、硫黄−硫黄結合をもつ。",
+    "memorize": [
+      "タマネギ・キャベツ様",
+      "含硫化合物",
+      "メチル基−S−S−メチル基"
+    ],
+    "odor_icon": "🧅",
+    "difficulty": "基礎",
+    "iupac": "methyldisulfanylmethane",
+    "structure_feature": "2つのメチル基の間に硫黄−硫黄結合を1つもつ。",
+    "odor_family": [
+      "硫黄",
+      "野菜",
+      "発酵"
+    ],
+    "learning_point": "ジメチルスルフィドと比較し、硫黄原子の数とS−S結合の有無を学ぶ。",
+    "related_compounds": [
+      "dimethyl-sulfide",
+      "diallyl-disulfide",
+      "methional",
+      "allyl-isothiocyanate"
+    ]
+  },
+  {
+    "id": "diallyl-disulfide",
+    "name_ja": "ジアリルジスルフィド",
+    "name_en": "Diallyl disulfide",
+    "smiles": "C=CCSSCC=C",
+    "odor": "生のニンニクを思わせる強く刺激的な硫黄香",
+    "sources": "ニンニク、黒ニンニク、ネギ属植物など",
+    "category": "ジスルフィド",
+    "feature": "硫黄−硫黄結合の両側にアリル基が結合した含硫化合物。",
+    "formula": "C6H10S2",
+    "molecular_weight": 146.28,
+    "structure": "structures/diallyl-disulfide.svg",
+    "class_group": "含硫化合物",
+    "functional_group": "ジスルフィド結合（S−S）と炭素−炭素二重結合",
+    "subcategory": "アリルジスルフィド",
+    "sources_list": [
+      "ニンニク",
+      "黒ニンニク",
+      "ネギ属植物など"
+    ],
+    "uses": [
+      "食品香気研究",
+      "ニンニク香料",
+      "香気分析"
+    ],
+    "description": "ニンニクの特徴的な香りを構成する代表的な有機硫黄化合物。",
+    "memorize": [
+      "ニンニク様の強い香り",
+      "含硫化合物",
+      "2つのアリル基とS−S結合"
+    ],
+    "odor_icon": "🧄",
+    "difficulty": "基礎",
+    "iupac": "3-(prop-2-enyldisulfanyl)prop-1-ene",
+    "structure_feature": "中央の硫黄−硫黄結合の両側に、炭素−炭素二重結合をもつアリル基が結合する。",
+    "odor_family": [
+      "硫黄",
+      "ニンニク",
+      "刺激"
+    ],
+    "learning_point": "ジメチルジスルフィドと比較し、メチル基とアリル基の構造の違いを学ぶ。",
+    "related_compounds": [
+      "dimethyl-disulfide",
+      "allyl-isothiocyanate",
+      "methional",
+      "two-furfurylthiol"
+    ]
+  },
+  {
+    "id": "two-furfurylthiol",
+    "name_ja": "2-フルフリルチオール",
+    "name_en": "2-Furfurylthiol",
+    "smiles": "C1=COC(=C1)CS",
+    "odor": "焙煎したコーヒーを思わせる強いロースト香",
+    "sources": "焙煎コーヒー、コーヒー抽出液、加熱食品など",
+    "category": "複素環チオール",
+    "feature": "酸素を含む芳香族五員環であるフラン環とチオール基をもつ。",
+    "formula": "C5H6OS",
+    "molecular_weight": 114.17,
+    "structure": "structures/two-furfurylthiol.svg",
+    "class_group": "含硫化合物",
+    "functional_group": "チオール基（−SH）とフラン環",
+    "subcategory": "フランチオール",
+    "sources_list": [
+      "焙煎コーヒー",
+      "コーヒー抽出液",
+      "加熱食品など"
+    ],
+    "uses": [
+      "コーヒー香料",
+      "食品香料",
+      "焙煎香研究"
+    ],
+    "description": "コーヒーの代表的な香気寄与成分で、低濃度でも強い焙煎香を示す。",
+    "memorize": [
+      "焙煎コーヒー様",
+      "含硫化合物",
+      "フラン環とチオール基"
+    ],
+    "odor_icon": "☕",
+    "difficulty": "基礎",
+    "iupac": "furan-2-ylmethanethiol",
+    "structure_feature": "フラン環の2位にチオール基をもつメチル基が結合している。",
+    "odor_family": [
+      "焙煎",
+      "コーヒー",
+      "硫黄"
+    ],
+    "learning_point": "2-アセチルピロールと比較し、含酸素複素環と含窒素複素環の違いを学ぶ。",
+    "related_compounds": [
+      "methional",
+      "two-acetylpyrrole",
+      "furaneol",
+      "three-mercaptohexan-one-ol"
+    ]
+  },
+  {
+    "id": "three-mercaptohexan-one-ol",
+    "name_ja": "3-メルカプトヘキサン-1-オール",
+    "name_en": "3-Mercaptohexan-1-ol",
+    "smiles": "CCCC(S)CCO",
+    "odor": "グレープフルーツやパッションフルーツを思わせるトロピカルな果実香",
+    "sources": "白ワイン、パッションフルーツ、発酵したブドウ果汁など",
+    "category": "チオールアルコール",
+    "feature": "6炭素鎖に第一級アルコールとチオール基をもち、3位炭素は不斉中心となる。",
+    "formula": "C6H14OS",
+    "molecular_weight": 134.24,
+    "structure": "structures/three-mercaptohexan-one-ol.svg",
+    "class_group": "含硫化合物",
+    "functional_group": "チオール基（−SH）と第一級アルコール（−CH₂OH）",
+    "subcategory": "多官能性チオール",
+    "sources_list": [
+      "白ワイン",
+      "パッションフルーツ",
+      "発酵したブドウ果汁など"
+    ],
+    "uses": [
+      "ワイン香研究",
+      "果実香研究",
+      "香気分析"
+    ],
+    "description": "3MHとも呼ばれ、ソーヴィニヨン・ブランなどのトロピカルな果実香に寄与する。",
+    "memorize": [
+      "グレープフルーツ・パッションフルーツ様",
+      "含硫化合物",
+      "チオール基とアルコール基"
+    ],
+    "odor_icon": "🍇",
+    "difficulty": "基礎",
+    "iupac": "3-sulfanylhexan-1-ol",
+    "structure_feature": "末端の第一級アルコールと3位のチオール基をもち、立体異性体が存在する。",
+    "odor_family": [
+      "果実",
+      "トロピカル",
+      "ワイン"
+    ],
+    "learning_point": "通常のアルコール類と比較し、チオール基が加わることで強い香気を示す多官能性化合物を学ぶ。",
+    "related_compounds": [
+      "two-furfurylthiol",
+      "cis-three-hexen-one-ol",
+      "cis-three-hexenyl-acetate",
+      "ethyl-hexanoate"
+    ]
   }
 ]
