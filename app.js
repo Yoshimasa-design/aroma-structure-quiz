@@ -8,7 +8,7 @@ const CLASS_INFO={
   "含硫化合物":{color:"#455a64",light:"#eceff1"},
   "その他":{color:"#795548",light:"#efebe9"}
 };
-const S={c:[],mode:"learn",q:[],i:0,stage:0,score:0,totalSteps:0,miss:[],answered:false,stats:JSON.parse(localStorage.getItem("aromaStats")||"{}")};
+const S={c:[],mode:"learn",questionCount:10,q:[],i:0,stage:0,score:0,totalSteps:0,miss:[],answered:false,stats:JSON.parse(localStorage.getItem("aromaStats")||"{}")};
 const $=id=>document.getElementById(id),screens=[...document.querySelectorAll(".screen")];
 function show(id){screens.forEach(s=>s.classList.toggle("active",s.id===id));scrollTo({top:0,behavior:"smooth"})}
 function shuffle(items){const a=Array.from(items);for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a}
@@ -20,7 +20,7 @@ function isMaster(c){const r=rec(c.id),t=r.correct+r.wrong;return r.correct>=3&&
 function isReview(c){const r=rec(c.id),t=r.correct+r.wrong;return r.wrong>0&&(r.correct<3||r.correct/t<.75)}
 function home(){const m=S.c.filter(isMaster).length,p=S.c.length?Math.round(m/S.c.length*100):0;$('mastery').textContent=p+'%';$('ring').style.setProperty('--p',p+'%');$('reviewN').textContent='復習対象 '+S.c.filter(isReview).length+'成分'}
 function renderLegend(){$('legend').innerHTML=Object.entries(CLASS_INFO).filter(([k])=>k!=="その他").map(([name,t])=>`<span style="--tag-color:${t.color};--tag-light:${t.light}">${name}</span>`).join('')}
-function start(mode){let pool=[...S.c];if(mode==='review'){const r=pool.filter(isReview);pool=r.length>=4?r:pool;S.mode='learn'}else S.mode=mode;S.q=shuffle(pool).slice(0,10);S.i=0;S.stage=0;S.score=0;S.miss=[];S.answered=false;S.totalSteps=S.mode==='learn'?S.q.length*2:S.q.length;show('quiz');renderQ()}
+function start(mode){let pool=[...S.c];if(mode==='review'){const r=pool.filter(isReview);pool=r.length>=4?r:pool;S.mode='learn'}else S.mode=mode;S.q=shuffle(pool).slice(0,S.questionCount);S.i=0;S.stage=0;S.score=0;S.miss=[];S.answered=false;S.totalSteps=S.mode==='learn'?S.q.length*2:S.q.length;show('quiz');renderQ()}
 function distract(a){const same=S.c.filter(c=>c.id!==a.id&&c.class_group===a.class_group),other=S.c.filter(c=>c.id!==a.id&&c.class_group!==a.class_group);return shuffle([...shuffle(same).slice(0,2),...shuffle(other)]).slice(0,3)}
 function currentStep(){return S.mode==='learn'?S.i*2+S.stage:S.i}
 function renderQ(){const a=S.q[S.i],isStructure=S.mode==='structure'||(S.mode==='learn'&&S.stage===1),opts=shuffle([a,...distract(a)]);S.answered=false;$('feedback').className='feedback hidden';applyClassTheme($('questionCard'),a);$('counter').textContent=`${currentStep()+1} / ${S.totalSteps}`;$('bar').style.width=currentStep()/S.totalSteps*100+'%';$('stageBadge').textContent=S.mode==='learn'?(S.stage===0?'STEP 1　香り → 成分名':'STEP 2　成分名 → 構造式'):'';$('stageBadge').style.display=S.mode==='learn'?'inline-flex':'none';$('qtype').textContent=isStructure?'STRUCTURE QUIZ':'ODOR QUIZ';$('qtext').textContent=isStructure?`${a.name_ja}の構造式はどれ？`:a.odor;$('hint').textContent=isStructure?'正しい構造式を選んでください。':`代表的な由来：${a.sources}`;$('choices').innerHTML='';opts.forEach(o=>{const b=document.createElement('button');b.className='choice';b.dataset.id=o.id;if(isStructure){b.classList.add('structure');b.innerHTML=`<img src="${o.structure}" alt="${o.name_ja}の構造式候補">`}else{b.innerHTML=`<strong>${o.name_ja}</strong><br><small>${o.name_en}</small>`}b.onclick=()=>answer(o.id,b,isStructure);$('choices').appendChild(b)})}
