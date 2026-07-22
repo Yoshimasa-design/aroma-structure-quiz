@@ -1,6 +1,6 @@
 
-import{loadCompounds,distract,theme,addResult,recordSession}from"./common.js";
-import{makeQueue}from"./quiz-engine.js";
+import{loadCompounds,theme,addResult,recordSession}from"./common.js";
+import{makeQueue,distract}from"./quiz-engine.js";
 import{favoriteButtonMarkup,bindFavoriteButtons}from"./storage.js";
 const mode=document.body.dataset.mode,all=await loadCompounds(),queue=makeQueue(all,10);let i=0,score=0,locked=false;
 const $=s=>document.querySelector(s);
