@@ -3838,5 +3838,188 @@
       "vanillin",
       "piperonal"
     ]
+  },
+  {
+    "id": "chavicol",
+    "name_ja": "チャビコール",
+    "name_en": "Chavicol",
+    "smiles": "C=CCc1ccc(O)cc1",
+    "odor": "スパイシーでフェノール様の、わずかに甘い香り",
+    "sources": "バジル、キンマ、マグノリア類など",
+    "category": "フェニルプロパノイド",
+    "feature": "フェノール環の4位にアリル基をもつ。",
+    "formula": "C9H10O",
+    "molecular_weight": 134.18,
+    "structure": "structures/chavicol.svg",
+    "class_group": "フェノール類",
+    "functional_group": "フェノール性ヒドロキシ基とアリル基",
+    "subcategory": "アリルフェノール",
+    "sources_list": [
+      "バジル",
+      "キンマ",
+      "マグノリア類など"
+    ],
+    "uses": [
+      "香気研究",
+      "植物精油研究",
+      "構造比較教材"
+    ],
+    "description": "4-アリルフェノールとも呼ばれ、フェノール環にアリル基が結合したフェニルプロパノイド。",
+    "memorize": [
+      "フェノール環",
+      "アリル基",
+      "オイゲノールからメトキシ基を除いた構造"
+    ],
+    "odor_icon": "🌿",
+    "difficulty": "基礎",
+    "iupac": "4-prop-2-enylphenol",
+    "structure_feature": "フェノール性ヒドロキシ基に対してパラ位にアリル基が結合している。"
+  },
+  {
+    "id": "estragole",
+    "name_ja": "エストラゴール",
+    "name_en": "Estragole",
+    "smiles": "C=CCc1ccc(OC)cc1",
+    "odor": "アニスやタラゴンを思わせる甘くハーブ様の香り",
+    "sources": "タラゴン、バジル、フェンネル、アニスなど",
+    "category": "フェニルプロパノイド",
+    "feature": "アニソール環の4位にアリル基をもつ。",
+    "formula": "C10H12O",
+    "molecular_weight": 148.21,
+    "structure": "structures/estragole.svg",
+    "class_group": "芳香族エーテル類",
+    "functional_group": "メトキシ基とアリル基",
+    "subcategory": "アリルアニソール",
+    "sources_list": [
+      "タラゴン",
+      "バジル",
+      "フェンネル",
+      "アニスなど"
+    ],
+    "uses": [
+      "食品香気研究",
+      "ハーブ精油研究",
+      "構造比較教材"
+    ],
+    "description": "メチルチャビコールとも呼ばれ、タラゴンやバジルの甘いアニス様香気に関係する。",
+    "memorize": [
+      "アニス・タラゴン様",
+      "メトキシ基",
+      "チャビコールのメチルエーテル"
+    ],
+    "odor_icon": "🌿",
+    "difficulty": "基礎",
+    "iupac": "1-methoxy-4-prop-2-enylbenzene",
+    "structure_feature": "ベンゼン環のパラ位にメトキシ基とアリル基が結合している。"
+  },
+  {
+    "id": "isoeugenol",
+    "name_ja": "イソオイゲノール",
+    "name_en": "Isoeugenol",
+    "smiles": "C/C=C/c1ccc(O)c(OC)c1",
+    "odor": "クローブやカーネーションを思わせる甘くスパイシーな香り",
+    "sources": "イランイラン、ナツメグ、クローブ、各種精油など",
+    "category": "フェニルプロパノイド",
+    "feature": "グアイアコール骨格にE型プロペニル基をもつ。",
+    "formula": "C10H12O2",
+    "molecular_weight": 164.2,
+    "structure": "structures/isoeugenol.svg",
+    "class_group": "フェノール類",
+    "functional_group": "フェノール性ヒドロキシ基・メトキシ基・プロペニル基",
+    "subcategory": "プロペニルグアイアコール",
+    "sources_list": [
+      "イランイラン",
+      "ナツメグ",
+      "クローブ",
+      "各種精油など"
+    ],
+    "uses": [
+      "香料研究",
+      "クローブ香研究",
+      "構造異性体の比較教材"
+    ],
+    "description": "オイゲノールとは側鎖内の炭素−炭素二重結合の位置が異なる構造異性体。",
+    "memorize": [
+      "クローブ・カーネーション様",
+      "プロペニル基",
+      "オイゲノールとの二重結合位置の違い"
+    ],
+    "odor_icon": "🌸",
+    "difficulty": "応用",
+    "iupac": "2-methoxy-4-[(E)-prop-1-enyl]phenol",
+    "structure_feature": "グアイアコール骨格の4位に、芳香環と直接つながったE型プロペニル基をもつ。"
+  },
+  {
+    "id": "methyl-eugenol",
+    "name_ja": "メチルオイゲノール",
+    "name_en": "Methyl eugenol",
+    "smiles": "C=CCc1ccc(OC)c(OC)c1",
+    "odor": "甘くスパイシーで、クローブやハーブを思わせる香り",
+    "sources": "バジル、ナツメグ、シトロネラ、クローブなど",
+    "category": "フェニルプロパノイド",
+    "feature": "ベンゼン環に2つのメトキシ基とアリル基をもつ。",
+    "formula": "C11H14O2",
+    "molecular_weight": 178.23,
+    "structure": "structures/methyl-eugenol.svg",
+    "class_group": "芳香族エーテル類",
+    "functional_group": "2つのメトキシ基とアリル基",
+    "subcategory": "ジメトキシアリルベンゼン",
+    "sources_list": [
+      "バジル",
+      "ナツメグ",
+      "シトロネラ",
+      "クローブなど"
+    ],
+    "uses": [
+      "植物精油研究",
+      "香気分析",
+      "構造比較教材"
+    ],
+    "description": "オイゲノールのフェノール性ヒドロキシ基がメチル化された芳香族エーテル。",
+    "memorize": [
+      "甘いスパイス様",
+      "2つのメトキシ基",
+      "オイゲノールのメチルエーテル"
+    ],
+    "odor_icon": "🌿",
+    "difficulty": "基礎",
+    "iupac": "1,2-dimethoxy-4-prop-2-enylbenzene",
+    "structure_feature": "隣接する2つのメトキシ基とアリル基をもつベンゼン誘導体。"
+  },
+  {
+    "id": "cinnamyl-alcohol",
+    "name_ja": "シンナミルアルコール",
+    "name_en": "Cinnamyl alcohol",
+    "smiles": "OC/C=C/c1ccccc1",
+    "odor": "ヒヤシンスやバルサムを思わせる甘く花様の香り",
+    "sources": "シナモン、スチラックス、ペルーバルサムなど",
+    "category": "芳香族アルコール",
+    "feature": "ベンゼン環と第一級アルコールを、不飽和3炭素鎖がつなぐ。",
+    "formula": "C9H10O",
+    "molecular_weight": 134.18,
+    "structure": "structures/cinnamyl-alcohol.svg",
+    "class_group": "アルコール類",
+    "functional_group": "第一級アルコールと炭素−炭素二重結合",
+    "subcategory": "不飽和芳香族アルコール",
+    "sources_list": [
+      "シナモン",
+      "スチラックス",
+      "ペルーバルサムなど"
+    ],
+    "uses": [
+      "香料",
+      "フローラル香調研究",
+      "芳香族アルコールの構造比較"
+    ],
+    "description": "シナモン類などにみられる不飽和芳香族アルコールで、甘く花様の香りを示す。",
+    "memorize": [
+      "ヒヤシンス・バルサム様",
+      "第一級アルコール",
+      "E型炭素−炭素二重結合"
+    ],
+    "odor_icon": "🌸",
+    "difficulty": "基礎",
+    "iupac": "(E)-3-phenylprop-2-en-1-ol",
+    "structure_feature": "フェニル基とヒドロキシメチル基の間にE型の炭素−炭素二重結合をもつ。"
   }
 ]
