@@ -1,7 +1,8 @@
 
-import{loadCompounds,shuffle,distract,theme,addResult,recordSession}from"./common.js";
+import{loadCompounds,distract,theme,addResult,recordSession}from"./common.js";
+import{makeQueue}from"./quiz-engine.js";
 import{favoriteButtonMarkup,bindFavoriteButtons}from"./storage.js";
-const mode=document.body.dataset.mode,all=await loadCompounds(),queue=shuffle(all).slice(0,10);let i=0,score=0,locked=false;
+const mode=document.body.dataset.mode,all=await loadCompounds(),queue=makeQueue(all,10);let i=0,score=0,locked=false;
 const $=s=>document.querySelector(s);
 function render(){const a=queue[i];locked=false;$("#result").classList.add("hidden");theme($("#card"),a);$("#count").textContent=`${i+1} / ${queue.length}`;$("#bar").style.width=(i/queue.length*100)+"%";
  const structural=mode==="structure";$("#question").textContent=structural?`${a.name_ja}の構造式はどれ？`:a.odor;$("#choices").innerHTML="";
