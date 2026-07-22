@@ -4021,5 +4021,372 @@
     "difficulty": "基礎",
     "iupac": "(E)-3-phenylprop-2-en-1-ol",
     "structure_feature": "フェニル基とヒドロキシメチル基の間にE型の炭素−炭素二重結合をもつ。"
+  },
+  {
+    "id": "methanethiol",
+    "name_ja": "メタンチオール",
+    "name_en": "Methanethiol",
+    "smiles": "CS",
+    "odor": "腐ったキャベツや硫黄を思わせる非常に強い香り",
+    "sources": "キャベツ、チーズ、ビール、ワインなど",
+    "category": "含硫黄化合物",
+    "feature": "炭素数1の最も単純なチオールで、低濃度でも強く感じられる。",
+    "formula": "CH4S",
+    "molecular_weight": 48.11,
+    "structure": "structures/methanethiol.svg",
+    "class_group": "チオール類",
+    "functional_group": "チオール基",
+    "subcategory": "アルカンチオール",
+    "sources_list": [
+      "キャベツ",
+      "チーズ",
+      "ビール",
+      "ワインなど"
+    ],
+    "uses": [
+      "食品香気研究",
+      "発酵香気研究",
+      "含硫黄化合物の構造学習"
+    ],
+    "description": "メチル基にチオール基が結合した、最も単純なアルカンチオール。",
+    "memorize": [
+      "腐敗キャベツ様",
+      "チオール基",
+      "炭素数1"
+    ],
+    "odor_icon": "🧅",
+    "difficulty": "基礎",
+    "iupac": "methanethiol",
+    "structure_feature": "メチル基に硫黄原子を含むチオール基が結合した構造。"
+  },
+  {
+    "id": "dimethyl-trisulfide",
+    "name_ja": "ジメチルトリスルフィド",
+    "name_en": "Dimethyl trisulfide",
+    "smiles": "CSSSC",
+    "odor": "加熱したタマネギ、キャベツ、肉を思わせる非常に強い香り",
+    "sources": "タマネギ、ニンニク、キャベツ、加熱肉など",
+    "category": "含硫黄化合物",
+    "feature": "3個の硫黄原子が連続したトリスルフィド構造をもつ。",
+    "formula": "C2H6S3",
+    "molecular_weight": 126.26,
+    "structure": "structures/dimethyl-trisulfide.svg",
+    "class_group": "ポリスルフィド類",
+    "functional_group": "トリスルフィド結合",
+    "subcategory": "ジアルキルトリスルフィド",
+    "sources_list": [
+      "タマネギ",
+      "ニンニク",
+      "キャベツ",
+      "加熱肉など"
+    ],
+    "uses": [
+      "加熱食品香気研究",
+      "ネギ属植物の香気研究",
+      "硫黄鎖長の比較教材"
+    ],
+    "description": "2つのメチル基の間に硫黄原子が3個並ぶ揮発性含硫黄化合物。",
+    "memorize": [
+      "加熱タマネギ・肉様",
+      "硫黄原子3個",
+      "トリスルフィド"
+    ],
+    "odor_icon": "🧄",
+    "difficulty": "基礎",
+    "iupac": "(methyltrisulfanyl)methane",
+    "structure_feature": "2つのメチル基の間に3個の硫黄原子が鎖状に連結している。"
+  },
+  {
+    "id": "furfuryl-mercaptan",
+    "name_ja": "フルフリルメルカプタン",
+    "name_en": "Furfuryl mercaptan",
+    "smiles": "C1=COC(=C1)CS",
+    "odor": "焙煎したコーヒーを思わせる強い香り",
+    "sources": "焙煎コーヒー、加熱食品など",
+    "category": "含硫黄複素環化合物",
+    "feature": "フラン環にメタンチオール側鎖が結合したコーヒー香の代表成分。",
+    "formula": "C5H6OS",
+    "molecular_weight": 114.17,
+    "structure": "structures/furfuryl-mercaptan.svg",
+    "class_group": "チオール類",
+    "functional_group": "チオール基とフラン環",
+    "subcategory": "フラン系チオール",
+    "sources_list": [
+      "焙煎コーヒー",
+      "加熱食品など"
+    ],
+    "uses": [
+      "コーヒー香気研究",
+      "焙煎香研究",
+      "メイラード反応生成物の教材"
+    ],
+    "description": "2-フランメタンチオールとも呼ばれ、焙煎コーヒーの特徴香に重要な成分。",
+    "memorize": [
+      "コーヒー様",
+      "フラン環",
+      "チオール基"
+    ],
+    "odor_icon": "☕",
+    "difficulty": "応用",
+    "iupac": "furan-2-ylmethanethiol",
+    "structure_feature": "フラン環の2位にチオール基を含むメチル側鎖が結合している。"
+  },
+  {
+    "id": "2-furfuryl-methyl-sulfide",
+    "name_ja": "2-フルフリルメチルスルフィド",
+    "name_en": "2-Furfuryl methyl sulfide",
+    "smiles": "CSCC1=CC=CO1",
+    "odor": "コーヒーやロースト食品を思わせる硫黄を含む香ばしい香り",
+    "sources": "焙煎コーヒー、加熱肉、加熱食品など",
+    "category": "含硫黄複素環化合物",
+    "feature": "フルフリル基とメチル基が硫黄原子を介して結合している。",
+    "formula": "C6H8OS",
+    "molecular_weight": 128.19,
+    "structure": "structures/2-furfuryl-methyl-sulfide.svg",
+    "class_group": "スルフィド類",
+    "functional_group": "チオエーテル結合とフラン環",
+    "subcategory": "フラン系スルフィド",
+    "sources_list": [
+      "焙煎コーヒー",
+      "加熱肉",
+      "加熱食品など"
+    ],
+    "uses": [
+      "コーヒー香気研究",
+      "加熱食品香気研究",
+      "チオールとスルフィドの比較教材"
+    ],
+    "description": "フルフリルメルカプタンの硫黄上の水素がメチル基に置き換わったチオエーテル。",
+    "memorize": [
+      "コーヒー・ロースト様",
+      "フラン環",
+      "メチルスルフィド"
+    ],
+    "odor_icon": "☕",
+    "difficulty": "応用",
+    "iupac": "2-(methylsulfanylmethyl)furan",
+    "structure_feature": "フラン環の2位にメチルスルファニルメチル基が結合している。"
+  },
+  {
+    "id": "2-acetyl-1-pyrroline",
+    "name_ja": "2-アセチル-1-ピロリン",
+    "name_en": "2-Acetyl-1-pyrroline",
+    "smiles": "CC(=O)C1=NCCC1",
+    "odor": "炊きたての香り米、ポップコーン、パンの皮を思わせる香ばしい香り",
+    "sources": "ジャスミン米、バスマティ米、パン、ポップコーンなど",
+    "category": "含窒素複素環化合物",
+    "feature": "不飽和五員環のピロリン環にアセチル基をもつ。",
+    "formula": "C6H9NO",
+    "molecular_weight": 111.14,
+    "structure": "structures/2-acetyl-1-pyrroline.svg",
+    "class_group": "ピロリン類",
+    "functional_group": "環状イミンとメチルケトン",
+    "subcategory": "アセチルピロリン",
+    "sources_list": [
+      "ジャスミン米",
+      "バスマティ米",
+      "パン",
+      "ポップコーンなど"
+    ],
+    "uses": [
+      "米の香気研究",
+      "パン・穀類の香気研究",
+      "メイラード反応生成物の教材"
+    ],
+    "description": "香り米やパンの皮、ポップコーンの特徴的な香ばしさに関係する重要香気成分。",
+    "memorize": [
+      "香り米・ポップコーン様",
+      "五員環",
+      "アセチル基"
+    ],
+    "odor_icon": "🍚",
+    "difficulty": "応用",
+    "iupac": "1-(3,4-dihydro-2H-pyrrol-5-yl)ethanone",
+    "structure_feature": "炭素と窒素からなる五員環の炭素にアセチル基が結合している。"
+  },
+  {
+    "id": "beta-damascenone",
+    "name_ja": "β-ダマセノン",
+    "name_en": "β-Damascenone",
+    "smiles": "CC=CC(=O)C1=C(C=CCC1(C)C)C",
+    "odor": "バラ、リンゴ、プラム、蜂蜜を思わせる非常に強い果実香",
+    "sources": "バラ、リンゴ、ブドウ、ワイン、紅茶など",
+    "category": "ノルイソプレノイド",
+    "feature": "極めて閾値が低く、ごく微量でも香りに大きく寄与する。",
+    "formula": "C13H18O",
+    "molecular_weight": 190.28,
+    "structure": "structures/beta-damascenone.svg",
+    "class_group": "ノルイソプレノイド",
+    "functional_group": "α,β-不飽和ケトン",
+    "subcategory": "アポカロテノイド",
+    "sources_list": [
+      "バラ",
+      "リンゴ",
+      "ブドウ",
+      "ワイン",
+      "紅茶"
+    ],
+    "uses": [
+      "香料",
+      "食品香料",
+      "ワイン香気研究",
+      "茶香気研究"
+    ],
+    "description": "バラや果実の香りを特徴づける代表的なノルイソプレノイドであり、天然香気成分の中でも特に香気閾値が低い。",
+    "memorize": [
+      "バラ香",
+      "超低閾値",
+      "ノルイソプレノイド"
+    ],
+    "odor_icon": "🌹",
+    "difficulty": "応用",
+    "iupac": "1-(2,6,6-trimethylcyclohexa-1,3-dien-1-yl)but-2-en-1-one",
+    "structure_feature": "環状ジエン骨格にα,β-不飽和ケトン側鎖をもつアポカロテノイド。"
+  },
+  {
+    "id": "methyl-anthranilate",
+    "name_ja": "メチルアントラニレート",
+    "name_en": "Methyl anthranilate",
+    "smiles": "COC(=O)C1=CC=CC=C1N",
+    "odor": "ブドウやオレンジの花を思わせる甘く華やかな香り",
+    "sources": "ブドウ、ネロリ、ジャスミン、マンダリンなど",
+    "category": "芳香族エステル",
+    "feature": "ブドウ香を代表する天然香気成分。",
+    "formula": "C8H9NO2",
+    "molecular_weight": 151.16,
+    "structure": "structures/methyl-anthranilate.svg",
+    "class_group": "エステル類",
+    "functional_group": "アミノ基・カルボン酸メチルエステル",
+    "subcategory": "芳香族エステル",
+    "sources_list": [
+      "ブドウ",
+      "ネロリ",
+      "ジャスミン",
+      "マンダリン"
+    ],
+    "uses": [
+      "食品香料",
+      "香料",
+      "ブドウ香気研究"
+    ],
+    "description": "ブドウ様香気を特徴づける代表的な天然芳香族エステルであり、香料としても広く利用されている。",
+    "memorize": [
+      "ブドウ香",
+      "芳香族エステル",
+      "アミノ基"
+    ],
+    "odor_icon": "🍇",
+    "difficulty": "基礎",
+    "iupac": "methyl 2-aminobenzoate",
+    "structure_feature": "ベンゼン環にアミノ基とカルボン酸メチルエステルがオルト位で結合している。"
+  },
+  {
+    "id": "geosmin",
+    "name_ja": "ゲオスミン",
+    "name_en": "Geosmin",
+    "smiles": "C[C@H]1CCC[C@@]2([C@@]1(CCCC2)O)C",
+    "odor": "雨上がりの土や湿った土壌を思わせる非常に強い土臭",
+    "sources": "放線菌、シアノバクテリア、土壌、淡水など",
+    "category": "テルペノイドアルコール",
+    "feature": "極めて低濃度でも知覚され、水や食品の土臭の原因となる。",
+    "formula": "C12H22O",
+    "molecular_weight": 182.3,
+    "structure": "structures/geosmin.svg",
+    "class_group": "テルペノイド類",
+    "functional_group": "第三級アルコール",
+    "subcategory": "二環式セスキテルペノイド",
+    "sources_list": [
+      "放線菌",
+      "シアノバクテリア",
+      "土壌",
+      "淡水"
+    ],
+    "uses": [
+      "水質評価",
+      "食品異臭研究",
+      "微生物香気研究",
+      "香気閾値の教材"
+    ],
+    "description": "放線菌やシアノバクテリアなどが産生する土臭成分で、雨上がりの土の香りや水道水・淡水魚の異臭に関係する。",
+    "memorize": [
+      "雨上がりの土",
+      "微生物由来",
+      "超低閾値"
+    ],
+    "odor_icon": "🌧️",
+    "difficulty": "応用",
+    "iupac": "(4S,4aS,8aR)-4,8a-dimethyl-1,2,3,4,5,6,7,8-octahydronaphthalen-4a-ol",
+    "structure_feature": "2つの環が縮合したデカリン骨格に、第三級アルコールと2つのメチル基をもつ。"
+  },
+  {
+    "id": "nootkatone",
+    "name_ja": "ヌートカトン",
+    "name_en": "Nootkatone",
+    "smiles": "C[C@H]1CC(=O)C=C2[C@@]1(C[C@H](CC2)C(=C)C)C",
+    "odor": "グレープフルーツを思わせる爽やかでややウッディな香り",
+    "sources": "グレープフルーツ、アラスカヒノキ",
+    "category": "セスキテルペン",
+    "feature": "グレープフルーツ香の代表成分。",
+    "formula": "C15H22O",
+    "molecular_weight": 218.33,
+    "structure": "structures/nootkatone.svg",
+    "class_group": "テルペノイド類",
+    "functional_group": "ケトン",
+    "subcategory": "セスキテルペンケトン",
+    "sources_list": [
+      "グレープフルーツ",
+      "アラスカヒノキ"
+    ],
+    "uses": [
+      "食品香料",
+      "香料",
+      "昆虫忌避剤研究"
+    ],
+    "description": "グレープフルーツの特徴香を与える代表的なセスキテルペンケトン。",
+    "memorize": [
+      "グレープフルーツ",
+      "セスキテルペン",
+      "ケトン"
+    ],
+    "odor_icon": "🍊",
+    "difficulty": "応用",
+    "iupac": "(4S,4aR,6S)-4,4a-dimethyl-6-prop-1-en-2-yl-3,4,5,6,7,8-hexahydronaphthalen-2-one",
+    "structure_feature": "二環性セスキテルペン骨格をもつケトン。"
+  },
+  {
+    "id": "raspberry-ketone",
+    "name_ja": "ラズベリーケトン",
+    "name_en": "Raspberry ketone",
+    "smiles": "CC(=O)CCC1=CC=C(C=C1)O",
+    "odor": "ラズベリーを思わせる甘くフルーティーな香り",
+    "sources": "ラズベリー、クランベリー、ブラックベリーなど",
+    "category": "芳香族ケトン",
+    "feature": "ラズベリー様香気を代表する天然香気成分。",
+    "formula": "C10H12O2",
+    "molecular_weight": 164.2,
+    "structure": "structures/raspberry-ketone.svg",
+    "class_group": "ケトン類",
+    "functional_group": "フェノール・ケトン",
+    "subcategory": "芳香族ケトン",
+    "sources_list": [
+      "ラズベリー",
+      "クランベリー",
+      "ブラックベリー"
+    ],
+    "uses": [
+      "食品香料",
+      "香料",
+      "化粧品香料"
+    ],
+    "description": "ラズベリー様の香りを示す代表的な天然芳香族ケトンであり、食品・香粧品分野で広く利用されている。",
+    "memorize": [
+      "ラズベリー香",
+      "芳香族ケトン",
+      "フェノール"
+    ],
+    "odor_icon": "🍓",
+    "difficulty": "基礎",
+    "iupac": "4-(4-hydroxyphenyl)butan-2-one",
+    "structure_feature": "ベンゼン環にヒドロキシ基とブタノン側鎖が結合した芳香族ケトン。"
   }
 ]
