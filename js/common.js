@@ -14,4 +14,3 @@ export function getStats(){return getLearningStats()}
 export function saveStats(stats){localStorage.setItem("aromaStatsV23",JSON.stringify(stats))}
 export function addResult(id,ok,mode){return recordAnswer(id,ok,mode)}
 export function recordSession(correct,total){const sessions=JSON.parse(localStorage.getItem("aromaSessionsV21")||"[]");sessions.push({date:new Date().toISOString(),correct,total});localStorage.setItem("aromaSessionsV21",JSON.stringify(sessions.slice(-100)))}
-export function distract(all,a){const same=shuffle(all.filter(c=>c.id!==a.id&&c.class_group===a.class_group)).slice(0,2);const other=shuffle(all.filter(c=>c.id!==a.id&&!same.some(x=>x.id===c.id))).slice(0,3-same.length);return shuffle([a,...same,...other])}
