@@ -1,4 +1,5 @@
-import{loadCompounds,shuffle,distract,theme,addResult,recordSession}from"./common.js";
+import{loadCompounds,shuffle,theme,addResult,recordSession}from"./common.js";
+import{distract}from"./quiz-engine.js";
 import{getFavorites,getIncorrectCompoundIds,getWeakCompoundIds,favoriteButtonMarkup,bindFavoriteButtons}from"./storage.js";
 const all=await loadCompounds();
 const byId=new Map(all.map(c=>[c.id,c]));

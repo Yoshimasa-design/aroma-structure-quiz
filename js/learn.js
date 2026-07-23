@@ -1,5 +1,6 @@
 
-import{loadCompounds,shuffle,distract,theme,addResult,recordSession}from"./common.js";
+import{loadCompounds,shuffle,theme,addResult,recordSession}from"./common.js";
+import{distract}from"./quiz-engine.js";
 import{favoriteButtonMarkup,bindFavoriteButtons}from"./storage.js";
 const all=await loadCompounds();const queue=shuffle(all).slice(0,10);let i=0,stage=0,score=0,locked=false;
 const $=s=>document.querySelector(s), card=$("#card"),choices=$("#choices"),feedback=$("#feedback");
