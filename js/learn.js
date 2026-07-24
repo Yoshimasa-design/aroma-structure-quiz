@@ -2,7 +2,7 @@
 import{loadCompounds,shuffle,theme,addResult,recordSession}from"./common.js";
 import{distract}from"./quiz-engine.js";
 import{favoriteButtonMarkup,bindFavoriteButtons}from"./storage.js";
-const all=await loadCompounds();const queue=shuffle(all).slice(0,10);let i=0,stage=0,score=0,locked=false;
+let all=[],queue=[],i=0,stage=0,score=0,locked=false;
 const $=s=>document.querySelector(s), card=$("#card"),choices=$("#choices"),feedback=$("#feedback");
 function render(){
  const a=queue[i];locked=false;feedback.classList.add("hidden");theme(card,a);
@@ -40,4 +40,13 @@ function advance(){
  if(i<queue.length-1){i++;stage=0;render();scrollTo({top:0,behavior:"smooth"});return}
  recordSession(score,queue.length*2);card.innerHTML=`<h1>学習終了</h1><p class="lead">${queue.length}成分について、香りと構造式を順番に学びました。</p><h2>${score} / ${queue.length*2}</h2><div class="actions"><a class="btn secondary" href="../index.html">トップへ</a><button class="btn primary" onclick="location.reload()">もう一度</button></div>`;
 }
-render();
+async function init(){
+ all=await loadCompounds();
+ queue=shuffle(all).slice(0,10);
+ render();
+}
+
+init().catch(error=>{
+ console.error(error);
+ card.innerHTML="<h1>読み込みエラー</h1><p>ページを再読み込みしてください。</p>";
+});
