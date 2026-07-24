@@ -85,12 +85,25 @@ function normalizeRecord(record = {}) {
 
 export function getLearningStats() {
   let stats = readJson(STATS_KEY, null);
+
   if (!stats || typeof stats !== "object" || Array.isArray(stats)) {
     const legacy = readJson(LEGACY_STATS_KEY, {});
-    stats = Object.fromEntries(Object.entries(legacy).map(([id, record]) => [id, normalizeRecord(record)]));
+    stats = {};
+
+    for (const [id, record] of Object.entries(legacy)) {
+      stats[id] = normalizeRecord(record);
+    }
+
     writeJson(STATS_KEY, stats);
   }
-  return Object.fromEntries(Object.entries(stats).map(([id, record]) => [id, normalizeRecord(record)]));
+
+  const normalized = {};
+
+  for (const [id, record] of Object.entries(stats)) {
+    normalized[id] = normalizeRecord(record);
+  }
+
+  return normalized;
 }
 
 export function saveLearningStats(stats) {
