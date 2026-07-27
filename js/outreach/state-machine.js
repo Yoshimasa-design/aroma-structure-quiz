@@ -63,16 +63,23 @@ function validateTimings(timings){
 }
 
 function validateConfig(config){
-  if(!config||!Array.isArray(config.idleCompoundIds)){
-    throw new Error("表示する成分ID一覧が設定されていません");
+  if(!config||!config.outreachCompounds||typeof config.outreachCompounds!=="object"){
+    throw new Error("展示用成分データが設定されていません");
   }
-  if(config.idleCompoundIds.length<4){
+  const outreachIds=Object.keys(config.outreachCompounds);
+  if(outreachIds.length<4){
     throw new Error("問題データが不足しています");
   }
-  const uniqueIds=new Set(config.idleCompoundIds);
-  if(uniqueIds.size!==config.idleCompoundIds.length){
-    throw new Error("表示する成分IDが重複しています");
-  }
+  outreachIds.forEach(function(id){
+    const foundIn=config.outreachCompounds[id].foundIn;
+    if(
+      !Array.isArray(foundIn)||
+      !foundIn.length||
+      foundIn.some(function(item){
+        return typeof item!=="string"||!item.trim();
+      })
+    )throw new Error("展示用成分データが不正です: "+id);
+  });
   validateTimings(config.timings);
 }
 
@@ -145,7 +152,8 @@ async function init(){
   const compoundsById=new Map(compounds.map(function(compound){
     return[compound.id,compound];
   }));
-  const idleCompounds=config.idleCompoundIds.map(function(id){
+  const outreachIds=Object.keys(config.outreachCompounds);
+  const idleCompounds=outreachIds.map(function(id){
     const compound=compoundsById.get(id);
     if(!compound)throw new Error("指定された成分が見つかりません: "+id);
     return compound;

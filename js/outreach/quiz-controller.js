@@ -45,6 +45,7 @@ export function createQuizController(options){
   let correctCount=0;
   let currentQuestion=null;
   let acceptingAnswer=false;
+  let usedCompoundIds=new Set();
 
   function announce(message){
     options.announce(message);
@@ -61,7 +62,7 @@ export function createQuizController(options){
   }
 
   function showQuestion(){
-    options.prepareQuestion().then(function(question){
+    prepareUniqueQuestion().then(function(question){
       currentQuestion=question;
       questionNumber+=1;
       acceptingAnswer=true;
@@ -76,6 +77,16 @@ export function createQuizController(options){
       choices[0].focus();
       resetInactivity();
     }).catch(handleError);
+  }
+
+  function prepareUniqueQuestion(){
+    return options.prepareQuestion().then(function(question){
+      if(usedCompoundIds.has(question.compound.id)){
+        return prepareUniqueQuestion();
+      }
+      usedCompoundIds.add(question.compound.id);
+      return question;
+    });
   }
 
   function handleError(error){
@@ -146,6 +157,7 @@ export function createQuizController(options){
     correctCount=0;
     currentQuestion=null;
     acceptingAnswer=false;
+    usedCompoundIds=new Set();
     showPanel("QUIZ_INTRO","クイズに挑戦。全部で3問です");
     phaseTimer.schedule(options.timings.quizIntroMs,showQuestion);
     resetInactivity();
