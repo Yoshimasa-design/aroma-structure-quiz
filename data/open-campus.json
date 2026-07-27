@@ -1,0 +1,27 @@
+{
+  "idleCompoundIds": [
+    "vanillin",
+    "limonene",
+    "menthol",
+    "linalool"
+  ],
+  "outreachCompounds": {
+    "vanillin": {
+      "foundIn": [
+        "🍨 バニラアイス",
+        "🍪 クッキー",
+        "🍫 チョコレート",
+        "🌸 バニラ系の香水",
+        "🧴 バニラの香りのボディクリーム"
+      ]
+    }
+  },
+  "timings": {
+    "questionMs": 8000,
+    "countdownStepMs": 1000,
+    "answerMs": 2000,
+    "structureMs": 4000,
+    "usageMs": 4000,
+    "nextMs": 1000
+  }
+}

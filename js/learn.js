@@ -44,7 +44,7 @@ function answer(o,btn){
 function advance(){
  if(stage===0){stage=1;render();scrollTo({top:0,behavior:"smooth"});return}
  if(i<queue.length-1){i++;stage=0;render();scrollTo({top:0,behavior:"smooth"});return}
- recordSession(score,queue.length*2);card.innerHTML=`<h1>学習終了</h1><p class="lead">${queue.length}成分について、香りと構造式を順番に学びました。</p><h2>${score} / ${queue.length*2}</h2><div class="actions"><a class="btn secondary" href="../index.html">トップへ</a><button class="btn primary" onclick="location.reload()">もう一度</button></div>`;
+ recordSession(score,queue.length*2);card.innerHTML=`<h1>学習終了</h1><p class="lead">${queue.length}成分について、香りと構造式を順番に学びました。</p><h2>${score} / ${queue.length*2}</h2><div class="actions"><a class="btn secondary" href="../student-home.html">トップへ</a><button class="btn primary" onclick="location.reload()">もう一度</button></div>`;
 }
 async function init(){
  all=await loadCompounds();

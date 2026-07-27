@@ -1,0 +1,93 @@
+.mode-entry{
+  min-height:100vh;
+  background:
+    radial-gradient(circle at 15% 15%,rgba(255,220,235,.9),transparent 32%),
+    radial-gradient(circle at 85% 80%,rgba(221,232,255,.9),transparent 34%),
+    linear-gradient(135deg,#fff 0%,#f8f0f6 52%,#f1f5fb 100%);
+}
+.entry-main{
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:32px 16px;
+}
+.entry-panel{
+  width:min(900px,100%);
+  padding:clamp(30px,6vw,64px);
+  text-align:center;
+  background:rgba(255,255,255,.94);
+  border:1px solid var(--line);
+  border-radius:28px;
+  box-shadow:0 24px 70px rgba(44,43,77,.12);
+}
+.entry-panel.compact{width:min(680px,100%)}
+.department{
+  margin:0;
+  color:#8f2d65;
+  font-size:clamp(1rem,2vw,1.25rem);
+  font-weight:800;
+  letter-spacing:.16em;
+}
+.entry-panel h1{
+  margin:.35em 0 .25em;
+  font-size:clamp(2rem,6vw,4rem);
+  color:var(--ink);
+}
+.entry-lead{
+  margin:0 0 32px;
+  color:var(--muted);
+  font-size:clamp(1rem,2.5vw,1.2rem);
+}
+.mode-grid{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:20px;
+}
+.mode-card{
+  min-height:210px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  gap:8px;
+  padding:28px 22px;
+  border:2px solid #d9c0d0;
+  border-radius:22px;
+  background:#fff;
+  box-shadow:0 10px 28px rgba(42,51,75,.08);
+  transition:transform .18s ease,box-shadow .18s ease,border-color .18s ease;
+}
+.mode-card:hover,.mode-card:focus-visible{
+  transform:translateY(-3px);
+  border-color:#a84c7d;
+  box-shadow:0 16px 36px rgba(77,45,75,.15);
+  outline:3px solid rgba(168,76,125,.2);
+  outline-offset:3px;
+}
+.mode-icon,.preparing-icon{font-size:3rem;line-height:1}
+.mode-title{font-size:clamp(1.25rem,3vw,1.6rem);font-weight:800}
+.mode-description{color:var(--muted)}
+.preparing-icon{margin:26px 0 12px}
+.entry-back{
+  display:inline-flex;
+  margin-top:12px;
+  padding:12px 18px;
+  border-radius:14px;
+  background:#edf2f7;
+  color:#29445f;
+  font-weight:800;
+}
+.entry-back:focus-visible{
+  outline:3px solid rgba(168,76,125,.35);
+  outline-offset:3px;
+}
+@media(max-width:640px){
+  .entry-main{padding:18px 12px}
+  .entry-panel{padding:30px 18px;border-radius:22px}
+  .mode-grid{grid-template-columns:1fr}
+  .mode-card{min-height:170px}
+}
+@media(prefers-reduced-motion:reduce){
+  .mode-card{transition:none}
+}

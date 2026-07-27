@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#7c2859">
+  <title>オープンキャンパス体験</title>
+  <link rel="stylesheet" href="../css/common.css">
+  <link rel="stylesheet" href="../css/open-campus.css">
+</head>
+<body class="open-campus">
+  <header class="outreach-header">
+    <a class="outreach-brand" href="../index.html">
+      <span class="department">食香粧化学科</span>
+      <span class="department-theme">食・香り・化粧を科学する</span>
+    </a>
+    <span class="experience-label">オープンキャンパス体験</span>
+  </header>
+
+  <main class="outreach-main">
+    <section class="experience-card" aria-label="オープンキャンパス問題">
+      <div class="state-panel" data-state-panel="IDLE_QUESTION IDLE_COUNTDOWN">
+        <p class="card-label">問題</p>
+        <h1>次の香りを示す成分は？</h1>
+        <p class="question-hint" data-compound-odor>香りの説明を読み込み中…</p>
+        <div class="outreach-choices" aria-label="選択肢">
+          <button type="button" data-choice-index="0">読み込み中…</button>
+          <button type="button" data-choice-index="1">読み込み中…</button>
+          <button type="button" data-choice-index="2">読み込み中…</button>
+          <button type="button" data-choice-index="3">読み込み中…</button>
+        </div>
+        <div class="countdown thinking" id="countdown" aria-label="考えてみよう">
+          <span aria-hidden="true">考えてみよう</span>
+        </div>
+      </div>
+
+      <div class="state-panel answer-panel hidden" data-state-panel="IDLE_ANSWER">
+        <h2>正解は・・・</h2>
+        <strong data-compound-name>読み込み中…</strong>
+      </div>
+
+      <div class="state-panel structure-panel hidden" data-state-panel="IDLE_STRUCTURE">
+        <p class="card-label">構造式</p>
+        <h2 data-compound-name>読み込み中…</h2>
+        <img data-compound-structure src="" alt="">
+        <p class="structure-odor" data-compound-odor>香りの説明を読み込み中…</p>
+      </div>
+
+      <div class="state-panel usage-panel hidden" data-state-panel="IDLE_USAGE">
+        <h2 data-compound-name>読み込み中…</h2>
+        <img data-compound-structure src="" alt="">
+        <h2>こんなものに含まれているよ！</h2>
+        <ul class="usage-list" id="foundInList">
+          <li>代表例を読み込み中…</li>
+        </ul>
+      </div>
+
+      <div class="state-panel next-panel hidden" data-state-panel="IDLE_NEXT">
+        <p class="state-icon" aria-hidden="true">🌸</p>
+        <h2>次の問題へ</h2>
+      </div>
+
+      <button class="start-experience" type="button">体験クイズを始める</button>
+      <p id="stateAnnouncement" class="visually-hidden" aria-live="polite"></p>
+    </section>
+  </main>
+  <script type="module" src="../js/outreach/state-machine.js"></script>
+</body>
+</html>
