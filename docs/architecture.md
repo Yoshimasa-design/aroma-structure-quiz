@@ -16,9 +16,9 @@
 > 開発を再開するときは、最初に本ファイルを確認し、現在の方針と次の作業を確認する。
 # Aroma Structure Quiz Architecture
 
-Version: 1.0
+Version: 1.2
 Status: Designing Phase 2
-Last updated: 2026-07-23
+Last updated: 2026-07-27
 
 ---
 
@@ -123,6 +123,12 @@ DOM操作禁止。
 
 共通ユーティリティ。
 
+## detail-modal.js
+
+香気成分の詳細表示、開閉、フォーカス復帰、モーダル固有のイベント登録を担当する。
+
+呼び出し元固有の画面更新はコールバックで受け取り、一覧やクイズの状態を保持しない。
+
 ---
 
 # 6. Dependency Rules
@@ -144,6 +150,16 @@ ui.js
 state.js
 
 common.js は独立。
+
+detail-modal.js
+
+↓
+
+common.js（テーマ適用）
+
+storage.js（お気に入りUI）
+
+呼び出し元固有の更新処理はコールバックで受け取り、呼び出し元モジュールを import しない。
 
 循環参照は禁止。
 
@@ -190,6 +206,8 @@ common.js は独立。
 ✓ Use quiz engine for distractor generation
 
 ✓ Remove distractor generation from common module
+
+✓ Extract encyclopedia detail modal into `detail-modal.js` (Phase 1)
 
 ## Next
 
@@ -274,6 +292,7 @@ Git のコミット履歴では理由まで分からなくなることがある�
 | 2026-07-23 | `state.js` を唯一の状態管理モジュールとする方針を決定 | 状態を一元管理し、UI・ロジック・テーマを疎結合に保つため |
 | 2026-07-23 | `architecture.md` を唯一の設計書とする | 長期間プロジェクトを中断しても、設計思想を再現できるようにするため |
 | 2026-07-23 | 設計書の `state.js（空）` という記述を修正 | `state.js` には既存の状態オブジェクトがある一方、現行の `quiz.js` は独自に状態を保持していることをコード確認で把握したため |
+| 2026-07-27 | 詳細モーダルを `detail-modal.js` に分離し、呼び出し元の更新処理をコールバックで注入する | モーダルを複数画面から再利用可能にしつつ、各画面の状態とモーダル処理の循環依存を避けるため |
 
 
 ---
@@ -380,4 +399,3 @@ AIとの共同開発では、以下のルールを守る。
 | 2026-07-23 | `docs/architecture.md` を唯一の設計書 (Single Source of Truth) とする | 設計書が複数存在すると内容が分散し、長期保守が困難になるため |
 | 2026-07-23 | 開発開始時に必ず `docs/architecture.md` を確認する運用を採用 | 新しいチャットや長期間の中断後でも、安全に作業を再開できるようにするため |
 | 2026-07-23 | 設計変更はコード変更より先に行うことを正式ルールとした | 設計と実装の不一致を防ぐため |
-
