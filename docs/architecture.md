@@ -16,8 +16,8 @@
 > 開発を再開するときは、最初に本ファイルを確認し、現在の方針と次の作業を確認する。
 # Aroma Structure Quiz Architecture
 
-Version: 1.2
-Status: Designing Phase 2
+Version: 1.0
+Status: Release Candidate
 Last updated: 2026-07-27
 
 ---
@@ -67,19 +67,26 @@ architecture.md を唯一の仕様書とする。
 
 # 3. Current Structure
 
-app.js
-├── common.js
-├── quiz.js
-├── stats.js
-├── learning.js
-├── quiz-engine.js
-├── state.js（既存の状態オブジェクトあり。ただし現行の quiz.js では未使用）
-├── ui.js（空）
-└── theme.js（空）
+各HTMLページが、その画面を担当するJavaScriptモジュールを読み込む静的サイトである。
+
+- `common.js`: データ取得、テーマ適用、学習結果記録などの共通処理
+- `storage.js`: お気に入りと学習記録の永続化、お気に入りUI
+- `quiz-engine.js`: 出題順・選択肢生成など、DOMに依存しないクイズロジック
+- `detail-modal.js`: 共通詳細モーダル
+- `encyclopedia.js`: 図鑑画面
+- `learn.js`: 香りから学ぶ画面
+- `quiz.js`: 香りクイズ・構造式クイズ
+- `review.js`: 復習画面
+- `progress.js`: 学習記録画面
+
+Version 1.0では、図鑑・香りから学ぶ・香りクイズ・構造式クイズが
+同じ `detail-modal.js` と `detail-modal.css` を利用する。
 
 ---
 
-# 4. Target Architecture
+# 4. Future Target Architecture
+
+以下はVersion 1.0の現状ではなく、将来の段階的なリファクタリング目標である。
 
 app.js
 ├── state.js
@@ -171,27 +178,17 @@ encyclopedia.js、learn.js、quiz.js は `createDetailModal()` でモーダル�
 
 # 7. State Ownership
 
-状態は state.js のみ保持する。
+将来的には状態を `state.js` に集約する。
+
+Version 1.0では各ページモジュールが画面固有の状態を保持し、
+お気に入りと学習記録のみ `storage.js` を通して永続化する。
 
 ---
 
 # 8. Campus Version
 
-変更するもの
-
-・テーマ
-
-・データ
-
-・一部UI
-
-変更しないもの
-
-・quiz-engine
-
-・state
-
-・学習アルゴリズム
+Campus版はVersion 1.1以降の計画であり、Version 1.0には含めない。
+詳細は末尾のVersion Roadmapに記録する。
 
 ---
 
@@ -231,7 +228,7 @@ encyclopedia.js、learn.js、quiz.js は `createDetailModal()` でモーダル�
 
 □ app.js簡素化
 
-□ Campus版対応
+これらはVersion 1.0リリース後に、機能追加とは分けて検討する。
 
 ---
 
@@ -241,9 +238,9 @@ encyclopedia.js、learn.js、quiz.js は `createDetailModal()` でモーダル�
 
 ・動作確認後にコミット
 
-・DOM操作は ui.js のみ
+・将来的にDOM操作を ui.js へ集約する
 
-・状態は state.js のみ
+・将来的に状態を state.js へ集約する
 
 ・quiz-engine はDOMを触らない
 
@@ -279,11 +276,17 @@ encyclopedia.js、learn.js、quiz.js は `createDetailModal()` でモーダル�
 
 # 13. Revision History
 
+## v1.0 RC (2026-07-27)
+
+・図鑑、香りから学ぶ、香りクイズ、構造式クイズの詳細モーダルを共通化
+
+・Version 1.0の実装構成と将来目標を明確化
+
 ## v1.0 (2026-07-23)
 
 ・Architecture作成
 
-・Phase2開始
+・Phase 2開始
 
 ---
 
@@ -424,8 +427,11 @@ Version 1.0 完成後に以下を予定する。現時点では記録のみと�
 - オープンキャンパスモード
 - 入口画面（大学生向け／オープンキャンパス）
 - アイドルモード
-- スライドショー
+- 自動スライドショー
+- 一定時間で解答・解説を表示
+- 「体験クイズを始める」ボタン
 - 体験クイズ
+- 体験終了後、一定時間でスライドショーへ戻る
 
 ## Version 1.2
 
