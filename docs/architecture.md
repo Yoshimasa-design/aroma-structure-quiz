@@ -161,7 +161,7 @@ storage.js（お気に入りUI）
 
 呼び出し元固有の更新処理はコールバックで受け取り、呼び出し元モジュールを import しない。
 
-encyclopedia.js と learn.js は `createDetailModal()` でモーダルを初期化し、表示対象の成分を `open()` に渡す。
+encyclopedia.js、learn.js、香りモードの quiz.js は `createDetailModal()` でモーダルを初期化し、表示対象の成分を `open()` に渡す。
 
 モーダルのHTML構造とCSSは各利用ページで共通のものを使用する。モーダルCSSは `detail-modal.css` に分離し、モーダルを利用するページだけが読み込む。
 
@@ -214,6 +214,8 @@ encyclopedia.js と learn.js は `createDetailModal()` でモーダルを初期�
 ✓ Extract encyclopedia detail modal into `detail-modal.js` (Phase 1)
 
 ✓ Open the shared detail modal from `learn.js` without page navigation (Phase 2-1)
+
+✓ Open the shared detail modal from the odor quiz without page navigation (Phase 2-2)
 
 ## Next
 
@@ -300,6 +302,7 @@ Git のコミット履歴では理由まで分からなくなることがある�
 | 2026-07-23 | 設計書の `state.js（空）` という記述を修正 | `state.js` には既存の状態オブジェクトがある一方、現行の `quiz.js` は独自に状態を保持していることをコード確認で把握したため |
 | 2026-07-27 | 詳細モーダルを `detail-modal.js` に分離し、呼び出し元の更新処理をコールバックで注入する | モーダルを複数画面から再利用可能にしつつ、各画面の状態とモーダル処理の循環依存を避けるため |
 | 2026-07-27 | 学ぶページの「図鑑で見る」から共通詳細モーダルを開き、モーダルCSSを `detail-modal.css` に分離する | ページ遷移による学習状態の消失を防ぎ、モーダルを使わないページへ影響させずに同じ表示を再利用するため |
+| 2026-07-27 | 共有 `quiz.js` では香りモードだけが共通詳細モーダルを初期化する | 構造式クイズの既存動作と依存するHTMLを変更せず、香りクイズだけを段階的に移行するため |
 
 
 ---
@@ -406,3 +409,23 @@ AIとの共同開発では、以下のルールを守る。
 | 2026-07-23 | `docs/architecture.md` を唯一の設計書 (Single Source of Truth) とする | 設計書が複数存在すると内容が分散し、長期保守が困難になるため |
 | 2026-07-23 | 開発開始時に必ず `docs/architecture.md` を確認する運用を採用 | 新しいチャットや長期間の中断後でも、安全に作業を再開できるようにするため |
 | 2026-07-23 | 設計変更はコード変更より先に行うことを正式ルールとした | 設計と実装の不一致を防ぐため |
+
+---
+
+# 19. Version Roadmap
+
+Version 1.0 完成後に以下を予定する。現時点では記録のみとし、実装しない。
+
+## Version 1.1
+
+- オープンキャンパスモード
+- 入口画面（大学生向け／オープンキャンパス）
+- アイドルモード
+- スライドショー
+- 体験クイズ
+
+## Version 1.2
+
+- 検索
+- お気に入り一覧
+- 学習統計
