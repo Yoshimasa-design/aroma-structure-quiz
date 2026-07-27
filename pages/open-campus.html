@@ -19,7 +19,13 @@
 
   <main class="outreach-main">
     <section class="experience-card" aria-label="オープンキャンパス問題">
-      <div class="state-panel" data-state-panel="IDLE_QUESTION IDLE_COUNTDOWN">
+      <div class="state-panel quiz-message-panel hidden" data-state-panel="QUIZ_INTRO">
+        <p class="state-icon" aria-hidden="true">🌸</p>
+        <h1>クイズに挑戦！</h1>
+        <p>全部で3問です</p>
+      </div>
+
+      <div class="state-panel" data-state-panel="IDLE_QUESTION IDLE_COUNTDOWN QUIZ_QUESTION">
         <p class="card-label">問題</p>
         <h1>次の香りを示す成分は？</h1>
         <p class="question-hint" data-compound-odor>香りの説明を読み込み中…</p>
@@ -34,19 +40,23 @@
         </div>
       </div>
 
+      <div class="state-panel quiz-feedback-panel hidden" data-state-panel="QUIZ_FEEDBACK">
+        <h2 id="quizFeedback">回答結果</h2>
+      </div>
+
       <div class="state-panel answer-panel hidden" data-state-panel="IDLE_ANSWER">
         <h2>正解は・・・</h2>
         <strong data-compound-name>読み込み中…</strong>
       </div>
 
-      <div class="state-panel structure-panel hidden" data-state-panel="IDLE_STRUCTURE">
+      <div class="state-panel structure-panel hidden" data-state-panel="IDLE_STRUCTURE QUIZ_STRUCTURE">
         <p class="card-label">構造式</p>
         <h2 data-compound-name>読み込み中…</h2>
         <img data-compound-structure src="" alt="">
         <p class="structure-odor" data-compound-odor>香りの説明を読み込み中…</p>
       </div>
 
-      <div class="state-panel usage-panel hidden" data-state-panel="IDLE_USAGE">
+      <div class="state-panel usage-panel hidden" data-state-panel="IDLE_USAGE QUIZ_USAGE">
         <h2 data-compound-name>読み込み中…</h2>
         <img data-compound-structure src="" alt="">
         <h2>こんなものに含まれているよ！</h2>
@@ -58,6 +68,22 @@
       <div class="state-panel next-panel hidden" data-state-panel="IDLE_NEXT">
         <p class="state-icon" aria-hidden="true">🌸</p>
         <h2>次の問題へ</h2>
+      </div>
+
+      <div class="state-panel quiz-next-panel hidden" data-state-panel="QUIZ_NEXT">
+        <p class="state-icon" aria-hidden="true">🌸</p>
+        <button id="quizNext" type="button">次の問題</button>
+      </div>
+
+      <div class="state-panel quiz-message-panel hidden" data-state-panel="QUIZ_RESULT">
+        <p class="state-icon" aria-hidden="true">🎉</p>
+        <h1>おつかれさまでした！</h1>
+        <p data-quiz-result-score></p>
+        <p data-quiz-result-message></p>
+        <div class="quiz-result-actions">
+          <button id="quizRetry" type="button">もう一度挑戦！</button>
+          <button id="quizReturnIdle" type="button">待機画面へ戻る</button>
+        </div>
       </div>
 
       <button class="start-experience" type="button">体験クイズを始める</button>

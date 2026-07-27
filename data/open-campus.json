@@ -22,6 +22,9 @@
     "answerMs": 2000,
     "structureMs": 4000,
     "usageMs": 4000,
-    "nextMs": 1000
+    "nextMs": 1000,
+    "quizIntroMs": 2000,
+    "quizFeedbackMs": 1500,
+    "quizInactivityMs": 60000
   }
 }

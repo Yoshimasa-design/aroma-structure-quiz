@@ -39,6 +39,8 @@
   padding:32px 0 64px;
 }
 .experience-card{
+  position:relative;
+  height:610px;
   min-height:610px;
   display:flex;
   flex-direction:column;
@@ -95,13 +97,9 @@
   font-weight:800;
   cursor:pointer;
 }
-.outreach-choices button:hover{
-  border-color:#a84c7d;
-  background:#fcf5f9;
+.open-campus[data-mode="quiz"] .outreach-choices button{
+  cursor:pointer;
 }
-.outreach-choices button:focus-visible,
-.start-experience:focus-visible,
-.state-previews summary:focus-visible,
 .outreach-brand:focus-visible{
   outline:4px solid #bd6c98;
   outline-offset:4px;
@@ -136,6 +134,54 @@
   font-weight:900;
   cursor:pointer;
   box-shadow:0 10px 24px rgba(101,65,154,.22);
+}
+.open-campus[data-mode="quiz"] .start-experience{display:none}
+.quiz-message-panel h1,
+.quiz-feedback-panel h2{
+  margin:12px 0;
+  color:#7c2859;
+  font-size:clamp(2rem,7vw,4rem);
+}
+.quiz-message-panel p{
+  margin:10px 0;
+  font-size:clamp(1.3rem,4vw,2rem);
+  font-weight:800;
+}
+.quiz-next-panel button{
+  width:min(420px,100%);
+  min-height:66px;
+  padding:14px 24px;
+  border:0;
+  border-radius:18px;
+  background:#7c2859;
+  color:#fff;
+  font-size:clamp(1.2rem,4vw,1.7rem);
+  font-weight:900;
+  cursor:pointer;
+}
+.quiz-result-actions{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:14px;
+  width:min(680px,100%);
+  margin-top:24px;
+}
+.quiz-result-actions button{
+  flex:1 1 260px;
+  min-height:60px;
+  padding:12px 20px;
+  border:2px solid #7c2859;
+  border-radius:16px;
+  background:#7c2859;
+  color:#fff;
+  font-size:clamp(1.05rem,3vw,1.35rem);
+  font-weight:900;
+  cursor:pointer;
+}
+.quiz-result-actions button+button{
+  background:#fff;
+  color:#7c2859;
 }
 .answer-panel h2,.next-panel h2{
   margin:10px 0;
@@ -208,13 +254,58 @@
   .outreach-header{width:calc(100% - 28px);padding-top:18px}
   .outreach-main{width:calc(100% - 20px)}
   .experience-card{padding:24px 14px}
-  .experience-card{min-height:620px}
+  .experience-card{height:620px;min-height:620px}
   .outreach-choices button{min-height:60px}
   .countdown{width:170px;height:82px;font-size:2.1rem}
   .countdown.thinking{font-size:1.2rem}
   .structure-panel img{height:220px}
   .usage-panel img{height:160px}
 }
+/* Motion */
+.state-panel{
+  opacity:1;
+  transition:opacity 220ms ease;
+}
+.state-panel.hidden{
+  position:absolute;
+  visibility:hidden;
+  display:flex;
+  opacity:0;
+  pointer-events:none;
+}
+
+/* Structure */
+.structure-panel img{
+  transform:scale(1);
+  transition:transform 220ms ease;
+}
+.structure-panel.hidden img{transform:scale(.97)}
+
+/* Buttons */
+.open-campus button{
+  transition:
+    transform 160ms ease,
+    filter 160ms ease,
+    border-color 160ms ease;
+}
+.open-campus button:not(:disabled):hover{
+  filter:brightness(1.04);
+  transform:translateY(-1px);
+}
+.open-campus button:not(:disabled):active{transform:translateY(0)}
+.open-campus button:focus-visible{
+  outline:4px solid #bd6c98;
+  outline-offset:4px;
+}
+.open-campus .outreach-choices button:not(:disabled):hover{
+  border-color:#a84c7d;
+  background:#fff;
+}
+
 @media(prefers-reduced-motion:reduce){
-  *,*::before,*::after{scroll-behavior:auto!important;transition:none!important}
+  *,*::before,*::after{
+    scroll-behavior:auto!important;
+    transition:none!important;
+    animation:none!important;
+  }
 }

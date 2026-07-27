@@ -1,5 +1,6 @@
 import{createTimer}from"./timer.js";
 import{createPlaylist}from"./playlist.js";
+import{createQuizController}from"./quiz-controller.js";
 import{loadCompounds,shuffle}from"../common.js";
 
 const STATE_ORDER=[
@@ -48,7 +49,10 @@ function validateTimings(timings){
     "answerMs",
     "structureMs",
     "usageMs",
-    "nextMs"
+    "nextMs",
+    "quizIntroMs",
+    "quizFeedbackMs",
+    "quizInactivityMs"
   ];
 
   required.forEach(function(key){
@@ -103,6 +107,7 @@ function applyCompoundData(compound,choices,foundIn,structureSrc){
   document.querySelectorAll("[data-choice-index]").forEach(function(button){
     const index=Number(button.getAttribute("data-choice-index"));
     button.textContent=choices[index].name_ja;
+    button.setAttribute("data-choice-id",choices[index].id);
   });
 
   const foundInList=document.querySelector("#foundInList");
@@ -155,6 +160,7 @@ async function init(){
   let machine=null;
   let currentCompound=null;
   let lastChoiceOrder="";
+  let idleActive=true;
 
   function getFoundIn(compound){
     const outreach=config.outreachCompounds&&config.outreachCompounds[compound.id];
@@ -196,6 +202,7 @@ async function init(){
     await loadImage(structureSrc);
     applyCompoundData(compound,choices,foundIn,structureSrc);
     currentCompound=compound;
+    return{compound:compound,choices:choices};
   }
 
   function showDataError(error){
@@ -225,6 +232,14 @@ async function init(){
       countdown.setAttribute("aria-label","考えてみよう");
     }
     announce(stateLabel(state,currentCompound));
+  }
+
+  function showPanel(state){
+    document.body.setAttribute("data-state",state);
+    document.querySelectorAll("[data-state-panel]").forEach(function(panel){
+      const panelStates=panel.getAttribute("data-state-panel").split(" ");
+      panel.classList.toggle("hidden",panelStates.indexOf(state)===-1);
+    });
   }
 
   function nextState(state){
@@ -296,8 +311,27 @@ async function init(){
   machine=createStateMachine({timer:timer,states:states,render:render});
   machine.transition("IDLE_QUESTION");
 
+  createQuizController({
+    card:document.querySelector(".experience-card"),
+    timings:config.timings,
+    pauseIdle:function(){
+      idleActive=false;
+      timer.cancel();
+    },
+    resumeIdle:function(){
+      idleActive=true;
+      prepareNextCompound().then(function(){
+        machine.transition("IDLE_QUESTION");
+      }).catch(showDataError);
+    },
+    prepareQuestion:prepareNextCompound,
+    showPanel:showPanel,
+    announce:announce,
+    showError:showDataError
+  });
+
   document.addEventListener("visibilitychange",function(){
-    if(document.visibilityState==="visible"){
+    if(document.visibilityState==="visible"&&idleActive){
       machine.restart();
     }
   });
