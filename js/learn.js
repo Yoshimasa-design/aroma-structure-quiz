@@ -2,7 +2,9 @@
 import{loadCompounds,shuffle,theme,addResult,recordSession}from"./common.js";
 import{distract}from"./quiz-engine.js";
 import{favoriteButtonMarkup,bindFavoriteButtons}from"./storage.js";
+import{createDetailModal}from"./detail-modal.js";
 let all=[],queue=[],i=0,stage=0,score=0,locked=false;
+let detailModal=null;
 const $=s=>document.querySelector(s), card=$("#card"),choices=$("#choices"),feedback=$("#feedback");
 function render(){
  const a=queue[i];locked=false;feedback.classList.add("hidden");theme(card,a);
@@ -31,9 +33,13 @@ function answer(o,btn){
    <img class="final-structure" src="../${a.structure}" alt="${a.name_ja}の構造式">
    <div class="feedback-grid"><div><b>分子式</b><br>${a.formula}</div><div><b>分子量</b><br>${a.molecular_weight}</div><div><b>官能基</b><br>${a.functional_group}</div><div><b>構造の特徴</b><br>${a.structure_feature}</div></div>
    <div class="memory"><b>覚えるポイント</b><ul>${a.memorize.filter(Boolean).map(x=>`<li>${x}</li>`).join("")}</ul></div>
-   <div class="actions favorite-actions">${favoriteButtonMarkup(a.id)}<a class="btn secondary" href="encyclopedia.html?id=${a.id}">図鑑で見る</a><button class="btn primary" id="next">${i===queue.length-1?"結果を見る":"次の問題"}</button></div>`;
+   <div class="actions favorite-actions">${favoriteButtonMarkup(a.id)}<button class="btn secondary" id="showDetail" type="button">図鑑で見る</button><button class="btn primary" id="next">${i===queue.length-1?"結果を見る":"次の問題"}</button></div>`;
  }
- bindFavoriteButtons(feedback);$("#next").onclick=advance;feedback.scrollIntoView({behavior:"smooth",block:"nearest"});
+ bindFavoriteButtons(feedback);
+ if(stage===1){
+  $("#showDetail").onclick=()=>detailModal.open(a);
+ }
+ $("#next").onclick=advance;feedback.scrollIntoView({behavior:"smooth",block:"nearest"});
 }
 function advance(){
  if(stage===0){stage=1;render();scrollTo({top:0,behavior:"smooth"});return}
@@ -42,6 +48,7 @@ function advance(){
 }
 async function init(){
  all=await loadCompounds();
+ detailModal=createDetailModal();
  queue=shuffle(all).slice(0,10);
  render();
 }
