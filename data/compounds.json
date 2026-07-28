@@ -459,7 +459,7 @@
     "structure_feature": "芳香環上でヒドロキシ基とエステル基が隣接している。"
   },
   {
-    "id": "phenethyl-alcohol",
+    "id": "2-phenylethanol",
     "name_ja": "2-フェニルエタノール",
     "name_en": "2-Phenylethanol",
     "smiles": "OCCc1ccccc1",
@@ -469,7 +469,7 @@
     "feature": "ベンゼン環と第一級アルコールが2炭素鎖でつながる。",
     "formula": "C8H10O",
     "molecular_weight": 122.17,
-    "structure": "structures/phenethyl-alcohol.svg",
+    "structure": "structures/2-phenylethanol.svg",
     "class_group": "アルコール類",
     "functional_group": "第一級アルコール（−CH₂OH）",
     "subcategory": "芳香族アルコール",
@@ -1030,7 +1030,7 @@
     ],
     "learning_point": "脂肪族エステルと芳香族エステルを比較し、ベンゼン環の有無が香りの印象に影響することを学ぶ。",
     "related_compounds": [
-      "phenethyl-alcohol",
+      "2-phenylethanol",
       "vanillin",
       "hexyl-acetate",
       "eugenol"
@@ -1266,7 +1266,7 @@
       "carvacrol",
       "eugenol",
       "menthol",
-      "one-eight-cineole"
+      "1-8-cineole"
     ]
   },
   {
@@ -1312,12 +1312,12 @@
     "related_compounds": [
       "thymol",
       "eugenol",
-      "one-eight-cineole",
+      "1-8-cineole",
       "camphor"
     ]
   },
   {
-    "id": "one-eight-cineole",
+    "id": "1-8-cineole",
     "name_ja": "1,8-シネオール",
     "name_en": "1,8-Cineole",
     "smiles": "CC1(C2CCC(O1)(CC2)C)C",
@@ -1327,7 +1327,7 @@
     "feature": "酸素原子が二環性骨格の一部となっている環状エーテル型モノテルペン。",
     "formula": "C10H18O",
     "molecular_weight": 154.25,
-    "structure": "structures/one-eight-cineole.svg",
+    "structure": "structures/1-8-cineole.svg",
     "class_group": "テルペン類",
     "functional_group": "環状エーテル結合（C−O−C）",
     "subcategory": "テルペンエーテル",
@@ -1406,7 +1406,7 @@
     ],
     "learning_point": "α-ピネンや1,8-シネオールと比較し、二環性テルペン骨格に含まれる官能基の違いを学ぶ。",
     "related_compounds": [
-      "one-eight-cineole",
+      "1-8-cineole",
       "alpha-pinene",
       "carvone",
       "menthol"
@@ -1794,7 +1794,7 @@
     "related_compounds": [
       "camphor",
       "bornyl-acetate",
-      "one-eight-cineole",
+      "1-8-cineole",
       "alpha-pinene"
     ]
   },
@@ -4388,5 +4388,98 @@
     "difficulty": "基礎",
     "iupac": "4-(4-hydroxyphenyl)butan-2-one",
     "structure_feature": "ベンゼン環にヒドロキシ基とブタノン側鎖が結合した芳香族ケトン。"
+  },
+  {
+    "id": "benzyl-alcohol",
+    "name_ja": "ベンジルアルコール",
+    "name_en": "Benzyl alcohol",
+    "smiles": "C1=CC=C(C=C1)CO",
+    "odor": "ほのかに甘い花の香り",
+    "sources": "ジャスミン、キンモクセイなど",
+    "category": "芳香族アルコール",
+    "feature": "ベンゼン環にヒドロキシメチル基が結合した芳香族アルコール。",
+    "formula": "C7H8O",
+    "molecular_weight": 108.14,
+    "structure": "structures/benzyl-alcohol.svg",
+    "class_group": "アルコール類",
+    "functional_group": "第一級アルコール（−CH₂OH）",
+    "subcategory": "芳香族アルコール",
+    "sources_list": [
+      "ジャスミン",
+      "キンモクセイ"
+    ],
+    "uses": [
+      "香料",
+      "化粧品",
+      "溶剤"
+    ],
+    "description": "さまざまな花に含まれる香り成分です。香料として利用されるほか、化粧品では成分を溶かす目的などにも使われています。",
+    "memorize": [
+      "ほのかに甘い花の香り",
+      "アルコール類",
+      "芳香族アルコール"
+    ],
+    "odor_icon": "🌼",
+    "difficulty": "基礎",
+    "iupac": "phenylmethanol",
+    "structure_feature": "ベンゼン環にヒドロキシメチル基が1つ結合している。",
+    "odor_family": [
+      "花",
+      "甘い"
+    ],
+    "learning_point": "ベンゼン環と第一級アルコールを併せもつ芳香族アルコールの構造を学ぶ。",
+    "related_compounds": [
+      "2-phenylethanol",
+      "benzyl-acetate",
+      "benzaldehyde",
+      "cinnamyl-alcohol"
+    ]
+  },
+  {
+    "id": "delta-decalactone",
+    "name_ja": "δ-デカラクトン",
+    "name_en": "Delta-decalactone",
+    "smiles": "CCCCCC1CCCC(=O)O1",
+    "odor": "クリーミーで桃のような甘い香り",
+    "sources": "桃、乳製品など",
+    "category": "ラクトン",
+    "feature": "6員環の環状エステルにペンチル基が結合したδ-ラクトン。",
+    "formula": "C10H18O2",
+    "molecular_weight": 170.25,
+    "structure": "structures/delta-decalactone.svg",
+    "class_group": "エステル類",
+    "functional_group": "6員環の環状エステル（δ-ラクトン）",
+    "subcategory": "δ-ラクトン",
+    "sources_list": [
+      "桃",
+      "乳製品"
+    ],
+    "uses": [
+      "食品香料",
+      "乳製品香料",
+      "香粧品"
+    ],
+    "description": "桃のような甘さとクリーミーさを感じる香り成分です。ミルキーな香りを表現する香料として使われます。",
+    "memorize": [
+      "クリーミーで桃のような甘い香り",
+      "エステル類",
+      "δ-ラクトン"
+    ],
+    "odor_icon": "🍑",
+    "difficulty": "基礎",
+    "iupac": "6-pentyloxan-2-one",
+    "structure_feature": "6員環のラクトン環に直鎖5炭素のペンチル基が結合している。",
+    "odor_family": [
+      "モモ",
+      "果実",
+      "クリーミー"
+    ],
+    "learning_point": "γ-ラクトンとδ-ラクトンの環サイズの違いを構造式から見分ける。",
+    "related_compounds": [
+      "gamma-decalactone",
+      "delta-octalactone",
+      "gamma-undecalactone",
+      "coumarin"
+    ]
   }
 ]

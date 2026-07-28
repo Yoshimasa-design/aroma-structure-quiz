@@ -63,24 +63,47 @@ function validateTimings(timings){
 }
 
 function validateConfig(config){
-  if(!config||!config.outreachCompounds||typeof config.outreachCompounds!=="object"){
-    throw new Error("展示用成分データが設定されていません");
-  }
-  const outreachIds=Object.keys(config.outreachCompounds);
-  if(outreachIds.length<4){
+  if(!config)throw new Error("オープンキャンパス設定がありません");
+  validateTimings(config.timings);
+}
+
+function validateOutreachData(data){
+  if(!data||!Array.isArray(data.compounds)||data.compounds.length<4){
     throw new Error("問題データが不足しています");
   }
-  outreachIds.forEach(function(id){
-    const foundIn=config.outreachCompounds[id].foundIn;
+
+  const slugs={};
+  data.compounds.forEach(function(compound){
     if(
-      !Array.isArray(foundIn)||
-      !foundIn.length||
-      foundIn.some(function(item){
-        return typeof item!=="string"||!item.trim();
-      })
-    )throw new Error("展示用成分データが不正です: "+id);
+      !compound||
+      typeof compound.slug!=="string"||
+      !compound.slug.trim()||
+      typeof compound.name!=="string"||
+      !compound.name.trim()||
+      typeof compound.englishName!=="string"||
+      !compound.englishName.trim()||
+      typeof compound.smell!=="string"||
+      !compound.smell.trim()||
+      typeof compound.comment!=="string"||
+      !compound.comment.trim()||
+      !Array.isArray(compound.foundIn)||
+      !compound.foundIn.length
+    )throw new Error("展示用成分データが不正です");
+
+    if(slugs[compound.slug]){
+      throw new Error("展示用成分IDが重複しています: "+compound.slug);
+    }
+    slugs[compound.slug]=true;
+
+    compound.foundIn.forEach(function(item){
+      if(
+        !item||
+        typeof item.label!=="string"||
+        !item.label.trim()||
+        (item.type!=="natural"&&item.type!=="product")
+      )throw new Error("代表例データが不正です: "+compound.slug);
+    });
   });
-  validateTimings(config.timings);
 }
 
 function getDataErrorMessage(error){
@@ -98,14 +121,18 @@ function loadImage(src){
   });
 }
 
-function applyCompoundData(compound,choices,foundIn,structureSrc){
-  const odorText=(compound.odor_icon?compound.odor_icon+" ":"")+compound.odor;
-
+function applyCompoundData(compound,choices,structureSrc){
   document.querySelectorAll("[data-compound-odor]").forEach(function(element){
-    element.textContent=odorText;
+    element.textContent=compound.odor;
   });
   document.querySelectorAll("[data-compound-name]").forEach(function(element){
     element.textContent=compound.name_ja;
+  });
+  document.querySelectorAll("[data-compound-english]").forEach(function(element){
+    element.textContent=compound.name_en;
+  });
+  document.querySelectorAll("[data-compound-comment]").forEach(function(element){
+    element.textContent=compound.outreach.comment;
   });
   document.querySelectorAll("[data-compound-structure]").forEach(function(image){
     image.src=structureSrc;
@@ -121,10 +148,14 @@ function applyCompoundData(compound,choices,foundIn,structureSrc){
   while(foundInList.firstChild){
     foundInList.removeChild(foundInList.firstChild);
   }
-  foundIn.forEach(function(item){
-    const listItem=document.createElement("li");
-    listItem.textContent=item;
-    foundInList.appendChild(listItem);
+  ["natural","product"].forEach(function(type){
+    compound.outreach.foundIn.forEach(function(item){
+      if(item.type!==type)return;
+      const listItem=document.createElement("li");
+      listItem.className="found-in-badge found-in-"+type;
+      listItem.textContent=item.label;
+      foundInList.appendChild(listItem);
+    });
   });
   foundInList.setAttribute("aria-label",compound.name_ja+"が含まれる代表的なもの");
 }
@@ -142,21 +173,37 @@ function stateLabel(state,compound){
 }
 
 async function init(){
-  const response=await fetch("../data/open-campus.json");
-  if(!response.ok)throw new Error("オープンキャンパス設定を読み込めません");
+  const responses=await Promise.all([
+    fetch("../data/open-campus.json"),
+    fetch("../data/open-campus-compounds.json")
+  ]);
+  if(!responses[0].ok)throw new Error("オープンキャンパス設定を読み込めません");
+  if(!responses[1].ok)throw new Error("展示用成分データを読み込めません");
 
-  const config=await response.json();
+  const data=await Promise.all([
+    responses[0].json(),
+    responses[1].json()
+  ]);
+  const config=data[0];
+  const outreachData=data[1];
   validateConfig(config);
+  validateOutreachData(outreachData);
 
   const compounds=await loadCompounds();
   const compoundsById=new Map(compounds.map(function(compound){
     return[compound.id,compound];
   }));
-  const outreachIds=Object.keys(config.outreachCompounds);
-  const idleCompounds=outreachIds.map(function(id){
-    const compound=compoundsById.get(id);
-    if(!compound)throw new Error("指定された成分が見つかりません: "+id);
-    return compound;
+  const idleCompounds=outreachData.compounds.map(function(outreachCompound){
+    const compound=compoundsById.get(outreachCompound.slug);
+    if(!compound){
+      throw new Error("指定された成分が見つかりません: "+outreachCompound.slug);
+    }
+    return Object.assign({},compound,{
+      name_ja:outreachCompound.name,
+      name_en:outreachCompound.englishName,
+      odor:outreachCompound.smell,
+      outreach:outreachCompound
+    });
   });
   if(idleCompounds.length<4)throw new Error("問題データが不足しています");
 
@@ -169,19 +216,6 @@ async function init(){
   let currentCompound=null;
   let lastChoiceOrder="";
   let idleActive=true;
-
-  function getFoundIn(compound){
-    const outreach=config.outreachCompounds&&config.outreachCompounds[compound.id];
-    if(outreach&&Array.isArray(outreach.foundIn)&&outreach.foundIn.length){
-      return outreach.foundIn;
-    }
-    if(Array.isArray(compound.sources_list)&&compound.sources_list.length){
-      return compound.sources_list.map(function(source){
-        return(compound.odor_icon?compound.odor_icon+" ":"")+source;
-      });
-    }
-    throw new Error("代表製品データがありません: "+compound.id);
-  }
 
   function makeChoices(compound){
     const distractors=shuffle(idleCompounds.filter(function(candidate){
@@ -205,10 +239,9 @@ async function init(){
     const compound=playlist.getNextCompound();
     const choices=makeChoices(compound);
     const structureSrc="../"+compound.structure;
-    const foundIn=getFoundIn(compound);
 
     await loadImage(structureSrc);
-    applyCompoundData(compound,choices,foundIn,structureSrc);
+    applyCompoundData(compound,choices,structureSrc);
     currentCompound=compound;
     return{compound:compound,choices:choices};
   }

@@ -1,0 +1,447 @@
+{
+  "version": "1.2.1",
+  "compounds": [
+    {
+      "slug": "limonene",
+      "name": "リモネン",
+      "englishName": "Limonene",
+      "smell": "柑橘系の爽やかな香り",
+      "foundIn": [
+        { "label": "オレンジ", "type": "natural" },
+        { "label": "レモン", "type": "natural" },
+        { "label": "柑橘系の香水", "type": "product" },
+        { "label": "柑橘系のシャンプー", "type": "product" }
+      ],
+      "comment": "柑橘類の皮に豊富に含まれる香り成分です。果汁よりも皮に多く含まれ、食品の風味づけや香水・化粧品の香りづくりに広く利用されています。"
+    },
+    {
+      "slug": "citral",
+      "name": "シトラール",
+      "englishName": "Citral",
+      "smell": "レモンのような爽やかな香り",
+      "foundIn": [
+        { "label": "レモングラス", "type": "natural" },
+        { "label": "レモンマートル", "type": "natural" },
+        { "label": "レモン風味のキャンディー", "type": "product" },
+        { "label": "レモン系の香水", "type": "product" }
+      ],
+      "comment": "レモンを思わせる爽やかな香りの代表的な成分です。レモングラスなどの精油に多く含まれ、食品や香料の香りづくりに利用されています。"
+    },
+    {
+      "slug": "geraniol",
+      "name": "ゲラニオール",
+      "englishName": "Geraniol",
+      "smell": "バラのような華やかな香り",
+      "foundIn": [
+        { "label": "バラ", "type": "natural" },
+        { "label": "ゼラニウム", "type": "natural" },
+        { "label": "フローラル系の香水", "type": "product" },
+        { "label": "スキンケア化粧品", "type": "product" }
+      ],
+      "comment": "バラを思わせる華やかな香りをもつ成分です。植物から得られる天然香料としても利用され、香水や化粧品の香りづくりに欠かせない成分の一つです。"
+    },
+    {
+      "slug": "nerol",
+      "name": "ネロール",
+      "englishName": "Nerol",
+      "smell": "やさしい花と柑橘の香り",
+      "foundIn": [
+        { "label": "ネロリ（ビターオレンジの花）", "type": "natural" },
+        { "label": "ダマスクローズ", "type": "natural" },
+        { "label": "フローラル系の香水", "type": "product" },
+        { "label": "スキンケア化粧品", "type": "product" }
+      ],
+      "comment": "オレンジの花やバラに含まれる香り成分です。ゲラニオールとよく似ていますが、よりやわらかく上品な香りを演出します。"
+    },
+    {
+      "slug": "neral",
+      "name": "ネラール",
+      "englishName": "Neral",
+      "smell": "みずみずしいレモンの香り",
+      "foundIn": [
+        { "label": "レモングラス", "type": "natural" },
+        { "label": "レモンマートル", "type": "natural" },
+        { "label": "レモン風味の飲料", "type": "product" },
+        { "label": "レモン系の香水", "type": "product" }
+      ],
+      "comment": "シトラールを構成する成分の一つで、フレッシュなレモンらしい香りのもとになります。食品や香料に利用され、爽やかな香りを表現するときに活躍しています。"
+    },
+    {
+      "slug": "geranial",
+      "name": "ゲラニアール",
+      "englishName": "Geranial",
+      "smell": "シャープなレモンの香り",
+      "foundIn": [
+        { "label": "レモングラス", "type": "natural" },
+        { "label": "レモンマートル", "type": "natural" },
+        { "label": "レモン系の香水", "type": "product" },
+        { "label": "レモン風味のキャンディー", "type": "product" }
+      ],
+      "comment": "シトラールを構成する成分の一つで、ネラールよりも力強くシャープなレモンの香りが特徴です。食品や香料に利用され、みずみずしい柑橘の香りを表現するときに活躍しています。"
+    },
+    {
+      "slug": "citronellol",
+      "name": "シトロネロール",
+      "englishName": "Citronellol",
+      "smell": "やさしいバラのような香り",
+      "foundIn": [
+        { "label": "バラ", "type": "natural" },
+        { "label": "シトロネラ", "type": "natural" },
+        { "label": "フローラル系の香水", "type": "product" },
+        { "label": "ボディーソープ", "type": "product" }
+      ],
+      "comment": "バラを思わせるやさしい香りをもつ成分です。天然精油にも多く含まれ、香水や化粧品の上品な香りづくりに利用されています。"
+    },
+    {
+      "slug": "ethyl-hexanoate",
+      "name": "ヘキサン酸エチル",
+      "englishName": "Ethyl hexanoate",
+      "smell": "りんごやパイナップルのような甘い果実の香り",
+      "foundIn": [
+        { "label": "リンゴ", "type": "natural" },
+        { "label": "パイナップル", "type": "natural" },
+        { "label": "フルーツキャンディー", "type": "product" },
+        { "label": "清涼飲料", "type": "product" }
+      ],
+      "comment": "果物のような甘く爽やかな香りをもつ成分です。果実らしい風味を表現するため、食品のフレーバーによく利用されています。"
+    },
+    {
+      "slug": "ethyl-octanoate",
+      "name": "オクタン酸エチル",
+      "englishName": "Ethyl octanoate",
+      "smell": "甘く華やかな果実の香り",
+      "foundIn": [
+        { "label": "ブドウ", "type": "natural" },
+        { "label": "パイナップル", "type": "natural" },
+        { "label": "フルーツ飲料", "type": "product" },
+        { "label": "キャンディー", "type": "product" }
+      ],
+      "comment": "果実を思わせる華やかな香りをもつ成分です。飲み物やお菓子のフルーティーな香りを表現するために利用されています。"
+    },
+    {
+      "slug": "ethyl-butyrate",
+      "name": "酪酸エチル",
+      "englishName": "Ethyl butyrate",
+      "smell": "パイナップルのような甘い香り",
+      "foundIn": [
+        { "label": "パイナップル", "type": "natural" },
+        { "label": "オレンジ", "type": "natural" },
+        { "label": "フルーツキャンディー", "type": "product" },
+        { "label": "炭酸飲料", "type": "product" }
+      ],
+      "comment": "パイナップルを思わせる甘く爽やかな香りの代表的な成分です。少量でも果実らしさを感じやすく、飲料やお菓子の香りづけによく利用されています。"
+    },
+    {
+      "slug": "linalool",
+      "name": "リナロール",
+      "englishName": "Linalool",
+      "smell": "やさしい花のような香り",
+      "foundIn": [
+        { "label": "ラベンダー", "type": "natural" },
+        { "label": "コリアンダー", "type": "natural" },
+        { "label": "フローラル系の香水", "type": "product" },
+        { "label": "ボディーソープ", "type": "product" }
+      ],
+      "comment": "花を思わせるやさしく上品な香りをもつ成分です。多くの植物に含まれ、香水や化粧品だけでなく、食品の香りづけにも利用されています。"
+    },
+    {
+      "slug": "linalyl-acetate",
+      "name": "酢酸リナリル",
+      "englishName": "Linalyl acetate",
+      "smell": "ラベンダーのようなやさしい香り",
+      "foundIn": [
+        { "label": "ラベンダー", "type": "natural" },
+        { "label": "クラリセージ", "type": "natural" },
+        { "label": "フローラル系の香水", "type": "product" },
+        { "label": "アロマオイル", "type": "product" }
+      ],
+      "comment": "ラベンダー精油を代表する香り成分の一つです。穏やかでやさしい香りが特徴で、香水やアロマ製品によく利用されています。"
+    },
+    {
+      "slug": "benzyl-acetate",
+      "name": "ベンジルアセテート",
+      "englishName": "Benzyl acetate",
+      "smell": "ジャスミンのような甘い花の香り",
+      "foundIn": [
+        { "label": "ジャスミン", "type": "natural" },
+        { "label": "イランイラン", "type": "natural" },
+        { "label": "フローラル系の香水", "type": "product" },
+        { "label": "ヘアケア製品", "type": "product" }
+      ],
+      "comment": "ジャスミンを思わせる甘く華やかな香りをもつ成分です。花の香りを表現するため、香水やヘアケア製品に利用されています。"
+    },
+    {
+      "slug": "benzyl-alcohol",
+      "name": "ベンジルアルコール",
+      "englishName": "Benzyl alcohol",
+      "smell": "ほのかに甘い花の香り",
+      "foundIn": [
+        { "label": "ジャスミン", "type": "natural" },
+        { "label": "キンモクセイ", "type": "natural" },
+        { "label": "フローラル系の香水", "type": "product" },
+        { "label": "化粧品", "type": "product" }
+      ],
+      "comment": "さまざまな花に含まれる香り成分です。香料として利用されるほか、化粧品では成分を溶かす目的などにも使われています。"
+    },
+    {
+      "slug": "2-phenylethanol",
+      "name": "フェニルエチルアルコール",
+      "englishName": "2-Phenylethanol",
+      "smell": "バラのような上品な香り",
+      "foundIn": [
+        { "label": "バラ", "type": "natural" },
+        { "label": "カーネーション", "type": "natural" },
+        { "label": "ローズ系の香水", "type": "product" },
+        { "label": "スキンケア化粧品", "type": "product" }
+      ],
+      "comment": "バラの香りを代表する成分の一つです。天然のバラ精油にも含まれ、上品なフローラルの香りを演出するために広く利用されています。"
+    },
+    {
+      "slug": "menthol",
+      "name": "メントール",
+      "englishName": "Menthol",
+      "smell": "ミントのような爽やかな香り",
+      "foundIn": [
+        { "label": "ペパーミント", "type": "natural" },
+        { "label": "ハッカ", "type": "natural" },
+        { "label": "のど飴", "type": "product" },
+        { "label": "歯みがき粉", "type": "product" }
+      ],
+      "comment": "ミントの爽やかさを生み出す代表的な成分です。冷たく感じますが、実際に温度を下げているわけではなく、冷たさを感じる神経を刺激しています。"
+    },
+    {
+      "slug": "1-8-cineole",
+      "name": "ユーカリプトール",
+      "englishName": "1,8-Cineole",
+      "smell": "すっきりとした清涼感のある香り",
+      "foundIn": [
+        { "label": "ユーカリ", "type": "natural" },
+        { "label": "ローズマリー", "type": "natural" },
+        { "label": "のど飴", "type": "product" },
+        { "label": "アロマオイル", "type": "product" }
+      ],
+      "comment": "ユーカリを代表する爽やかな香り成分です。すっきりとした香りが特徴で、食品やアロマ製品、日用品の香りづくりに利用されています。"
+    },
+    {
+      "slug": "camphor",
+      "name": "カンファー",
+      "englishName": "Camphor",
+      "smell": "すっきりとした樟脳の香り",
+      "foundIn": [
+        { "label": "クスノキ", "type": "natural" },
+        { "label": "ローズマリー", "type": "natural" },
+        { "label": "防虫剤", "type": "product" },
+        { "label": "外用ケア用品", "type": "product" }
+      ],
+      "comment": "クスノキに多く含まれる香り成分です。昔から防虫剤などに利用され、特徴のある清涼感のある香りとして知られています。"
+    },
+    {
+      "slug": "thymol",
+      "name": "チモール",
+      "englishName": "Thymol",
+      "smell": "ハーブのような爽やかな香り",
+      "foundIn": [
+        { "label": "タイム", "type": "natural" },
+        { "label": "オレガノ", "type": "natural" },
+        { "label": "マウスウォッシュ", "type": "product" },
+        { "label": "歯みがき粉", "type": "product" }
+      ],
+      "comment": "タイムを代表する香り成分です。爽やかな香りをもち、口腔ケア製品などにも利用されています。"
+    },
+    {
+      "slug": "carvacrol",
+      "name": "カルバクロール",
+      "englishName": "Carvacrol",
+      "smell": "スパイシーでハーブのような香り",
+      "foundIn": [
+        { "label": "オレガノ", "type": "natural" },
+        { "label": "タイム", "type": "natural" },
+        { "label": "ハーブ調味料", "type": "product" },
+        { "label": "アロマオイル", "type": "product" }
+      ],
+      "comment": "オレガノやタイムに多く含まれる香り成分です。料理に使われるハーブの香りを特徴づける成分として知られています。"
+    },
+    {
+      "slug": "vanillin",
+      "name": "バニリン",
+      "englishName": "Vanillin",
+      "smell": "バニラのような甘い香り",
+      "foundIn": [
+        { "label": "バニラビーンズ", "type": "natural" },
+        { "label": "オーク樽", "type": "natural" },
+        { "label": "バニラアイス", "type": "product" },
+        { "label": "バニラ風味のお菓子", "type": "product" }
+      ],
+      "comment": "バニラの甘い香りを代表する成分です。天然のバニラビーンズにも含まれますが、現在は発酵や化学合成によって作られたものも広く利用されています。"
+    },
+    {
+      "slug": "eugenol",
+      "name": "オイゲノール",
+      "englishName": "Eugenol",
+      "smell": "クローブのような甘くスパイシーな香り",
+      "foundIn": [
+        { "label": "クローブ", "type": "natural" },
+        { "label": "シナモン", "type": "natural" },
+        { "label": "スパイス食品", "type": "product" },
+        { "label": "オリエンタル系の香水", "type": "product" }
+      ],
+      "comment": "クローブを代表する香り成分です。スパイスらしい温かみのある香りが特徴で、食品や香水の香りづくりに利用されています。"
+    },
+    {
+      "slug": "cinnamaldehyde",
+      "name": "シンナムアルデヒド",
+      "englishName": "Cinnamaldehyde",
+      "smell": "シナモンのような甘い香り",
+      "foundIn": [
+        { "label": "シナモン", "type": "natural" },
+        { "label": "カシア", "type": "natural" },
+        { "label": "シナモンロール", "type": "product" },
+        { "label": "スパイス菓子", "type": "product" }
+      ],
+      "comment": "シナモンの香りを代表する成分です。焼き菓子や飲み物の香りづけに利用され、世界中で親しまれています。"
+    },
+    {
+      "slug": "anethole",
+      "name": "アネトール",
+      "englishName": "Anethole",
+      "smell": "甘いハーブのような香り",
+      "foundIn": [
+        { "label": "アニス", "type": "natural" },
+        { "label": "フェンネル", "type": "natural" },
+        { "label": "ハーブティー", "type": "product" },
+        { "label": "リキュールの香り", "type": "product" }
+      ],
+      "comment": "アニスやフェンネルの甘い香りを生み出す成分です。ヨーロッパではお菓子や飲み物の香りづけにも利用されています。"
+    },
+    {
+      "slug": "coumarin",
+      "name": "クマリン",
+      "englishName": "Coumarin",
+      "smell": "甘くやさしい草のような香り",
+      "foundIn": [
+        { "label": "桜の葉", "type": "natural" },
+        { "label": "トンカビーンズ", "type": "natural" },
+        { "label": "香水", "type": "product" },
+        { "label": "石けん", "type": "product" }
+      ],
+      "comment": "桜餅を包む葉を思わせる甘い香りの成分として知られています。やさしく落ち着いた香りのため、香水や石けんにも利用されています。"
+    },
+    {
+      "slug": "methyl-salicylate",
+      "name": "メチルサリチレート",
+      "englishName": "Methyl salicylate",
+      "smell": "湿布のようなすっきりした香り",
+      "foundIn": [
+        { "label": "ウィンターグリーン", "type": "natural" },
+        { "label": "シラカバ", "type": "natural" },
+        { "label": "湿布", "type": "product" },
+        { "label": "スポーツ用マッサージクリーム", "type": "product" }
+      ],
+      "comment": "ウィンターグリーンを代表する香り成分です。独特の清涼感があり、外用ケア用品などの香りとしてもよく知られています。"
+    },
+    {
+      "slug": "benzaldehyde",
+      "name": "ベンズアルデヒド",
+      "englishName": "Benzaldehyde",
+      "smell": "アーモンドのような甘い香り",
+      "foundIn": [
+        { "label": "アーモンド", "type": "natural" },
+        { "label": "アンズの種", "type": "natural" },
+        { "label": "杏仁豆腐", "type": "product" },
+        { "label": "焼き菓子", "type": "product" }
+      ],
+      "comment": "アーモンドや杏仁を思わせる香りの成分です。お菓子や飲み物の風味づけにも利用され、甘い香りを演出しています。"
+    },
+    {
+      "slug": "isoamyl-acetate",
+      "name": "酢酸イソアミル",
+      "englishName": "Isoamyl acetate",
+      "smell": "バナナのような甘い香り",
+      "foundIn": [
+        { "label": "バナナ", "type": "natural" },
+        { "label": "ナシ", "type": "natural" },
+        { "label": "バナナ風味のお菓子", "type": "product" },
+        { "label": "チューインガム", "type": "product" }
+      ],
+      "comment": "バナナの香りを代表する成分です。少量でもバナナらしい香りを感じやすいため、食品のフレーバーとして広く利用されています。"
+    },
+    {
+      "slug": "beta-ionone",
+      "name": "β-イオノン",
+      "englishName": "β-Ionone",
+      "smell": "スミレのような上品な花の香り",
+      "foundIn": [
+        { "label": "スミレ", "type": "natural" },
+        { "label": "キンモクセイ", "type": "natural" },
+        { "label": "フローラル系の香水", "type": "product" },
+        { "label": "化粧品", "type": "product" }
+      ],
+      "comment": "スミレを思わせる上品な香りをもつ成分です。植物の色素であるカロテノイドが分解されることで生じることもあり、香水や化粧品の香りづくりに利用されています。"
+    },
+    {
+      "slug": "geosmin",
+      "name": "ジオスミン",
+      "englishName": "Geosmin",
+      "smell": "雨上がりの土のような香り",
+      "foundIn": [
+        { "label": "土", "type": "natural" },
+        { "label": "ビート（テンサイ）", "type": "natural" },
+        { "label": "浄水器", "type": "product" },
+        { "label": "香りの研究", "type": "product" }
+      ],
+      "comment": "雨上がりに感じる土の香りの正体の一つです。土壌中の放線菌などの微生物が作り出しており、自然の香りや水道水のにおいを研究する上でも重要な成分です。"
+    },
+    {
+      "slug": "piperonal",
+      "name": "ヘリオトロピン（ピペロナール）",
+      "englishName": "Piperonal",
+      "smell": "甘くパウダリーな花の香り",
+      "foundIn": [
+        { "label": "ヘリオトロープ", "type": "natural" },
+        { "label": "ブラックペッパー", "type": "natural" },
+        { "label": "パウダリー系の香水", "type": "product" },
+        { "label": "石けん", "type": "product" }
+      ],
+      "comment": "花とバニラを合わせたような甘い香りをもつ成分です。やわらかく落ち着いた印象を与えるため、香水や石けんの香りづくりに利用されています。"
+    },
+    {
+      "slug": "gamma-decalactone",
+      "name": "γ-デカラクトン",
+      "englishName": "Gamma-decalactone",
+      "smell": "桃のような甘くみずみずしい香り",
+      "foundIn": [
+        { "label": "桃", "type": "natural" },
+        { "label": "アプリコット", "type": "natural" },
+        { "label": "桃風味のお菓子", "type": "product" },
+        { "label": "フルーツ飲料", "type": "product" }
+      ],
+      "comment": "桃らしい甘くみずみずしい香りを生み出す代表的な成分です。果実系の食品や飲料のフレーバーに広く利用されています。"
+    },
+    {
+      "slug": "delta-decalactone",
+      "name": "δ-デカラクトン",
+      "englishName": "Delta-decalactone",
+      "smell": "クリーミーで桃のような甘い香り",
+      "foundIn": [
+        { "label": "桃", "type": "natural" },
+        { "label": "乳製品", "type": "natural" },
+        { "label": "アイスクリーム", "type": "product" },
+        { "label": "乳製品風味のお菓子", "type": "product" }
+      ],
+      "comment": "桃のような甘さとクリームのようなまろやかさを感じる成分です。乳製品や果実系食品のコクのある香りを表現するために利用されています。"
+    },
+    {
+      "slug": "hexyl-acetate",
+      "name": "酢酸ヘキシル",
+      "englishName": "Hexyl acetate",
+      "smell": "青リンゴのような爽やかな香り",
+      "foundIn": [
+        { "label": "リンゴ", "type": "natural" },
+        { "label": "ナシ", "type": "natural" },
+        { "label": "青リンゴ風味のキャンディー", "type": "product" },
+        { "label": "フルーツ飲料", "type": "product" }
+      ],
+      "comment": "青リンゴを思わせる爽やかで甘い香りをもつ成分です。果実らしい軽やかな香りを表現するため、飲料やお菓子のフレーバーに利用されています。"
+    }
+  ]
+}
