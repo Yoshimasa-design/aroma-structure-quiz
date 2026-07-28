@@ -1,6 +1,7 @@
 import{createTimer}from"./timer.js";
 import{createPlaylist}from"./playlist.js";
 import{createQuizController}from"./quiz-controller.js";
+import{createProgressBar}from"./progress-bar.js";
 import{loadCompounds,shuffle}from"../common.js";
 
 const STATE_ORDER=[
@@ -296,6 +297,9 @@ async function init(){
   const countdown=document.querySelector("#countdown");
   const countdownNumber=countdown.querySelector("span");
   const panelRenderer=createPanelRenderer();
+  const progressBar=createProgressBar(
+    document.querySelector("[data-progress]")
+  );
   let machine=null;
   let currentCompound=null;
   let lastChoiceOrder="";
@@ -332,6 +336,7 @@ async function init(){
 
   function showDataError(error){
     timer.cancel();
+    progressBar.hide();
     console.error(error);
     const card=document.querySelector(".experience-card");
     if(card){
@@ -348,6 +353,7 @@ async function init(){
   function render(state){
     return panelRenderer.render(state,function(){
       document.body.setAttribute("data-state",state);
+      progressBar.hide();
       if(state==="IDLE_QUESTION"){
         countdown.classList.add("thinking");
         countdownNumber.textContent="考えてみよう";
@@ -360,6 +366,7 @@ async function init(){
   function showPanel(state){
     return panelRenderer.render(state,function(){
       document.body.setAttribute("data-state",state);
+      progressBar.hide();
     });
   }
 
@@ -369,6 +376,7 @@ async function init(){
   }
 
   function scheduleNext(state,duration){
+    progressBar.start(duration);
     timer.schedule(duration,function(){
       machine.transition(nextState(state));
     });
@@ -376,6 +384,7 @@ async function init(){
 
   function runCountdown(){
     let remaining=5;
+    progressBar.start(config.timings.countdownStepMs*remaining);
     countdown.classList.remove("thinking");
     countdownNumber.textContent=String(remaining);
     countdown.setAttribute("aria-label","残り"+remaining+"秒");
@@ -420,6 +429,7 @@ async function init(){
     },
     IDLE_NEXT:{
       enter:function(){
+        progressBar.start(displayTimings.nextMs);
         timer.schedule(displayTimings.nextMs,function(){
           prepareNextCompound().then(function(){
             machine.transition("IDLE_QUESTION");
@@ -443,6 +453,7 @@ async function init(){
     pauseIdle:function(){
       idleActive=false;
       machine.cancel();
+      progressBar.hide();
     },
     resumeIdle:function(){
       idleActive=true;
@@ -452,6 +463,7 @@ async function init(){
     },
     prepareQuestion:prepareNextCompound,
     showPanel:showPanel,
+    progressBar:progressBar,
     announce:announce,
     showError:showDataError
   });

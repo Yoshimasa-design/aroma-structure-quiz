@@ -107,6 +107,7 @@ export function createQuizController(options){
       "QUIZ_USAGE",
       currentQuestion.compound.name_ja+"が含まれる代表的なものを表示しました"
     ).then(function(){
+      options.progressBar.start(options.timings.usageMs);
       phaseTimer.schedule(options.timings.usageMs,function(){
         nextButton.textContent=questionNumber===3?"結果を見る":"次の問題";
         showPanel("QUIZ_NEXT","次の問題ボタンを表示しました").then(function(){
@@ -122,6 +123,7 @@ export function createQuizController(options){
       "QUIZ_STRUCTURE",
       currentQuestion.compound.name_ja+"の構造式を表示しました"
     ).then(function(){
+      options.progressBar.start(options.timings.structureMs);
       phaseTimer.schedule(options.timings.structureMs,function(){
         showUsage().catch(handleError);
       });
