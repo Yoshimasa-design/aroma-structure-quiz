@@ -14,7 +14,17 @@
       <span class="department">食香粧化学科</span>
       <span class="department-theme">食・香り・化粧を科学する</span>
     </a>
-    <span class="experience-label">オープンキャンパス体験</span>
+    <div class="outreach-actions">
+      <span class="experience-label">オープンキャンパス体験</span>
+      <button class="exhibition-button" type="button" data-exhibition-enter>
+        展示モード
+      </button>
+      <button class="exhibition-button exhibition-exit" type="button"
+        data-exhibition-exit hidden>
+        展示モードを終了
+      </button>
+    </div>
+    <p class="visually-hidden" data-exhibition-status aria-live="polite"></p>
   </header>
 
   <main class="outreach-main">
@@ -95,6 +105,7 @@
       <p id="stateAnnouncement" class="visually-hidden" aria-live="polite"></p>
     </section>
   </main>
+  <script type="module" src="../js/outreach/exhibition-mode.js"></script>
   <script type="module" src="../js/outreach/state-machine.js"></script>
 </body>
 </html>
