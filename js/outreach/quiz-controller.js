@@ -233,14 +233,16 @@ export function createQuizController(options){
   });
 
   document.addEventListener("click",function(event){
-    if(mode==="idle"){
+    if(mode==="idle"&&event.target.closest(".start-experience")){
       event.preventDefault();
       startQuiz();
     }
   });
 
-  document.addEventListener("touchend",function(){
-    if(mode==="idle")startQuiz();
+  document.addEventListener("touchend",function(event){
+    if(mode==="idle"&&event.target.closest(".start-experience")){
+      startQuiz();
+    }
   });
 
   card.addEventListener("keydown",function(){
