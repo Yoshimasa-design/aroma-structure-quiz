@@ -188,6 +188,10 @@ async function init(){
   const outreachData=data[1];
   validateConfig(config);
   validateOutreachData(outreachData);
+  const displayTimings=Object.assign({},config.timings,{
+    usageMs:config.timings.usageMs*2,
+    nextMs:config.timings.nextMs*2
+  });
 
   const compounds=await loadCompounds();
   const compoundsById=new Map(compounds.map(function(compound){
@@ -336,11 +340,11 @@ async function init(){
       enter:function(){scheduleNext("IDLE_STRUCTURE",config.timings.structureMs)}
     },
     IDLE_USAGE:{
-      enter:function(){scheduleNext("IDLE_USAGE",config.timings.usageMs)}
+      enter:function(){scheduleNext("IDLE_USAGE",displayTimings.usageMs)}
     },
     IDLE_NEXT:{
       enter:function(){
-        timer.schedule(config.timings.nextMs,function(){
+        timer.schedule(displayTimings.nextMs,function(){
           prepareNextCompound().then(function(){
             machine.transition("IDLE_QUESTION");
           }).catch(showDataError);
@@ -354,7 +358,7 @@ async function init(){
 
   createQuizController({
     card:document.querySelector(".experience-card"),
-    timings:config.timings,
+    timings:displayTimings,
     pauseIdle:function(){
       idleActive=false;
       timer.cancel();
