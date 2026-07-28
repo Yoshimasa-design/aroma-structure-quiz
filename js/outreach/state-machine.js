@@ -11,14 +11,18 @@ const STATE_ORDER=[
   "IDLE_USAGE",
   "IDLE_NEXT"
 ];
+const PANEL_FADE_MS=170;
 
 export function createStateMachine(options){
   const timer=options.timer;
   const states=options.states;
   let current=null;
+  let transitionSequence=0;
 
   function transition(nextState){
     if(!states[nextState])throw new Error("未定義の状態です: "+nextState);
+    const sequence=transitionSequence+1;
+    transitionSequence=sequence;
 
     timer.cancel();
 
@@ -27,8 +31,10 @@ export function createStateMachine(options){
     }
 
     current=nextState;
-    options.render(current);
-    states[current].enter();
+    Promise.resolve(options.render(current)).then(function(){
+      if(sequence!==transitionSequence||current!==nextState)return;
+      states[nextState].enter();
+    }).catch(options.onError);
   }
 
   function restart(){
@@ -39,7 +45,78 @@ export function createStateMachine(options){
     return current;
   }
 
-  return{transition,restart,getState};
+  function cancel(){
+    transitionSequence+=1;
+    timer.cancel();
+  }
+
+  return{transition,restart,getState,cancel};
+}
+
+function createPanelRenderer(){
+  const panels=Array.from(document.querySelectorAll("[data-state-panel]"));
+  const reducedMotion=window.matchMedia&&
+    window.matchMedia("(prefers-reduced-motion: reduce)");
+  let renderQueue=Promise.resolve();
+
+  function panelForState(state){
+    return panels.find(function(panel){
+      const states=panel.getAttribute("data-state-panel").split(" ");
+      return states.indexOf(state)!==-1;
+    });
+  }
+
+  function delay(){
+    return new Promise(function(resolve){
+      window.setTimeout(resolve,PANEL_FADE_MS);
+    });
+  }
+
+  function setOnlyPanel(nextPanel){
+    panels.forEach(function(panel){
+      panel.classList.toggle("hidden",panel!==nextPanel);
+      panel.classList.remove("is-fading");
+    });
+  }
+
+  function perform(state,updateContent){
+    const nextPanel=panelForState(state);
+    const currentPanel=panels.find(function(panel){
+      return !panel.classList.contains("hidden");
+    });
+    if(!nextPanel)throw new Error("表示パネルが見つかりません: "+state);
+
+    if(
+      (reducedMotion&&reducedMotion.matches)||
+      !currentPanel||
+      currentPanel===nextPanel
+    ){
+      setOnlyPanel(nextPanel);
+      updateContent();
+      return Promise.resolve();
+    }
+
+    currentPanel.classList.add("is-fading");
+    return delay().then(function(){
+      currentPanel.classList.add("hidden");
+      currentPanel.classList.remove("is-fading");
+      updateContent();
+      nextPanel.classList.remove("hidden");
+      nextPanel.classList.add("is-fading");
+      void nextPanel.offsetWidth;
+      nextPanel.classList.remove("is-fading");
+      return delay();
+    });
+  }
+
+  function render(state,updateContent){
+    renderQueue=renderQueue.then(function(){
+      return perform(state,updateContent);
+    });
+    return renderQueue;
+  }
+
+  return{render:render};
 }
 
 function validateTimings(timings){
@@ -218,6 +295,7 @@ async function init(){
   const announcement=document.querySelector("#stateAnnouncement");
   const countdown=document.querySelector("#countdown");
   const countdownNumber=countdown.querySelector("span");
+  const panelRenderer=createPanelRenderer();
   let machine=null;
   let currentCompound=null;
   let lastChoiceOrder="";
@@ -268,24 +346,20 @@ async function init(){
   }
 
   function render(state){
-    document.body.setAttribute("data-state",state);
-    document.querySelectorAll("[data-state-panel]").forEach(function(panel){
-      const panelStates=panel.getAttribute("data-state-panel").split(" ");
-      panel.classList.toggle("hidden",panelStates.indexOf(state)===-1);
+    return panelRenderer.render(state,function(){
+      document.body.setAttribute("data-state",state);
+      if(state==="IDLE_QUESTION"){
+        countdown.classList.add("thinking");
+        countdownNumber.textContent="考えてみよう";
+        countdown.setAttribute("aria-label","考えてみよう");
+      }
+      announce(stateLabel(state,currentCompound));
     });
-    if(state==="IDLE_QUESTION"){
-      countdown.classList.add("thinking");
-      countdownNumber.textContent="考えてみよう";
-      countdown.setAttribute("aria-label","考えてみよう");
-    }
-    announce(stateLabel(state,currentCompound));
   }
 
   function showPanel(state){
-    document.body.setAttribute("data-state",state);
-    document.querySelectorAll("[data-state-panel]").forEach(function(panel){
-      const panelStates=panel.getAttribute("data-state-panel").split(" ");
-      panel.classList.toggle("hidden",panelStates.indexOf(state)===-1);
+    return panelRenderer.render(state,function(){
+      document.body.setAttribute("data-state",state);
     });
   }
 
@@ -355,7 +429,12 @@ async function init(){
     }
   };
 
-  machine=createStateMachine({timer:timer,states:states,render:render});
+  machine=createStateMachine({
+    timer:timer,
+    states:states,
+    render:render,
+    onError:showDataError
+  });
   machine.transition("IDLE_QUESTION");
 
   createQuizController({
@@ -363,7 +442,7 @@ async function init(){
     timings:displayTimings,
     pauseIdle:function(){
       idleActive=false;
-      timer.cancel();
+      machine.cancel();
     },
     resumeIdle:function(){
       idleActive=true;

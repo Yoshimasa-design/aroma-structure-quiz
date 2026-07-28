@@ -52,8 +52,9 @@ export function createQuizController(options){
   }
 
   function showPanel(state,message){
-    options.showPanel(state);
-    if(message)announce(message);
+    return Promise.resolve(options.showPanel(state)).then(function(){
+      if(message)announce(message);
+    });
   }
 
   function resetInactivity(){
@@ -66,7 +67,6 @@ export function createQuizController(options){
       currentQuestion=question;
       questionNumber+=1;
       acceptingAnswer=true;
-      showPanel("QUIZ_QUESTION","第"+questionNumber+"問を表示しました");
       const countdown=document.querySelector("#countdown");
       countdown.classList.add("thinking");
       countdown.querySelector("span").textContent="第"+questionNumber+"問";
@@ -74,8 +74,13 @@ export function createQuizController(options){
       choices.forEach(function(button){
         button.disabled=false;
       });
-      choices[0].focus();
-      resetInactivity();
+      return showPanel(
+        "QUIZ_QUESTION",
+        "第"+questionNumber+"問を表示しました"
+      ).then(function(){
+        choices[0].focus();
+        resetInactivity();
+      });
     }).catch(handleError);
   }
 
@@ -98,24 +103,29 @@ export function createQuizController(options){
   }
 
   function showUsage(){
-    showPanel(
+    return showPanel(
       "QUIZ_USAGE",
       currentQuestion.compound.name_ja+"が含まれる代表的なものを表示しました"
-    );
-    phaseTimer.schedule(options.timings.usageMs,function(){
-      showPanel("QUIZ_NEXT","次の問題ボタンを表示しました");
-      nextButton.textContent=questionNumber===3?"結果を見る":"次の問題";
-      nextButton.focus();
-      resetInactivity();
+    ).then(function(){
+      phaseTimer.schedule(options.timings.usageMs,function(){
+        nextButton.textContent=questionNumber===3?"結果を見る":"次の問題";
+        showPanel("QUIZ_NEXT","次の問題ボタンを表示しました").then(function(){
+          nextButton.focus();
+          resetInactivity();
+        }).catch(handleError);
+      });
     });
   }
 
   function showStructure(){
-    showPanel(
+    return showPanel(
       "QUIZ_STRUCTURE",
       currentQuestion.compound.name_ja+"の構造式を表示しました"
-    );
-    phaseTimer.schedule(options.timings.structureMs,showUsage);
+    ).then(function(){
+      phaseTimer.schedule(options.timings.structureMs,function(){
+        showUsage().catch(handleError);
+      });
+    });
   }
 
   function answer(button){
@@ -128,18 +138,22 @@ export function createQuizController(options){
     const message=isCorrect?"○ 正解！":"× 残念！";
     if(isCorrect)correctCount+=1;
     feedback.textContent=message;
-    showPanel("QUIZ_FEEDBACK",message);
-    phaseTimer.schedule(options.timings.quizFeedbackMs,showStructure);
-    resetInactivity();
+    showPanel("QUIZ_FEEDBACK",message).then(function(){
+      phaseTimer.schedule(options.timings.quizFeedbackMs,function(){
+        showStructure().catch(handleError);
+      });
+      resetInactivity();
+    }).catch(handleError);
   }
 
   function showResult(){
     const result=getQuizResult(correctCount);
     resultScore.textContent=result.score;
     resultMessage.textContent=result.message;
-    showPanel("QUIZ_RESULT",result.announcement);
-    resetInactivity();
-    retryButton.focus();
+    showPanel("QUIZ_RESULT",result.announcement).then(function(){
+      resetInactivity();
+      retryButton.focus();
+    }).catch(handleError);
   }
 
   function nextQuestion(){
@@ -158,9 +172,10 @@ export function createQuizController(options){
     currentQuestion=null;
     acceptingAnswer=false;
     usedCompoundIds=new Set();
-    showPanel("QUIZ_INTRO","クイズに挑戦。全部で3問です");
-    phaseTimer.schedule(options.timings.quizIntroMs,showQuestion);
-    resetInactivity();
+    showPanel("QUIZ_INTRO","クイズに挑戦。全部で3問です").then(function(){
+      phaseTimer.schedule(options.timings.quizIntroMs,showQuestion);
+      resetInactivity();
+    }).catch(handleError);
   }
 
   function startQuiz(){
