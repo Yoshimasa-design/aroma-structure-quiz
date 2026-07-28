@@ -353,7 +353,9 @@ async function init(){
   function render(state){
     return panelRenderer.render(state,function(){
       document.body.setAttribute("data-state",state);
-      progressBar.hide();
+      if(state!=="IDLE_COUNTDOWN"){
+        progressBar.hide();
+      }
       if(state==="IDLE_QUESTION"){
         countdown.classList.add("thinking");
         countdownNumber.textContent="考えてみよう";
@@ -376,7 +378,10 @@ async function init(){
   }
 
   function scheduleNext(state,duration){
-    progressBar.start(duration);
+    const progressDuration=state==="IDLE_QUESTION"
+      ?duration+(config.timings.countdownStepMs*5)
+      :duration;
+    progressBar.start(progressDuration);
     timer.schedule(duration,function(){
       machine.transition(nextState(state));
     });
@@ -384,7 +389,6 @@ async function init(){
 
   function runCountdown(){
     let remaining=5;
-    progressBar.start(config.timings.countdownStepMs*remaining);
     countdown.classList.remove("thinking");
     countdownNumber.textContent=String(remaining);
     countdown.setAttribute("aria-label","残り"+remaining+"秒");
