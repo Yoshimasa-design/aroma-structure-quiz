@@ -189,8 +189,10 @@ async function init(){
   validateConfig(config);
   validateOutreachData(outreachData);
   const displayTimings=Object.assign({},config.timings,{
+    answerMs:config.timings.answerMs*2.5,
+    structureMs:config.timings.structureMs*2,
     usageMs:config.timings.usageMs*2,
-    nextMs:config.timings.nextMs*2
+    nextMs:config.timings.nextMs*8
   });
 
   const compounds=await loadCompounds();
@@ -334,10 +336,10 @@ async function init(){
       enter:runCountdown
     },
     IDLE_ANSWER:{
-      enter:function(){scheduleNext("IDLE_ANSWER",config.timings.answerMs)}
+      enter:function(){scheduleNext("IDLE_ANSWER",displayTimings.answerMs)}
     },
     IDLE_STRUCTURE:{
-      enter:function(){scheduleNext("IDLE_STRUCTURE",config.timings.structureMs)}
+      enter:function(){scheduleNext("IDLE_STRUCTURE",displayTimings.structureMs)}
     },
     IDLE_USAGE:{
       enter:function(){scheduleNext("IDLE_USAGE",displayTimings.usageMs)}
