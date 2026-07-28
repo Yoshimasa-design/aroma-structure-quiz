@@ -13,6 +13,7 @@ const STATE_ORDER=[
   "IDLE_NEXT"
 ];
 const PANEL_FADE_MS=170;
+const QUIZ_EXPLANATION_EXTENSION_MS=3000;
 
 export function createStateMachine(options){
   const timer=options.timer;
@@ -207,7 +208,9 @@ function applyCompoundData(compound,choices,structureSrc){
     element.textContent=compound.name_ja;
   });
   document.querySelectorAll("[data-compound-english]").forEach(function(element){
-    element.textContent=compound.name_en;
+    element.textContent=compound.id==="1-8-cineole"
+      ?"Eucalyptol (1,8-Cineole)"
+      :compound.name_en;
   });
   document.querySelectorAll("[data-compound-comment]").forEach(function(element){
     element.textContent=compound.outreach.comment;
@@ -271,6 +274,9 @@ async function init(){
     structureMs:config.timings.structureMs*2,
     usageMs:config.timings.usageMs*2,
     nextMs:config.timings.nextMs*8
+  });
+  const quizDisplayTimings=Object.assign({},displayTimings,{
+    usageMs:displayTimings.usageMs+QUIZ_EXPLANATION_EXTENSION_MS
   });
 
   const compounds=await loadCompounds();
@@ -453,7 +459,7 @@ async function init(){
 
   createQuizController({
     card:document.querySelector(".experience-card"),
-    timings:displayTimings,
+    timings:quizDisplayTimings,
     pauseIdle:function(){
       idleActive=false;
       machine.cancel();
