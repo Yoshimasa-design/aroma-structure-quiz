@@ -272,11 +272,8 @@ async function init(){
   const displayTimings=Object.assign({},config.timings,{
     answerMs:config.timings.answerMs*2.5,
     structureMs:config.timings.structureMs*2,
-    usageMs:config.timings.usageMs*2,
+    usageMs:(config.timings.usageMs*2)+QUIZ_EXPLANATION_EXTENSION_MS,
     nextMs:config.timings.nextMs*8
-  });
-  const quizDisplayTimings=Object.assign({},displayTimings,{
-    usageMs:displayTimings.usageMs+QUIZ_EXPLANATION_EXTENSION_MS
   });
 
   const compounds=await loadCompounds();
@@ -459,7 +456,7 @@ async function init(){
 
   createQuizController({
     card:document.querySelector(".experience-card"),
-    timings:quizDisplayTimings,
+    timings:displayTimings,
     pauseIdle:function(){
       idleActive=false;
       machine.cancel();
