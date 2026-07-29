@@ -3,6 +3,7 @@
   "compounds": [
     {
       "slug": "limonene",
+      "confusableWith": ["citral", "neral", "geranial"],
       "name": "リモネン",
       "englishName": "Limonene",
       "smell": "柑橘系の爽やかな香り",
@@ -16,6 +17,7 @@
     },
     {
       "slug": "citral",
+      "confusableWith": ["limonene", "neral", "geranial"],
       "name": "シトラール",
       "englishName": "Citral",
       "smell": "レモンのような爽やかな香り",
@@ -29,6 +31,7 @@
     },
     {
       "slug": "geraniol",
+      "confusableWith": ["nerol", "citronellol", "2-phenylethanol"],
       "name": "ゲラニオール",
       "englishName": "Geraniol",
       "smell": "バラのような華やかな香り",
@@ -42,6 +45,7 @@
     },
     {
       "slug": "nerol",
+      "confusableWith": ["geraniol", "citronellol", "2-phenylethanol"],
       "name": "ネロール",
       "englishName": "Nerol",
       "smell": "やさしい花と柑橘の香り",
@@ -55,6 +59,7 @@
     },
     {
       "slug": "neral",
+      "confusableWith": ["limonene", "citral", "geranial"],
       "name": "ネラール",
       "englishName": "Neral",
       "smell": "みずみずしいレモンの香り",
@@ -68,6 +73,7 @@
     },
     {
       "slug": "geranial",
+      "confusableWith": ["limonene", "citral", "neral"],
       "name": "ゲラニアール",
       "englishName": "Geranial",
       "smell": "シャープなレモンの香り",
@@ -81,6 +87,7 @@
     },
     {
       "slug": "citronellol",
+      "confusableWith": ["geraniol", "nerol", "2-phenylethanol"],
       "name": "シトロネロール",
       "englishName": "Citronellol",
       "smell": "やさしいバラのような香り",
@@ -94,6 +101,7 @@
     },
     {
       "slug": "ethyl-hexanoate",
+      "confusableWith": ["ethyl-octanoate", "ethyl-butyrate", "hexyl-acetate"],
       "name": "ヘキサン酸エチル",
       "englishName": "Ethyl hexanoate",
       "smell": "りんごやパイナップルのような甘い果実の香り",
@@ -107,6 +115,7 @@
     },
     {
       "slug": "ethyl-octanoate",
+      "confusableWith": ["ethyl-hexanoate", "ethyl-butyrate"],
       "name": "オクタン酸エチル",
       "englishName": "Ethyl octanoate",
       "smell": "甘く華やかな果実の香り",
@@ -120,6 +129,7 @@
     },
     {
       "slug": "ethyl-butyrate",
+      "confusableWith": ["ethyl-hexanoate", "ethyl-octanoate"],
       "name": "酪酸エチル",
       "englishName": "Ethyl butyrate",
       "smell": "パイナップルのような甘い香り",
@@ -133,6 +143,7 @@
     },
     {
       "slug": "linalool",
+      "confusableWith": ["benzyl-alcohol"],
       "name": "リナロール",
       "englishName": "Linalool",
       "smell": "やさしい花のような香り",
@@ -159,6 +170,7 @@
     },
     {
       "slug": "benzyl-acetate",
+      "confusableWith": ["benzyl-alcohol"],
       "name": "ベンジルアセテート",
       "englishName": "Benzyl acetate",
       "smell": "ジャスミンのような甘い花の香り",
@@ -172,6 +184,7 @@
     },
     {
       "slug": "benzyl-alcohol",
+      "confusableWith": ["linalool", "benzyl-acetate"],
       "name": "ベンジルアルコール",
       "englishName": "Benzyl alcohol",
       "smell": "ほのかに甘い花の香り",
@@ -185,6 +198,7 @@
     },
     {
       "slug": "2-phenylethanol",
+      "confusableWith": ["geraniol", "nerol", "citronellol"],
       "name": "フェニルエチルアルコール",
       "englishName": "2-Phenylethanol",
       "smell": "バラのような上品な香り",
@@ -198,6 +212,7 @@
     },
     {
       "slug": "menthol",
+      "confusableWith": ["1-8-cineole", "camphor"],
       "name": "メントール",
       "englishName": "Menthol",
       "smell": "ミントのような爽やかな香り",
@@ -211,6 +226,7 @@
     },
     {
       "slug": "1-8-cineole",
+      "confusableWith": ["menthol", "camphor"],
       "name": "ユーカリプトール",
       "englishName": "1,8-Cineole",
       "smell": "すっきりとした清涼感のある香り",
@@ -224,6 +240,7 @@
     },
     {
       "slug": "camphor",
+      "confusableWith": ["menthol", "1-8-cineole"],
       "name": "カンファー",
       "englishName": "Camphor",
       "smell": "すっきりとした樟脳の香り",
@@ -237,6 +254,7 @@
     },
     {
       "slug": "thymol",
+      "confusableWith": ["carvacrol"],
       "name": "チモール",
       "englishName": "Thymol",
       "smell": "ハーブのような爽やかな香り",
@@ -250,6 +268,7 @@
     },
     {
       "slug": "carvacrol",
+      "confusableWith": ["thymol"],
       "name": "カルバクロール",
       "englishName": "Carvacrol",
       "smell": "スパイシーでハーブのような香り",
@@ -406,6 +425,7 @@
     },
     {
       "slug": "gamma-decalactone",
+      "confusableWith": ["delta-decalactone"],
       "name": "γ-デカラクトン",
       "englishName": "Gamma-decalactone",
       "smell": "桃のような甘くみずみずしい香り",
@@ -419,6 +439,7 @@
     },
     {
       "slug": "delta-decalactone",
+      "confusableWith": ["gamma-decalactone"],
       "name": "δ-デカラクトン",
       "englishName": "Delta-decalactone",
       "smell": "クリーミーで桃のような甘い香り",
@@ -432,6 +453,7 @@
     },
     {
       "slug": "hexyl-acetate",
+      "confusableWith": ["ethyl-hexanoate"],
       "name": "酢酸ヘキシル",
       "englishName": "Hexyl acetate",
       "smell": "青リンゴのような爽やかな香り",
