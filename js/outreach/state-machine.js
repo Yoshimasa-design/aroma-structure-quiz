@@ -174,6 +174,16 @@ function validateOutreachData(data){
     }
     slugs[compound.slug]=true;
 
+    if(
+      compound.confusableWith!==undefined&&
+      (
+        !Array.isArray(compound.confusableWith)||
+        compound.confusableWith.some(function(slug){
+          return typeof slug!=="string"||!slug.trim()||slug===compound.slug;
+        })
+      )
+    )throw new Error("混同候補データが不正です: "+compound.slug);
+
     compound.foundIn.forEach(function(item){
       if(
         !item||
@@ -181,6 +191,19 @@ function validateOutreachData(data){
         !item.label.trim()||
         (item.type!=="natural"&&item.type!=="product")
       )throw new Error("代表例データが不正です: "+compound.slug);
+    });
+  });
+
+  data.compounds.forEach(function(compound){
+    const seen={};
+    (compound.confusableWith||[]).forEach(function(slug){
+      if(!slugs[slug]){
+        throw new Error("混同候補IDが見つかりません: "+slug);
+      }
+      if(seen[slug]){
+        throw new Error("混同候補IDが重複しています: "+compound.slug);
+      }
+      seen[slug]=true;
     });
   });
 }
@@ -309,9 +332,23 @@ async function init(){
   let idleActive=true;
 
   function makeChoices(compound){
-    const distractors=shuffle(idleCompounds.filter(function(candidate){
-      return candidate.id!==compound.id;
-    })).slice(0,3);
+    const correctSlug=compound.outreach.slug;
+    const confusableWith=compound.outreach.confusableWith||[];
+    let candidates=idleCompounds.filter(function(candidate){
+      const candidateSlug=candidate.outreach.slug;
+      const candidateConfusableWith=candidate.outreach.confusableWith||[];
+      return candidateSlug!==correctSlug&&
+        confusableWith.indexOf(candidateSlug)===-1&&
+        candidateConfusableWith.indexOf(correctSlug)===-1;
+    });
+
+    if(candidates.length<3){
+      candidates=idleCompounds.filter(function(candidate){
+        return candidate.outreach.slug!==correctSlug;
+      });
+    }
+
+    const distractors=shuffle(candidates).slice(0,3);
     const choices=shuffle([compound].concat(distractors));
     let signature=choices.map(function(choice){return choice.id}).join(",");
 
